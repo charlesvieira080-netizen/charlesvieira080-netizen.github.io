@@ -333,6 +333,13 @@ a.lane h3, a.card h3{text-decoration:none}
 /* A lesson that carries both: the diagram tucks up under its photo. */
 .w101-after-photo{padding-top:0}
 
+/* The footer phone. Added 2026-09-10: SITE.phone existed in the config and appeared on no
+   page, so the site had no number anywhere. Sized to be tappable, not shouted. */
+.foot-tel{display:inline-block;margin-top:6px;padding:8px 0;color:#14BABD;font-weight:600;
+  font-size:18px;line-height:1.5;letter-spacing:.01em;text-decoration:none;min-height:44px;
+  box-sizing:border-box}
+.foot-tel:hover{text-decoration:underline}
+
 /* Wedding 101 tools */
 /* Wedding 101 tools: the screen styles every tool shares (TOOLS-SPEC 5.1, 5.3).
  * Appended to site.css by the build; until then w101.js links it from the tool page.
