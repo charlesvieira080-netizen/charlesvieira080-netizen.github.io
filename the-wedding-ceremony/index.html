@@ -147,5 +147,33 @@
     <div class="foot-note">Prices shown are current and may change. Every date is quoted in writing before anything is booked.</div>
   </div>
 </footer>
+<script id="ee-attrib">
+(function(){
+  try {
+    var q = new URLSearchParams(location.search);
+    var src = q.get("src") || q.get("utm_source");
+    if (src) { try { sessionStorage.setItem("ee_src", src); } catch (e) {} }
+    else { try { src = sessionStorage.getItem("ee_src"); } catch (e) {} }
+    if (src) {
+      var links = document.querySelectorAll('a[href^="/contact"], a[href*="/contact/"]');
+      for (var i = 0; i < links.length; i++) {
+        var u = links[i].getAttribute("href");
+        if (u.indexOf("src=") === -1) links[i].setAttribute("href", u + (u.indexOf("?") === -1 ? "?" : "&") + "src=" + encodeURIComponent(src));
+      }
+      var f = document.querySelector('input[name="source"]');
+      if (f) f.value = src;
+    }
+    var want = q.get("interest");
+    if (want) {
+      var sel = document.querySelector('select[name="interest"]');
+      if (sel) {
+        for (var j = 0; j < sel.options.length; j++) {
+          if (sel.options[j].text.toLowerCase().indexOf(want.toLowerCase()) !== -1) { sel.selectedIndex = j; break; }
+        }
+      }
+    }
+  } catch (e) { /* attribution is never worth breaking a page over */ }
+})();
+</script>
 </body>
 </html>
