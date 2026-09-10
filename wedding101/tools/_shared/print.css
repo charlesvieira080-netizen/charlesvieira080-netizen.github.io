@@ -1,0 +1,70 @@
+/* Wedding 101 shared print stylesheet (TOOLS-SPEC 5.4).
+ * Linked raw by every printable (they have no shell), and appended to site.css inside
+ * @media print by the build so a tool page prints its .sheet-view on a white Letter page.
+ * Ink #0E1726 on white (17.96:1), gray #555B66 for helper text (6.83:1), hairlines #B8BCC4.
+ * System fonts only; Georgia for the one display heading. Nothing depends on color. */
+@page{size:Letter portrait;margin:0.6in}
+@page landscape{size:Letter landscape;margin:0.6in}
+.landscape{page:landscape}
+
+html,body{background:#fff !important;color:#0E1726 !important}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:11pt;line-height:1.35;font-weight:400;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+*{box-sizing:border-box}
+
+/* one sheet per page; rows never split; table headers repeat */
+.sheet{position:relative}
+.sheet + .sheet{break-before:page;page-break-before:always}
+tr,.row,.card,.no-split{break-inside:avoid;page-break-inside:avoid}
+thead{display:table-header-group}
+h1,h2,h3{break-after:avoid;page-break-after:avoid;margin:0;font-weight:400;color:#0E1726}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:22pt;line-height:1.1;margin:0 0 6pt}
+h2{font-size:13pt;font-weight:600;margin:12pt 0 6pt}
+h3{font-size:11pt;font-weight:600;margin:9pt 0 4pt}
+p{margin:0 0 6pt}
+ul,ol{margin:0 0 6pt;padding-left:16pt}
+li{margin:0 0 3pt}
+.gray,.help{color:#555B66}
+.small{font-size:9pt}
+.faint{color:#9A9EA6}
+.b{font-weight:600}
+.tabular{font-variant-numeric:tabular-nums}
+
+/* the header and footer repeat on every page as real elements, not position: fixed */
+.sheet-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12pt;border-bottom:2px solid #0E1726;padding-bottom:6pt;margin-bottom:10pt}
+.sheet-head .names{font-family:Georgia,"Times New Roman",serif;font-size:18pt;line-height:1.1}
+.sheet-head .sub{color:#555B66;font-size:10pt;margin-top:2pt}
+.sheet-head .kind{font-size:9pt;text-transform:uppercase;letter-spacing:.06em;color:#555B66;text-align:right;white-space:nowrap}
+.sheet-foot{margin-top:14pt;padding-top:6pt;border-top:1px solid #B8BCC4;font-size:8.5pt;color:#555B66;display:flex;justify-content:space-between;gap:12pt}
+
+/* fill-in furniture */
+.box{border:1px solid #B8BCC4;min-height:22pt}
+.box.tall{min-height:44pt}
+.line{border-bottom:1px solid #B8BCC4;min-height:18pt}
+.lines .line{margin-bottom:2pt}
+.check{display:inline-block;width:14pt;height:14pt;border:1px solid #0E1726;vertical-align:-3pt;margin-right:6pt;flex:none}
+.circle{display:inline-block;width:12pt;height:12pt;border:1px solid #0E1726;border-radius:50%;vertical-align:-2pt;margin-right:4pt}
+.big{font-size:24pt;font-weight:600;border:1.5px solid #0E1726;min-height:40pt;padding:4pt 8pt;color:#9A9EA6;-webkit-text-stroke:0.5pt #0E1726;letter-spacing:.04em}
+.rule-list li{margin-bottom:5pt}
+
+/* tables */
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;vertical-align:top;padding:4pt 5pt;border-bottom:1px solid #B8BCC4}
+th{font-size:8.5pt;text-transform:uppercase;letter-spacing:.04em;color:#555B66;font-weight:600;border-bottom:1px solid #0E1726}
+td.t{white-space:nowrap;font-weight:600;font-variant-numeric:tabular-nums}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+tr.indent td:nth-child(2){padding-left:16pt}
+tr.soft td{color:#555B66;font-style:italic}
+tr.marker td{color:#0E1726;font-weight:600;border-left:3px solid #0E1726}
+
+/* inside the site shell: hide the chrome and the controls, show the sheet, collapse the title */
+.topbar,footer,.btn,.cta-row,.band,.chain,.skip,input,select,button,textarea,.w1-ui,.w1-bar,.w1-toast,noscript,.tool-card{display:none !important}
+.sheet-view{display:block !important}
+.phead{border:0 !important}
+.phead .shell{padding:0 !important}
+.phead .lab,.phead p{display:none !important}
+.phead h1{font-size:14pt;font-family:Georgia,"Times New Roman",serif;color:#555B66;max-width:none;margin:0 0 8pt;line-height:1.2}
+.tool-page{padding:0 !important}
+.tool-page .shell,.shell{max-width:none !important;padding:0 !important;margin:0 !important}
+main{display:block}
+section{padding:0 !important;background:#fff !important;border:0 !important}
+a{color:inherit;text-decoration:none}

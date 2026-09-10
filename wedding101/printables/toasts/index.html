@@ -1,0 +1,139 @@
+<!doctype html>
+<!-- pages: 2 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Toast Planner, blank worksheet | Wedding 101 by Ensemble Events</title>
+<style>
+@page{size:letter portrait;margin:0.6in}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#0E1726}
+body{font:11pt/1.35 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.sheet{break-after:page;display:flex;flex-direction:column;min-height:9.6in;max-width:7.3in;margin:0 auto}
+.sheet:last-child{break-after:auto}
+@media screen{body{background:#E9EAEC;padding:24px 12px}.sheet{background:#fff;min-height:9.8in;padding:0.6in;margin:0 auto 24px;box-shadow:0 1px 4px rgba(0,0,0,.15);max-width:8.5in}}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:12pt;border-bottom:2pt solid #0E1726;padding-bottom:6pt;margin:0 0 8pt}
+.head h1{font:400 22pt/1.1 Georgia,"Times New Roman",serif;margin:0}
+.head .lab{display:block;font-size:8.5pt;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#555B66;margin-bottom:2pt}
+.head .who{text-align:right;font-size:10pt;color:#555B66;min-width:2.6in}
+.head .who .line{margin-top:4pt}
+h2{font:700 11.5pt/1.2 inherit;text-transform:uppercase;letter-spacing:.06em;margin:11pt 0 4pt;padding-bottom:3pt;border-bottom:1.5pt solid #0E1726}
+h2 .n{font-weight:400;color:#555B66;text-transform:none;letter-spacing:0;font-size:9.5pt;margin-left:8pt}
+h2:first-of-type{margin-top:6pt}
+p{margin:0 0 6pt}
+.rule{font-size:9.5pt;color:#555B66;margin:0 0 6pt;line-height:1.35}
+table{width:100%;border-collapse:collapse}
+th{font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:#555B66;text-align:left;padding:2pt 4pt;border-bottom:1pt solid #0E1726;font-weight:600}
+td{border-bottom:1pt solid #B8BCC4;padding:2pt 4pt;height:.36in;vertical-align:top;font-size:10pt}
+td.c{font-weight:600;font-size:9.5pt;padding-top:4pt;white-space:nowrap}
+td.c small{display:block;font-weight:400;color:#555B66;font-size:8pt;white-space:normal;line-height:1.2}
+td .faint{display:block}
+tr{break-inside:avoid}
+.box{border:1pt solid #0E1726;min-height:.5in;padding:3pt 5pt;break-inside:avoid}
+.box b,.lbl{display:block;font-size:8pt;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#555B66;margin-bottom:2pt}
+.lines .line{border-bottom:1pt solid #B8BCC4;height:.32in}
+.check{display:inline-block;width:11pt;height:11pt;border:1pt solid #0E1726;vertical-align:-2pt;margin-right:5pt;background:#fff}
+.faint{color:#9AA0A8}
+.big{font:600 24pt/1.1 inherit;border:1.5pt solid #0E1726;min-height:.8in;padding:6pt 8pt;break-inside:avoid}
+.big .lbl{font-size:8pt;margin-bottom:6pt}
+.foot{margin-top:auto;padding-top:6pt;border-top:1pt solid #B8BCC4;font-size:8.5pt;color:#555B66;display:flex;justify-content:space-between;gap:12pt}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:0 16pt}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:6pt 10pt}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6pt 10pt}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:3pt 8pt}
+.sub3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6pt 10pt;grid-column:1 / -1}
+.grid .box,.grid3 .box{margin:0}
+.wide{grid-column:1 / -1}
+.chk{font-size:10pt;line-height:1.6;display:inline-block;margin-right:12pt;white-space:nowrap}
+.sign{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border:2pt solid #0E1726;padding:.5in .4in;margin:12pt 0;min-height:7in}
+.sign .t{font:400 26pt/1.2 Georgia,"Times New Roman",serif;color:#9AA0A8;max-width:5.5in}
+.sign .m{font-size:10pt;color:#555B66;margin-top:18pt}
+.card{border:1.5pt solid #0E1726;padding:14pt 16pt;break-inside:avoid;display:flex;flex-direction:column;gap:6pt;min-height:4.1in}
+.card .nm{border-bottom:1pt solid #B8BCC4;height:.5in;font:400 12pt Georgia,serif;color:#555B66}
+.card p{margin:0;font-size:11.5pt}
+.card .fill{display:inline-block;min-width:1.2in;border-bottom:1pt solid #0E1726;height:12pt;vertical-align:bottom}
+.cut{border-top:1pt dashed #555B66;margin:8pt 0 10pt;text-align:center;font-size:8pt;color:#555B66;line-height:0}
+.cut span{background:#fff;padding:0 6pt;position:relative;top:-1pt}
+.cards{display:grid;grid-template-columns:1fr;gap:8pt}
+.seg{font-size:10pt}
+.seg .check{margin-left:8pt}
+.seg .check:first-child{margin-left:0}
+
+.cards.four{grid-template-columns:1fr 1fr;gap:12pt}
+.cards.four .card{min-height:3.95in;padding:12pt 13pt}
+.cards.four .card p{font-size:10.5pt}
+.cards.four .card .nm{height:.42in}
+.cards.four .fill{min-width:.9in}
+</style>
+</head>
+<body>
+<div class="sheet"><div class="head"><div><span class="lab">Wedding 101 &middot; Toast Planner</span><h1>The toast plan</h1></div><div class="who"><div class="line">The two of us: ________________________________</div><div class="line">Date: ______________________</div></div></div>
+<p class="rule">Prepare, prepare, prepare. Start with who already thinks they are giving one, then give each a number of minutes.</p>
+<div class="grid">
+  <div class="box" style="min-height:.4in"><b>The toasts happen</b><span class="seg"><span class="check"></span>before dinner &nbsp; <span class="check"></span>between courses &nbsp; <span class="check"></span>after dinner</span></div>
+  <div class="box" style="min-height:.4in"><b>Toasts start at</b><span style="font-size:14pt">________ : ________</span></div>
+</div>
+<h2>The order<span class="n">one minute of applause and walk-up per speaker is in the count</span></h2>
+<table><thead><tr><th style="width:.3in">#</th><th style="width:1.3in">Name</th><th style="width:1in">Who they are</th><th style="width:.5in">Min</th><th>The one line the MC says to bring them up</th><th style="width:1.05in">Mic</th><th style="width:1.05in">Ready</th></tr></thead><tbody>
+<tr><td class="c" style="height:.31in">1</td><td></td><td></td><td></td><td></td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>stand <span class="check"></span>holds</td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>yes <span class="check"></span>notes</td></tr>
+<tr><td class="c" style="height:.31in">2</td><td></td><td></td><td></td><td></td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>stand <span class="check"></span>holds</td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>yes <span class="check"></span>notes</td></tr>
+<tr><td class="c" style="height:.31in">3</td><td></td><td></td><td></td><td></td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>stand <span class="check"></span>holds</td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>yes <span class="check"></span>notes</td></tr>
+<tr><td class="c" style="height:.31in">4</td><td></td><td></td><td></td><td></td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>stand <span class="check"></span>holds</td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>yes <span class="check"></span>notes</td></tr>
+<tr><td class="c" style="height:.31in">5</td><td></td><td></td><td></td><td></td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>stand <span class="check"></span>holds</td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>yes <span class="check"></span>notes</td></tr>
+<tr><td class="c" style="height:.31in">6</td><td></td><td></td><td></td><td></td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>stand <span class="check"></span>holds</td><td class="seg" style="font-size:8.5pt;white-space:nowrap"><span class="check"></span>yes <span class="check"></span>notes</td></tr>
+</tbody></table>
+<div class="grid" style="margin-top:8pt">
+  <div class="box" style="min-height:.34in"><b>The blessing, if any: who gives it (two minutes, before the meal)</b></div>
+  <div class="box" style="min-height:.34in"><b>Who hands and takes the mic (one person, every time)</b><span class="faint" style="font-size:9pt">the MC</span></div>
+  <div class="box" style="min-height:.34in"><b>Open mic at the end?</b><span class="seg"><span class="check"></span>no &nbsp; <span class="check"></span>yes, capped at ______ minutes</span></div>
+  <div class="box" style="min-height:.34in"><b>Surprise toasts?</b><span class="seg"><span class="check"></span>no &nbsp; <span class="check"></span>yes: names and tables on the back</span></div>
+  <div class="box wide" style="min-height:.44in"><b>The planned bit, if any: who is in on it, and the two-line script</b></div>
+  <div class="box wide"><b>Add it up</b><span style="font-size:10.5pt">speakers' minutes ______ + one per speaker ______ + blessing (2) ______ + open mic cap ______ = <strong>______ minutes total</strong></span></div>
+</div>
+<h2>The rules I use</h2>
+<p class="rule" style="color:#0E1726;font-size:10pt">Four minutes each is plenty; past five the room is looking for the exit, past eight you have lost them. Four speakers and fifteen minutes are the most a dinner will forgive. One hand gives the mic and takes it back.</p>
+<div class="foot"><span>Wedding 101 by Ensemble Events &middot; ensemble-events.com/wedding101</span><span>Toast Planner &middot; page 1 of 2</span></div></div>
+<div class="sheet"><div class="head"><div><span class="lab">Wedding 101 &middot; Toast Planner</span><h1>Speaker cards</h1></div><div class="who"><div class="line">The two of us: ________________________________</div><div class="line">Date: ______________________</div></div></div>
+<p class="rule">Four to a page, cut along the gaps. Fill one in for each speaker and hand it over the week of the wedding. The card copy is the plan's, not theirs.</p>
+<div class="cards four"><div class="card">
+  <span class="lbl">Toast card &middot; for: ________________________</span>
+  <div class="nm">speaker's name</div>
+  <p>You are on at about <span class="fill"></span>, right after <span class="fill" style="min-width:1.6in"></span>.</p>
+  <p>You have <span class="fill" style="min-width:.5in"></span> minutes.</p>
+  <p><span class="fill" style="min-width:1in"></span> hands you the mic and takes it back.</p>
+  <p>Speak into it, not around it.</p>
+  <p>Notes on paper beat notes on a phone.</p>
+  <p style="color:#555B66">Thank you, <span class="fill" style="min-width:2in"></span></p>
+</div><div class="card">
+  <span class="lbl">Toast card &middot; for: ________________________</span>
+  <div class="nm">speaker's name</div>
+  <p>You are on at about <span class="fill"></span>, right after <span class="fill" style="min-width:1.6in"></span>.</p>
+  <p>You have <span class="fill" style="min-width:.5in"></span> minutes.</p>
+  <p><span class="fill" style="min-width:1in"></span> hands you the mic and takes it back.</p>
+  <p>Speak into it, not around it.</p>
+  <p>Notes on paper beat notes on a phone.</p>
+  <p style="color:#555B66">Thank you, <span class="fill" style="min-width:2in"></span></p>
+</div><div class="card">
+  <span class="lbl">Toast card &middot; for: ________________________</span>
+  <div class="nm">speaker's name</div>
+  <p>You are on at about <span class="fill"></span>, right after <span class="fill" style="min-width:1.6in"></span>.</p>
+  <p>You have <span class="fill" style="min-width:.5in"></span> minutes.</p>
+  <p><span class="fill" style="min-width:1in"></span> hands you the mic and takes it back.</p>
+  <p>Speak into it, not around it.</p>
+  <p>Notes on paper beat notes on a phone.</p>
+  <p style="color:#555B66">Thank you, <span class="fill" style="min-width:2in"></span></p>
+</div><div class="card">
+  <span class="lbl">Toast card &middot; for: ________________________</span>
+  <div class="nm">speaker's name</div>
+  <p>You are on at about <span class="fill"></span>, right after <span class="fill" style="min-width:1.6in"></span>.</p>
+  <p>You have <span class="fill" style="min-width:.5in"></span> minutes.</p>
+  <p><span class="fill" style="min-width:1in"></span> hands you the mic and takes it back.</p>
+  <p>Speak into it, not around it.</p>
+  <p>Notes on paper beat notes on a phone.</p>
+  <p style="color:#555B66">Thank you, <span class="fill" style="min-width:2in"></span></p>
+</div></div>
+<div class="foot"><span>Wedding 101 by Ensemble Events &middot; ensemble-events.com/wedding101</span><span>Toast Planner &middot; page 2 of 2</span></div></div>
+</body>
+</html>

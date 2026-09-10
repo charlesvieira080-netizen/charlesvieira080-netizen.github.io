@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team Sheet | Wedding 101 Tools | Ensemble Events</title>
+<meta name="description" content="One page with every vendor's day-of contact, arrival, departure, meals, and who has to talk to whom. It goes in the kit and to every person on it.">
+
+<link rel="icon" href="/assets/img/ee-mark-white.png" type="image/png">
+<link rel="canonical" href="https://www.ensemble-events.com/wedding101/tools/team-sheet/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Team Sheet | Wedding 101 Tools | Ensemble Events">
+<meta property="og:description" content="One page with every vendor's day-of contact, arrival, departure, meals, and who has to talk to whom. It goes in the kit and to every person on it.">
+<meta property="og:url" content="https://www.ensemble-events.com/wedding101/tools/team-sheet/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="shell">
+    <a class="brandmark" href="/" aria-label="Ensemble Events, home"><img src="/assets/img/ee-logo-white.png" alt="Ensemble Events"></a>
+    <nav class="pages" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/wedding-packages/">Weddings</a>
+      <a href="/wedding-content-creation/">Content</a>
+      <a href="/game-shows/">Game Shows</a>
+      <a href="/holiday-parties/">Holiday</a>
+      <a href="/packages/">Pricing</a>
+      <a href="/about/">About</a>
+      <a class="cta" href="/contact/">Check Your Date</a>
+    </nav>
+  </div>
+</div>
+<main id="main">
+<div class="phead tool-head">
+  <div class="shell">
+    <span class="lab"><a href="/wedding101/">Wedding 101</a> &middot; Tool</span>
+    <h1>Team Sheet</h1>
+    <p>One page with every vendor's day-of contact, arrival, departure, meals, and who has to talk to whom. It goes in the kit and to every person on it.</p>
+    <div class="cta-row">
+      <a class="btn btn-s" href="/wedding101/printables/team-sheet/">Print the worksheet</a>
+      <a class="btn btn-s" href="/wedding101/">All of Wedding 101</a>
+    </div>
+  </div>
+</div>
+<section class="tool-page tool-team-sheet">
+  <div class="shell">
+<style>
+/* screen styles shared by the four tools; .tool-team-sheet is replaced by .tool-<id> */
+.tool-team-sheet{--ink:#0E1726;--amber:#F2B441}
+.tool-team-sheet .t-intro{max-width:66ch;color:var(--text-2);margin:0 0 30px;font-size:17px}
+.tool-team-sheet .t-intro p{margin:0 0 14px}
+.tool-team-sheet .t-top{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:0 0 30px;font-size:14px;color:var(--text-2)}
+.tool-team-sheet .t-saved{margin:0}
+.tool-team-sheet .t-step{margin:0 0 34px;padding:0 0 30px;border-bottom:1px solid var(--line)}
+.tool-team-sheet .t-step > h2{font-size:clamp(24px,3vw,32px);line-height:1.1;margin:0 0 8px}
+.tool-team-sheet .t-step > h2 .n{color:var(--teal);margin-right:8px}
+.tool-team-sheet .t-step > .h{color:var(--text-2);max-width:64ch;margin:0 0 20px;font-size:15px}
+.tool-team-sheet .t-step > .h + .h{margin-top:-10px}
+.tool-team-sheet h3{font-family:var(--f-body);font-weight:600;font-size:17px;margin:0}
+.tool-team-sheet label,.tool-team-sheet .t-lab{display:block;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-2);margin:0 0 6px}
+.tool-team-sheet .t-fld{margin:0 0 14px;min-width:0}
+.tool-team-sheet .t-fld .sub{display:block;font-size:13px;color:var(--text-2);margin:6px 0 0;text-transform:none;letter-spacing:0;font-weight:300}
+.tool-team-sheet input[type=text],.tool-team-sheet input[type=time],.tool-team-sheet input[type=date],.tool-team-sheet input[type=number],.tool-team-sheet input[type=email],.tool-team-sheet textarea,.tool-team-sheet select{min-height:48px;font-size:16px;padding:11px 12px}
+.tool-team-sheet textarea{min-height:88px;resize:vertical;line-height:1.5}
+.tool-team-sheet input[type=range]{width:100%;min-height:44px;padding:0;background:none;border:0;accent-color:var(--teal)}
+.tool-team-sheet .t-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px 14px}
+.tool-team-sheet .t-row.two{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.tool-team-sheet .t-row.tight{grid-template-columns:repeat(auto-fit,minmax(110px,1fr))}
+.tool-team-sheet .btn{min-height:44px;padding:12px 20px;font-size:13px;line-height:1.2;display:inline-flex;align-items:center;justify-content:center;text-align:center}
+.tool-team-sheet .btn-p{background:var(--teal);color:var(--night);border-color:var(--teal)}
+.tool-team-sheet .btn-p:hover{background:#3FCBCD;color:var(--night)}
+.tool-team-sheet .btn-s{color:var(--text);border-color:var(--line);background:none}
+.tool-team-sheet .btn-s:hover{color:var(--teal);border-color:var(--teal)}
+.tool-team-sheet .btn-m{background:none;border:1px solid var(--magenta);color:var(--magenta)}
+.tool-team-sheet .btn-m:hover{color:#fff;border-color:#F06BA9}
+.tool-team-sheet .btn.small{min-height:44px;padding:10px 14px;font-size:12px}
+.tool-team-sheet .t-link{background:none;border:0;padding:12px 0;min-height:44px;color:var(--teal);font:inherit;font-size:14px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.tool-team-sheet .t-link:hover{color:#3FCBCD}
+.tool-team-sheet .t-acts{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 8px}
+.tool-team-sheet .t-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.tool-team-sheet .t-chips button{min-height:44px;padding:10px 14px;background:var(--surface);border:1px solid var(--line);color:var(--text);font:600 13px/1.2 var(--f-body);cursor:pointer;border-radius:0}
+.tool-team-sheet .t-chips button:hover{border-color:var(--teal);color:var(--teal)}
+.tool-team-sheet .t-card{background:var(--surface);border:1px solid var(--line);padding:18px 18px 12px;margin:0 0 12px}
+.tool-team-sheet .t-card.off{padding:14px 18px;color:var(--text-2)}
+.tool-team-sheet .t-card.off .t-off-line{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.tool-team-sheet .t-card-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 12px}
+.tool-team-sheet .t-card-head .fig{font-family:var(--f-disp);font-size:26px;color:var(--teal);line-height:1;white-space:nowrap}
+.tool-team-sheet .t-card-head .fig small{font-family:var(--f-body);font-size:13px;color:var(--text-2);font-weight:600;margin-left:4px}
+.tool-team-sheet .t-pick{display:flex;gap:6px;margin:0 0 14px}
+.tool-team-sheet .t-pick button{flex:1;min-height:44px;background:var(--night);border:1px solid var(--line);color:var(--text-2);font:600 12px/1 var(--f-body);letter-spacing:.05em;text-transform:uppercase;cursor:pointer;border-radius:0;padding:0 8px}
+.tool-team-sheet .t-pick button:hover{border-color:var(--text-2);color:var(--text)}
+.tool-team-sheet .t-pick button[aria-checked=true]{border-color:var(--teal);color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
+.tool-team-sheet .t-pick button[aria-disabled=true]{opacity:.45;cursor:not-allowed}
+.tool-team-sheet .t-dots button{width:44px;height:44px;background:var(--night);border:1px solid var(--line);color:var(--text-2);cursor:pointer;border-radius:0;font:600 14px var(--f-body)}
+.tool-team-sheet .t-dots button[aria-checked=true]{border-color:var(--teal);color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
+.tool-team-sheet .t-dots{display:inline-flex;gap:6px;vertical-align:middle}
+.tool-team-sheet .t-share{display:grid;grid-template-columns:1fr 92px;gap:12px;align-items:center}
+.tool-team-sheet .t-share input[type=number]{text-align:right}
+.tool-team-sheet .t-money{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:15px;color:var(--text-2);margin:10px 0 12px}
+.tool-team-sheet .t-money b{color:var(--text);font-weight:600}
+.tool-team-sheet .t-note{font-size:14px;color:var(--text-2);margin:8px 0 0}
+.tool-team-sheet .t-note.warn,.tool-team-sheet .warn{color:var(--amber)}
+.tool-team-sheet .t-lock{font-size:13px;color:var(--text-2);display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-height:44px}
+.tool-team-sheet .t-sum{position:sticky;bottom:0;z-index:5;background:rgba(14,23,38,.97);border-top:2px solid var(--teal);padding:12px 0;margin-top:14px;display:flex;flex-wrap:wrap;gap:6px 22px;align-items:baseline;font-size:14px;color:var(--text-2)}
+.tool-team-sheet .t-sum b{color:var(--text);font-weight:600;font-size:16px}
+.tool-team-sheet .t-sum .say{flex-basis:100%;color:var(--text)}
+.tool-team-sheet .t-notes{margin:0 0 8px;font-size:15px}
+.tool-team-sheet .t-notes p{margin:0 0 10px;padding:12px 16px;background:var(--surface);border-left:3px solid var(--teal)}
+.tool-team-sheet .t-notes p.warn{border-left-color:var(--amber)}
+@media (max-width:640px){.tool-team-sheet .t-sum{font-size:13px;gap:4px 16px}.tool-team-sheet .t-sum b{font-size:15px}.tool-team-sheet .t-sum .say{font-size:13px}}
+.tool-team-sheet .t-list{list-style:none;margin:0;padding:0}
+.tool-team-sheet .t-list li{padding:0;margin:0;border-bottom:1px solid var(--line)}
+.tool-team-sheet .t-list li:last-child{border-bottom:0}
+.tool-team-sheet .t-check{display:flex;align-items:center;gap:14px;min-height:52px;padding:6px 0;cursor:pointer;font-size:16px;font-weight:300;letter-spacing:0;text-transform:none;color:var(--text);margin:0}
+.tool-team-sheet .t-check input[type=checkbox]{width:26px;height:26px;min-height:0;margin:0;flex:none;accent-color:var(--teal);cursor:pointer}
+.tool-team-sheet .t-check.done{color:var(--text-2);text-decoration:line-through;text-decoration-color:var(--line)}
+.tool-team-sheet .t-check .why{display:block;font-size:13px;color:var(--text-2);text-decoration:none;margin-top:2px}
+.tool-team-sheet .t-inline{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:0 0 12px 40px}
+.tool-team-sheet .t-inline label{margin:0;white-space:nowrap}
+.tool-team-sheet .t-inline input{width:auto;min-width:150px;flex:1}
+.tool-team-sheet details.t-box{border:1px solid var(--line);background:var(--surface);margin:0 0 12px}
+.tool-team-sheet details.t-box > summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;min-height:56px;font-family:var(--f-body);font-weight:600;font-size:17px}
+.tool-team-sheet details.t-box > summary::-webkit-details-marker{display:none}
+.tool-team-sheet details.t-box > summary .t-count{font-family:var(--f-disp);font-weight:400;color:var(--teal);font-size:20px;white-space:nowrap}
+.tool-team-sheet details.t-box > summary .t-count.all{color:var(--text-2)}
+.tool-team-sheet details.t-box > summary::before{content:"+";color:var(--teal);font-weight:400;font-size:22px;width:20px;flex:none}
+.tool-team-sheet details.t-box[open] > summary::before{content:"\2212"}
+.tool-team-sheet details.t-box > .in{padding:0 18px 16px}
+.tool-team-sheet details.t-box > .in > .h{color:var(--text-2);font-size:14px;margin:0 0 10px}
+.tool-team-sheet .t-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 22px}
+.tool-team-sheet .t-tabs button{min-height:48px;padding:10px 16px;background:var(--surface);border:1px solid var(--line);color:var(--text-2);font:600 13px/1.2 var(--f-body);letter-spacing:.03em;cursor:pointer;border-radius:0;flex:1 1 auto}
+.tool-team-sheet .t-tabs button[aria-selected=true]{border-color:var(--teal);color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
+.tool-team-sheet .t-cands{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 22px}
+.tool-team-sheet .t-cands button{min-height:48px;background:var(--surface);border:1px solid var(--line);color:var(--text-2);font:600 13px/1.2 var(--f-body);cursor:pointer;border-radius:0;padding:8px 10px;text-align:left}
+.tool-team-sheet .t-cands button[aria-checked=true]{border-color:var(--teal);color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
+.tool-team-sheet .t-cands button small{display:block;font-weight:300;color:var(--text-2);text-transform:none;letter-spacing:0;margin-top:2px}
+.tool-team-sheet .t-q{background:var(--surface);border:1px solid var(--line);padding:16px 18px;margin:0 0 10px}
+.tool-team-sheet .t-q.mine{border-left:3px solid var(--teal)}
+.tool-team-sheet .t-q .q{font-weight:600;font-size:16px;margin:0 0 4px;color:var(--text)}
+.tool-team-sheet .t-q .why{font-size:14px;color:var(--text-2);margin:0 0 10px}
+.tool-team-sheet .t-q textarea{min-height:64px}
+.tool-team-sheet .t-q .t-check{min-height:44px}
+.tool-team-sheet .t-rate{display:grid;gap:10px;margin:8px 0 0}
+.tool-team-sheet .t-rate > div{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.tool-team-sheet .t-rate .t-lab{margin:0}
+.tool-team-sheet .t-vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tool-team-sheet .t-toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--teal);color:var(--night);font-weight:600;font-size:14px;padding:12px 18px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;max-width:90vw}
+.tool-team-sheet .t-toast.on{opacity:1}
+.tool-team-sheet .t-pairs{margin:0;padding:0;list-style:none}
+.tool-team-sheet .t-pairs li{padding:6px 0;border-bottom:1px solid var(--line);font-size:15px}
+.tool-team-sheet .t-line1{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.tool-team-sheet .t-line1 .who{font-weight:600}
+.tool-team-sheet .t-line1 .meta{color:var(--text-2);font-size:14px}
+.tool-team-sheet .t-line1 a{color:var(--teal)}
+.tool-team-sheet .t-env{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:8px;align-items:end;margin:0 0 10px}
+.tool-team-sheet .t-env .t-fld{margin:0}
+.tool-team-sheet .t-add{display:flex;gap:8px;align-items:end;flex-wrap:wrap}
+.tool-team-sheet .t-add .t-fld{flex:1;min-width:180px;margin:0}
+.tool-team-sheet .sheet-view{display:none}
+.tool-team-sheet .t-noscript{color:var(--text-2);font-size:15px}
+@media (prefers-reduced-motion:reduce){.tool-team-sheet .t-toast{transition:none}}
+@media (max-width:640px){
+  .tool-team-sheet .t-env{grid-template-columns:1fr 1fr}
+  .tool-team-sheet .t-cands{grid-template-columns:1fr}
+  .tool-team-sheet .t-acts .btn{flex:1 1 46%}
+}
+
+/* print rules for a tool page inside the site shell; .tool-team-sheet is .tool-<id>.
+ * body:has(.tool-team-sheet) keeps every rule tied to this tool's presence on the page, so
+ * nothing here can reach another page. */
+@media print{
+  @page{size:Letter landscape;margin:0.6in}
+  body:has(.tool-team-sheet){background:#fff;color:#0E1726;font:11pt/1.35 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-weight:400}
+  body:has(.tool-team-sheet) .topbar,body:has(.tool-team-sheet) footer,body:has(.tool-team-sheet) .phead,body:has(.tool-team-sheet) .skip,body:has(.tool-team-sheet) .band{display:none!important}
+  .tool-team-sheet{padding:0}
+  .tool-team-sheet .shell{max-width:none;padding:0;margin:0}
+  .tool-team-sheet .t-editor,.tool-team-sheet .t-toast,.tool-team-sheet .t-noscript{display:none!important}
+  .tool-team-sheet .sheet-view{display:block;color:#0E1726}
+  .tool-team-sheet .sheet-view *{color:inherit}
+  .tool-team-sheet .sheet{display:flex;flex-direction:column;min-height:7.2in}
+  .tool-team-sheet .sheet + .sheet{break-before:page}
+  .tool-team-sheet .sheet-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12pt;border-bottom:1.5pt solid #0E1726;padding:0 0 6pt;margin:0 0 10pt}
+  .tool-team-sheet .sheet-head h2{font:400 18pt/1.1 Georgia,"Times New Roman",serif;margin:0;letter-spacing:0;text-transform:none;color:#0E1726}
+  .tool-team-sheet .sheet-head .who{font-size:9pt;color:#555B66;text-align:right}
+  .tool-team-sheet .sheet-head .who div{margin:2pt 0}
+  .tool-team-sheet .sheet-head .who span{display:inline-block;min-width:2in;border-bottom:1px solid #B8BCC4;margin-left:4pt;color:#0E1726;text-align:left;padding:0 3pt}
+  .tool-team-sheet .sheet-foot{margin-top:auto;padding-top:5pt;border-top:1px solid #B8BCC4;font-size:8.5pt;color:#555B66;display:flex;justify-content:space-between;gap:12pt}
+  .tool-team-sheet .sheet h3{font:600 10pt/1.2 inherit;letter-spacing:.05em;text-transform:uppercase;margin:10pt 0 5pt;color:#0E1726}
+  .tool-team-sheet .sheet p{margin:0 0 5pt;font-size:10pt}
+  .tool-team-sheet .sheet .help{font-size:8.5pt;color:#555B66}
+  .tool-team-sheet .sheet .faint{color:#9AA0A8}
+  .tool-team-sheet .sheet table{width:100%;border-collapse:collapse;margin:0 0 8pt}
+  .tool-team-sheet .sheet th,.tool-team-sheet .sheet td{border:1px solid #B8BCC4;padding:3pt 5pt;text-align:left;vertical-align:top;font-size:9.5pt;line-height:1.3}
+  .tool-team-sheet .sheet th{font-size:7.5pt;text-transform:uppercase;letter-spacing:.04em;color:#555B66;background:#F2F3F5;font-weight:600}
+  .tool-team-sheet .sheet td.n,.tool-team-sheet .sheet th.n{text-align:right;white-space:nowrap}
+  .tool-team-sheet .sheet tr,.tool-team-sheet .sheet .item,.tool-team-sheet .sheet .row,.tool-team-sheet .sheet .q{break-inside:avoid}
+  .tool-team-sheet .sheet thead{display:table-header-group}
+  .tool-team-sheet .sheet .line{border-bottom:1px solid #B8BCC4;min-height:17pt}
+  .tool-team-sheet .sheet .check{display:inline-block;width:12pt;height:12pt;border:1px solid #0E1726;vertical-align:-2pt;margin-right:6pt;flex:none;text-align:center;font-size:9pt;line-height:12pt;font-weight:700}
+  .tool-team-sheet .sheet .item{display:flex;align-items:flex-start;gap:0;padding:2pt 0;font-size:9.5pt;line-height:1.3}
+  .tool-team-sheet .sheet .item.done{color:#555B66}
+  .tool-team-sheet .sheet .cols{display:grid;grid-template-columns:1fr 1fr;gap:0 18pt;align-items:start}
+  .tool-team-sheet .sheet .box{border:1px solid #B8BCC4;padding:5pt 7pt;margin:0 0 8pt;break-inside:avoid}
+  .tool-team-sheet .sheet .box h3{margin:0 0 3pt}
+  .tool-team-sheet .sheet .box .carry{font-size:8.5pt;color:#555B66;margin:0 0 4pt}
+  .tool-team-sheet .sheet .q{padding:3pt 0 5pt;border-bottom:1px solid #E3E5E8}
+  .tool-team-sheet .sheet .q .qt{font-size:9.5pt;line-height:1.3}
+  .tool-team-sheet .sheet .q.mine .qt{font-weight:700}
+  .tool-team-sheet .sheet .q .a{font-size:9.5pt;white-space:pre-wrap;min-height:14pt;padding:2pt 0 0}
+  .tool-team-sheet .sheet .q .line{min-height:15pt}
+  .tool-team-sheet .sheet .three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10pt}
+  .tool-team-sheet .sheet .kv{display:grid;grid-template-columns:auto 1fr;gap:2pt 8pt;font-size:9.5pt}
+  .tool-team-sheet .sheet .kv b{font-weight:600}
+  .tool-team-sheet .sheet .say{font-size:10.5pt;margin:6pt 0;padding:5pt 8pt;border-left:2pt solid #0E1726}
+}
+
+</style>
+<div class="t-editor">
+<div class="t-top"><p class="t-saved">Nothing saved yet. It saves as you type, on this phone only.</p></div>
+
+<div class="t-intro">
+  <p>One point of contact per provider, on one page, before your phones go dark. Tap a role, fill the card, and the sheet builds itself. Then it goes to every person on it, along with the run of show.</p>
+  <p>Don't assume your team will find each other on their own. A good coordinator will, but you send this anyway. Establish clear communication, and establish it early.</p>
+</div>
+<section class="t-step" aria-labelledby="ts-h0">
+  <h2 id="ts-h0"><span class="n">1</span>The day</h2>
+  <div class="t-row">
+    <div class="t-fld"><label for="ts-names">Your names</label><input type="text" id="ts-names" data-h="names" autocomplete="off"></div>
+    <div class="t-fld"><label for="ts-date">Date</label><input type="date" id="ts-date" data-h="date"></div>
+    <div class="t-fld"><label for="ts-venue">Venue</label><input type="text" id="ts-venue" data-h="venue" autocomplete="off"></div>
+    <div class="t-fld"><label for="ts-access">Venue opens for setup at</label><input type="time" id="ts-access" data-h="access"><span class="sub">Anyone arriving before this gets flagged below.</span></div>
+  </div>
+</section>
+<section class="t-step" aria-labelledby="ts-h1">
+  <h2 id="ts-h1"><span class="n">2</span>The team</h2>
+  <p class="h">Tap a role to add a card. One name per provider, the person who will actually be there. Cards fold to one line when you are done with them.</p>
+  <div class="t-chips" role="group" aria-label="Add a team member by role">
+    <button type="button" data-role="Planner or day-of coordinator">Planner or day-of coordinator</button>
+    <button type="button" data-role="Venue manager">Venue manager</button>
+    <button type="button" data-role="Caterer">Caterer</button>
+    <button type="button" data-role="DJ or MC">DJ or MC</button>
+    <button type="button" data-role="Band">Band</button>
+    <button type="button" data-role="Ceremony musicians">Ceremony musicians</button>
+    <button type="button" data-role="Officiant">Officiant</button>
+    <button type="button" data-role="Photographer">Photographer</button>
+    <button type="button" data-role="Videographer or content creator">Videographer or content creator</button>
+    <button type="button" data-role="Florist">Florist</button>
+    <button type="button" data-role="Cake">Cake</button>
+    <button type="button" data-role="Hair">Hair</button>
+    <button type="button" data-role="Makeup">Makeup</button>
+    <button type="button" data-role="Transportation">Transportation</button>
+    <button type="button" data-role="Rentals or tent">Rentals or tent</button>
+    <button type="button" data-role="Photo booth">Photo booth</button>
+    <button type="button" data-role="Lighting">Lighting</button>
+    <button type="button" data-role="Other">Other</button>
+  </div>
+  <div id="ts-rows"></div>
+</section>
+<section class="t-step" aria-labelledby="ts-h2">
+  <h2 id="ts-h2"><span class="n">3</span>Our side</h2>
+  <p class="h">The one number the team calls, and who is doing what on the day. The two of you will be pulled in too many directions, trust me.</p>
+  <div class="t-row two"><div class="t-fld"><label for="ts-o-point-name">Point person for the day, the single number vendors call</label><input type="text" id="ts-o-point-name" data-o="point.name" autocomplete="off"></div><div class="t-fld"><label for="ts-o-point-cell">Cell</label><input type="text" inputmode="tel" id="ts-o-point-cell" data-o="point.cell" autocomplete="off"></div></div>
+  <div class="t-row two"><div class="t-fld"><label for="ts-o-lead-name">Wedding party lead</label><input type="text" id="ts-o-lead-name" data-o="lead.name" autocomplete="off"></div><div class="t-fld"><label for="ts-o-lead-cell">Cell</label><input type="text" inputmode="tel" id="ts-o-lead-cell" data-o="lead.cell" autocomplete="off"></div></div>
+  <div class="t-row two"><div class="t-fld"><label for="ts-o-fam1-name">Family contact</label><input type="text" id="ts-o-fam1-name" data-o="fam1.name" autocomplete="off"></div><div class="t-fld"><label for="ts-o-fam1-cell">Cell</label><input type="text" inputmode="tel" id="ts-o-fam1-cell" data-o="fam1.cell" autocomplete="off"></div></div>
+  <div class="t-row two"><div class="t-fld"><label for="ts-o-fam2-name">Family contact</label><input type="text" id="ts-o-fam2-name" data-o="fam2.name" autocomplete="off"></div><div class="t-fld"><label for="ts-o-fam2-cell">Cell</label><input type="text" inputmode="tel" id="ts-o-fam2-cell" data-o="fam2.cell" autocomplete="off"></div></div>
+  <div class="t-fld"><label for="ts-o-phones">Where the couple's phones will be</label><input type="text" id="ts-o-phones" data-o="phones" autocomplete="off" placeholder="off, in the point person's bag"></div>
+  <h3 style="margin:18px 0 12px">Day-of roles</h3>
+  <div class="t-row two">
+    <div class="t-fld"><label for="ts-o-role-cards">Carries the cards and gifts</label><input type="text" id="ts-o-role-cards" data-o="roles.cards" autocomplete="off"></div>
+    <div class="t-fld"><label for="ts-o-role-envelopes">Holds the envelopes</label><input type="text" id="ts-o-role-envelopes" data-o="roles.envelopes" autocomplete="off"></div>
+    <div class="t-fld"><label for="ts-o-role-rain">Makes the rain call</label><input type="text" id="ts-o-role-rain" data-o="roles.rain" autocomplete="off"></div>
+    <div class="t-fld"><label for="ts-o-role-sendoff">Signals the send-off</label><input type="text" id="ts-o-role-sendoff" data-o="roles.sendoff" autocomplete="off"></div>
+    <div class="t-fld"><label for="ts-o-role-deliveries">Signs for deliveries</label><input type="text" id="ts-o-role-deliveries" data-o="roles.deliveries" autocomplete="off"></div>
+  </div>
+</section>
+<div class="t-notes" id="ts-notes" role="status" aria-live="polite" hidden></div>
+<div class="t-acts">
+  <button type="button" class="btn btn-p" data-act="copy">Copy as text</button>
+  <button type="button" class="btn btn-s" data-act="share">Share</button>
+  
+  <button type="button" class="btn btn-s" data-act="print">Print this</button>
+  <a class="btn btn-s" href="/wedding101/printables/team-sheet/">Print the blank worksheet</a>
+  <button type="button" class="btn btn-s" data-act="save">Save a copy</button>
+  <button type="button" class="btn btn-s" data-act="load">Load a copy</button>
+  <button type="button" class="btn btn-m" data-act="reset">Start over</button>
+</div>
+<label class="t-vh" for="ts-load">Load a saved copy, a wedding101-team-sheet.json file</label>
+<input type="file" class="t-vh" id="ts-load" accept="application/json,.json" tabindex="-1">
+<div class="t-sum" id="ts-sum" role="status" aria-live="polite"></div>
+<noscript><p class="t-noscript">This page needs JavaScript to save and add up. The printable does not: <a href="/wedding101/printables/team-sheet/">print the blank worksheet</a>.</p></noscript>
+</div>
+<div class="sheet-view" id="ts-sheet" aria-hidden="true"></div>
+<div class="t-toast" role="status" aria-live="polite"></div>
+<script type="module">
+/* Wedding 101 tool helpers, inlined into each tool body. Storage keys start
+ * with ee-w101-; the shared record ee-w101-plan carries the facts several
+ * tools use (names, date, venue, guestCount, venueAccess, great, missed,
+ * total, pointPerson, vendorMeals, roles, seatingNotes). */
+var W = (function () {
+  var PREFIX = 'ee-w101-';
+  var storageOk = true;
+  try { localStorage.setItem(PREFIX + 'probe', '1'); localStorage.removeItem(PREFIX + 'probe'); } catch (e) { storageOk = false; }
+  function read(key) {
+    try { var v = localStorage.getItem(PREFIX + key); return v ? JSON.parse(v) : null; }
+    catch (e) { storageOk = false; return null; }
+  }
+  function writeNow(key, obj) {
+    try { localStorage.setItem(PREFIX + key, JSON.stringify(obj)); return true; }
+    catch (e) { storageOk = false; return false; }
+  }
+  var timers = {};
+  function write(key, obj, cb) {
+    clearTimeout(timers[key]);
+    timers[key] = setTimeout(function () { var ok = writeNow(key, obj); if (cb) cb(ok); }, 300);
+  }
+  function remove(key) { try { localStorage.removeItem(PREFIX + key); } catch (e) {} }
+  function plan() { var p = read('plan'); return (p && typeof p === 'object') ? p : {}; }
+  function patchPlan(patch) { var cur = plan(); for (var k in patch) cur[k] = patch[k]; writeNow('plan', cur); }
+  function str(v) { return (typeof v === 'string') ? v : (typeof v === 'number' ? String(v) : ''); }
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function num(v) {
+    if (typeof v === 'number') return isFinite(v) ? v : 0;
+    var s = String(v == null ? '' : v).replace(/[^0-9.\-]/g, '');
+    var n = parseFloat(s);
+    return isFinite(n) ? n : 0;
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly', ''); ta.setAttribute('aria-hidden', 'true');
+    ta.style.position = 'fixed'; ta.style.left = '-9999px';
+    document.body.appendChild(ta); ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+  function copyText(text, done) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(fallbackCopy(text)); });
+    } else { done(fallbackCopy(text)); }
+  }
+  function share(title, text, done) {
+    if (navigator.share) {
+      navigator.share({ title: title, text: text }).then(function () { done('shared'); }, function () { copyText(text, function (ok) { done(ok ? 'copied' : 'failed'); }); });
+    } else { copyText(text, function (ok) { done(ok ? 'copied' : 'failed'); }); }
+  }
+  function toast(root, msg) {
+    var t = root.querySelector('.t-toast'); if (!t) return;
+    t.textContent = msg; t.classList.add('on');
+    clearTimeout(t._h); t._h = setTimeout(function () { t.classList.remove('on'); }, 2400);
+  }
+  function fmtClock(d) {
+    d = new Date(d); if (isNaN(d.getTime())) return '';
+    var h = d.getHours(), m = d.getMinutes(), ap = h >= 12 ? 'PM' : 'AM';
+    h = h % 12; if (h === 0) h = 12;
+    return h + ':' + (m < 10 ? '0' : '') + m + ' ' + ap;
+  }
+  function savedLine(root, when) {
+    var el = root.querySelector('.t-saved'); if (!el) return;
+    if (!storageOk) { el.textContent = 'Saving is off in this browser. Print or copy before you leave the page.'; return; }
+    el.textContent = when ? 'Saved on this phone at ' + fmtClock(when) + '.' : 'Nothing saved yet. It saves as you type, on this phone only.';
+  }
+  function fmtTime(v) {
+    v = str(v); if (!v) return '';
+    var p = v.split(':'); var h = parseInt(p[0], 10); var m = p[1] || '00';
+    if (isNaN(h)) return v;
+    var ap = h >= 12 ? 'PM' : 'AM'; h = h % 12; if (h === 0) h = 12;
+    return h + ':' + m + ' ' + ap;
+  }
+  function fmtDate(v) {
+    v = str(v); var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v); if (!m) return v;
+    var d = new Date(+m[1], +m[2] - 1, +m[3]);
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var mons = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    return days[d.getDay()] + ', ' + mons[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+  }
+  function money(n) {
+    n = Math.round(num(n)); var neg = n < 0; n = Math.abs(n);
+    return (neg ? '-$' : '$') + String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+  function saveCopy(id, state) {
+    var blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'wedding101-' + id + '.json';
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+  function loadCopy(file, cb) {
+    var r = new FileReader();
+    r.onload = function () { var obj = null; try { obj = JSON.parse(r.result); } catch (e) { obj = null; } cb(obj && typeof obj === 'object' ? obj : null); };
+    r.readAsText(file);
+  }
+  /* arrow keys inside a role=radiogroup or role=tablist move and select */
+  function arrowKeys(root, sel) {
+    root.addEventListener('keydown', function (e) {
+      var keys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'];
+      if (keys.indexOf(e.key) < 0) return;
+      var group = e.target.closest && e.target.closest(sel); if (!group) return;
+      var items = Array.prototype.slice.call(group.querySelectorAll('[role=radio],[role=tab]'));
+      var i = items.indexOf(e.target); if (i < 0) return;
+      e.preventDefault();
+      var n = (e.key === 'ArrowLeft' || e.key === 'ArrowUp') ? (i - 1 + items.length) % items.length : (i + 1) % items.length;
+      items[n].focus(); items[n].click();
+    });
+  }
+  function ok() { return storageOk; }
+  return { read: read, write: write, writeNow: writeNow, remove: remove, plan: plan, patchPlan: patchPlan, str: str, esc: esc, num: num,
+    copyText: copyText, share: share, toast: toast, savedLine: savedLine, fmtTime: fmtTime, fmtDate: fmtDate, fmtClock: fmtClock,
+    money: money, saveCopy: saveCopy, loadCopy: loadCopy, arrowKeys: arrowKeys, ok: ok };
+})();
+
+(function () {
+  var root = document.querySelector('.tool-team-sheet'); if (!root) return;
+  var ID = 'team-sheet';
+  var FIELDS = ['role', 'company', 'contact', 'cell', 'email', 'social', 'arrive', 'setup', 'depart', 'meals', 'mealsWhere', 'mealsWhen', 'notes'];
+  function blank() {
+    return { head: { names: '', date: '', venue: '', access: '' }, rows: [], nextId: 1,
+      ours: { point: { name: '', cell: '' }, lead: { name: '', cell: '' }, fam1: { name: '', cell: '' }, fam2: { name: '', cell: '' }, phones: '', roles: { cards: '', envelopes: '', rain: '', sendoff: '', deliveries: '' } }, savedAt: null };
+  }
+  var state = W.read(ID); if (!state || typeof state !== 'object') state = blank();
+  var b0 = blank();
+  if (!state.head) state.head = b0.head; if (!Array.isArray(state.rows)) state.rows = []; if (!state.nextId) state.nextId = 1;
+  if (!state.ours) state.ours = b0.ours; ['point', 'lead', 'fam1', 'fam2'].forEach(function (k) { if (!state.ours[k]) state.ours[k] = { name: '', cell: '' }; }); if (!state.ours.roles) state.ours.roles = b0.ours.roles;
+  /* the plan record may already know names, date, venue, access */
+  (function () { var p = W.plan(); ['names', 'date', 'venue'].forEach(function (k) { if (!state.head[k] && W.str(p[k])) state.head[k] = W.str(p[k]); }); if (!state.head.access && W.str(p.venueAccess)) state.head.access = W.str(p.venueAccess); })();
+
+  function rowById(id) { for (var i = 0; i < state.rows.length; i++) if (state.rows[i].id === id) return state.rows[i]; return null; }
+  function label(r) { return W.str(r.role) || 'Team member'; }
+  function who(r) { var s = [W.str(r.contact), W.str(r.company)].filter(Boolean).join(', '); return s; }
+  function sorted() {
+    return state.rows.slice().sort(function (a, b) { var x = W.str(a.arrive), y = W.str(b.arrive); if (x && y) return x < y ? -1 : x > y ? 1 : 0; if (x) return -1; if (y) return 1; return 0; });
+  }
+  function pairs() {
+    var seen = {}, out = [];
+    state.rows.forEach(function (r) {
+      var talks = r.talks || {};
+      Object.keys(talks).forEach(function (oid) {
+        var o = rowById(oid); if (!o) return;
+        var key = [r.id, oid].sort().join('|');
+        var about = W.str(talks[oid]); var back = o.talks && W.str(o.talks[r.id]);
+        if (seen[key]) { if (about && seen[key].about.indexOf(about) < 0) seen[key].about.push(about); return; }
+        seen[key] = { a: label(r), b: label(o), about: [about, back].filter(Boolean) }; out.push(seen[key]);
+      });
+    });
+    return out;
+  }
+  function mealTotal() { var n = 0; state.rows.forEach(function (r) { n += Math.max(0, Math.round(W.num(r.meals))); }); return n; }
+  function copies() {
+    var n = state.rows.length;
+    ['point', 'lead', 'fam1', 'fam2'].forEach(function (k) { if (W.str(state.ours[k].name)) n++; });
+    return n;
+  }
+  function flags() {
+    var out = [], acc = W.str(state.head.access); if (!acc) return out;
+    state.rows.forEach(function (r) { var a = W.str(r.arrive); if (a && a < acc) out.push(label(r) + ' arrives ' + W.fmtTime(a) + ', and the venue opens at ' + W.fmtTime(acc) + '. Check it with both.'); });
+    return out;
+  }
+
+  function fld(r, f, lab, type, extra) {
+    var id = 'ts-' + r.id + '-' + f;
+    return '<div class="t-fld"><label for="' + id + '">' + lab + '</label><input type="' + (type || 'text') + '" id="' + id + '" data-f="' + f + '" value="' + W.esc(W.str(r[f])) + '"' + (extra || '') + '></div>';
+  }
+  function card(r) {
+    var h = '<div class="t-card t-vendor" data-rid="' + r.id + '">';
+    if (!r.open) {
+      h += '<div class="t-line1"><div><span class="who">' + W.esc(label(r)) + '</span>' + (who(r) ? ' <span class="meta">' + W.esc(who(r)) + '</span>' : '') + '</div>'
+        + '<div class="meta">' + (W.str(r.cell) ? '<a href="tel:' + W.esc(W.str(r.cell).replace(/[^0-9+]/g, '')) + '">' + W.esc(r.cell) + '</a>' : 'no cell yet') + (W.str(r.arrive) ? ' · arrives ' + W.fmtTime(r.arrive) : '') + '</div>'
+        + '<button type="button" class="btn btn-s small" data-act="expand">Edit</button></div></div>';
+      return h;
+    }
+    h += '<div class="t-card-head"><h3>' + W.esc(label(r)) + '</h3></div>';
+    h += '<div class="t-row two">' + fld(r, 'role', 'Role') + fld(r, 'company', 'Company') + fld(r, 'contact', 'Day-of contact, the one name') + fld(r, 'cell', 'Cell', 'text', ' inputmode="tel" autocomplete="off"') + fld(r, 'email', 'Email', 'email', ' autocomplete="off"') + fld(r, 'social', 'Social handle') + '</div>';
+    h += '<div class="t-row tight">' + fld(r, 'arrive', 'Arrives', 'time') + fld(r, 'depart', 'Leaves', 'time') + fld(r, 'meals', 'Meals', 'number', ' min="0" step="1" inputmode="numeric"') + '</div>';
+    h += '<div class="t-row two">' + fld(r, 'setup', 'Setup needs (power, table, space)') + fld(r, 'mealsWhere', 'Where they eat') + fld(r, 'mealsWhen', 'When they eat', 'text', ' placeholder="with the guests\' entrees"') + '</div>';
+    var others = state.rows.filter(function (o) { return o.id !== r.id; });
+    if (others.length) {
+      h += '<details class="t-box"><summary>Must talk to<span class="t-count">' + Object.keys(r.talks || {}).length + '</span></summary><div class="in"><p class="h">Who this person has to line up with on the day, and about what.</p>';
+      others.forEach(function (o) {
+        var on = r.talks && Object.prototype.hasOwnProperty.call(r.talks, o.id);
+        var cid = 'ts-' + r.id + '-talk-' + o.id;
+        h += '<label class="t-check" for="' + cid + '"><input type="checkbox" id="' + cid + '" data-talk="' + o.id + '"' + (on ? ' checked' : '') + '><span>' + W.esc(label(o)) + '</span></label>';
+        if (on) h += '<div class="t-inline"><label for="' + cid + '-a">About</label><input type="text" id="' + cid + '-a" data-about="' + o.id + '" value="' + W.esc(W.str(r.talks[o.id])) + '" placeholder="the last dance and the send-off"></div>';
+      });
+      h += '</div></details>';
+    }
+    h += '<div class="t-fld"><label for="ts-' + r.id + '-notes">Notes</label><input type="text" id="ts-' + r.id + '-notes" data-f="notes" value="' + W.esc(W.str(r.notes)) + '"></div>';
+    h += '<div class="t-acts" style="margin:6px 0 4px"><button type="button" class="btn btn-s small" data-act="collapse">Done with this card</button><button type="button" class="t-link" data-act="remove">Remove</button></div></div>';
+    return h;
+  }
+  var rowsBox = root.querySelector('#ts-rows');
+  function renderRows() {
+    if (!rowsBox) return;
+    /* keep the "must talk to" panels open across a re-render */
+    var openIds = {};
+    Array.prototype.forEach.call(rowsBox.querySelectorAll('.t-vendor details[open]'), function (d) { openIds[d.closest('.t-vendor').getAttribute('data-rid')] = true; });
+    var h = ''; sorted().forEach(function (r) { h += card(r); });
+    if (!state.rows.length) h = '<p class="t-note">No one on the sheet yet. Tap a role above to add the first card.</p>';
+    rowsBox.innerHTML = h;
+    Object.keys(openIds).forEach(function (id) { var d = rowsBox.querySelector('.t-vendor[data-rid="' + id + '"] details'); if (d) d.open = true; });
+  }
+  function renderSummary() {
+    var el = root.querySelector('#ts-sum'), notes = root.querySelector('#ts-notes');
+    var n = copies(), m = mealTotal(), ps = pairs(), fl = flags();
+    if (el) el.innerHTML = '<span>On the sheet <b>' + state.rows.length + '</b></span><span>Copies to hand out <b>' + n + '</b></span><span>Vendor meals <b>' + m + '</b></span>';
+    /* the pairs and the flags sit above the buttons, not in the sticky bar, so the bar stays short on a phone */
+    if (notes) {
+      var h = '';
+      if (ps.length) h += '<p class="say">Talks to: ' + ps.map(function (p) { return W.esc(p.a) + ' and ' + W.esc(p.b) + (p.about.length ? ' (' + W.esc(p.about.join('; ')) + ')' : ''); }).join(' · ') + '</p>';
+      fl.forEach(function (f) { h += '<p class="say warn">! ' + W.esc(f) + '</p>'; });
+      notes.innerHTML = h; notes.hidden = !h;
+    }
+  }
+  function renderSheet() {
+    var el = root.querySelector('#ts-sheet'); if (!el) return;
+    var hd = state.head, o = state.ours;
+    var h = '<div class="sheet"><div class="sheet-head"><h2>Team Sheet</h2><div class="who"><div>Names <span>' + W.esc(W.str(hd.names)) + '</span></div><div>Date <span>' + W.esc(W.fmtDate(hd.date)) + '</span></div><div>Venue <span>' + W.esc(W.str(hd.venue)) + (W.str(hd.access) ? ' (opens ' + W.fmtTime(hd.access) + ')' : '') + '</span></div></div></div>';
+    h += '<p class="say">Point person for the day: <b>' + W.esc(W.str(o.point.name) || '____________') + '</b>' + (W.str(o.point.cell) ? ', ' + W.esc(o.point.cell) : '') + '. This is the one number the team calls. The couple\'s phones: ' + W.esc(W.str(o.phones) || 'off, with ' + (W.str(o.point.name) || 'the point person')) + '.</p>';
+    h += '<table><thead><tr><th>Role</th><th>Contact and company</th><th>Cell and email</th><th>Arrives</th><th>Leaves</th><th class="n">Meals</th><th>Talks to</th><th>Notes</th></tr></thead><tbody>';
+    sorted().forEach(function (r) {
+      var talks = Object.keys(r.talks || {}).map(function (oid) { var t = rowById(oid); return t ? label(t) + (W.str(r.talks[oid]) ? ' (' + W.str(r.talks[oid]) + ')' : '') : ''; }).filter(Boolean).join('; ');
+      var meals = W.num(r.meals) > 0 ? Math.round(W.num(r.meals)) + (W.str(r.mealsWhere) || W.str(r.mealsWhen) ? '<br><span class="help">' + W.esc([W.str(r.mealsWhere), W.str(r.mealsWhen)].filter(Boolean).join(', ')) + '</span>' : '') : '';
+      h += '<tr><td><b>' + W.esc(label(r)) + '</b></td><td>' + W.esc(W.str(r.contact)) + (W.str(r.company) ? '<br><span class="help">' + W.esc(r.company) + '</span>' : '') + '</td><td>' + W.esc(W.str(r.cell)) + (W.str(r.email) ? '<br><span class="help">' + W.esc(r.email) + '</span>' : '') + '</td><td>' + W.esc(W.fmtTime(r.arrive)) + (W.str(r.setup) ? '<br><span class="help">' + W.esc(r.setup) + '</span>' : '') + '</td><td>' + W.esc(W.fmtTime(r.depart)) + '</td><td class="n">' + meals + '</td><td>' + W.esc(talks) + '</td><td>' + W.esc(W.str(r.notes)) + '</td></tr>';
+    });
+    if (!state.rows.length) h += '<tr><td colspan="8" class="help">No one on the sheet yet.</td></tr>';
+    h += '</tbody></table>';
+    h += '<p class="help">Vendor meals to confirm with the caterer: <b>' + mealTotal() + '</b>. Usually served with the guests\' entrees, so the team is back before the first dance set.</p>';
+    h += '<div class="cols"><div><h3>Our side</h3><div class="kv">'
+      + '<b>Point person</b><span>' + W.esc(W.str(o.point.name)) + (W.str(o.point.cell) ? ', ' + W.esc(o.point.cell) : '') + '</span>'
+      + '<b>Wedding party lead</b><span>' + W.esc(W.str(o.lead.name)) + (W.str(o.lead.cell) ? ', ' + W.esc(o.lead.cell) : '') + '</span>'
+      + '<b>Family contact</b><span>' + W.esc(W.str(o.fam1.name)) + (W.str(o.fam1.cell) ? ', ' + W.esc(o.fam1.cell) : '') + '</span>'
+      + '<b>Family contact</b><span>' + W.esc(W.str(o.fam2.name)) + (W.str(o.fam2.cell) ? ', ' + W.esc(o.fam2.cell) : '') + '</span>'
+      + '<b>Our phones</b><span>' + W.esc(W.str(o.phones)) + '</span></div></div>';
+    h += '<div><h3>Day-of roles</h3><div class="kv">';
+    var RL = { cards: 'Carries the cards and gifts', envelopes: 'Holds the envelopes', rain: 'Makes the rain call', sendoff: 'Signals the send-off', deliveries: 'Signs for deliveries' };
+    Object.keys(RL).forEach(function (k) { h += '<b>' + RL[k] + '</b><span>' + W.esc(W.str(o.roles[k])) + '</span>'; });
+    h += '</div></div></div>';
+    var ps = pairs();
+    if (ps.length) h += '<h3>Who talks to whom</h3><p>' + ps.map(function (p) { return W.esc(p.a) + ' and ' + W.esc(p.b) + (p.about.length ? ': ' + W.esc(p.about.join('; ')) : ''); }).join(' · ') + '</p>';
+    h += '<p class="help">Copies to hand out: <b>' + copies() + '</b>. Everyone on this sheet gets this sheet and the run of show, 72 hours out.</p>';
+    h += '<div class="sheet-foot"><span>Wedding 101 by Ensemble Events · ensemble-events.com/wedding101</span><span>Team Sheet</span></div></div>';
+    el.innerHTML = h;
+  }
+  function render() { renderRows(); renderSummary(); renderSheet(); }
+  function light() { renderSummary(); renderSheet(); }
+  function save() {
+    state.savedAt = Date.now();
+    W.write(ID, state, function (ok) { W.savedLine(root, ok ? state.savedAt : null); });
+    var p = {}; ['names', 'date', 'venue'].forEach(function (k) { p[k] = W.str(state.head[k]); }); p.venueAccess = W.str(state.head.access);
+    p.pointPerson = { name: W.str(state.ours.point.name), cell: W.str(state.ours.point.cell) }; p.vendorMeals = mealTotal();
+    p.roles = state.ours.roles; W.patchPlan(p);
+  }
+  function copyTextOut() {
+    var hd = state.head, o = state.ours, L = [];
+    L.push('Team Sheet (Wedding 101, Ensemble Events)');
+    L.push([W.str(hd.names), W.fmtDate(hd.date), W.str(hd.venue)].filter(Boolean).join(' · '));
+    L.push('Point person for the day: ' + (W.str(o.point.name) || '(not set)') + (W.str(o.point.cell) ? ', ' + o.point.cell : '') + '. One number for the whole team.');
+    if (W.str(hd.access)) L.push('Venue opens for setup at ' + W.fmtTime(hd.access) + '.');
+    L.push('');
+    sorted().forEach(function (r) {
+      var parts = [];
+      parts.push([W.str(r.contact), W.str(r.company)].filter(Boolean).join(', '));
+      if (W.str(r.cell)) parts.push(W.str(r.cell)); if (W.str(r.email)) parts.push(W.str(r.email)); if (W.str(r.social)) parts.push(W.str(r.social));
+      if (W.str(r.arrive)) parts.push('arrives ' + W.fmtTime(r.arrive)); if (W.str(r.depart)) parts.push('leaves ' + W.fmtTime(r.depart));
+      if (W.str(r.setup)) parts.push('needs ' + W.str(r.setup));
+      if (W.num(r.meals) > 0) parts.push('meals ' + Math.round(W.num(r.meals)) + [W.str(r.mealsWhere), W.str(r.mealsWhen)].filter(Boolean).map(function (s) { return ', ' + s; }).join(''));
+      var talks = Object.keys(r.talks || {}).map(function (oid) { var t = rowById(oid); return t ? label(t) + (W.str(r.talks[oid]) ? ' (' + W.str(r.talks[oid]) + ')' : '') : ''; }).filter(Boolean);
+      if (talks.length) parts.push('talks to ' + talks.join('; '));
+      if (W.str(r.notes)) parts.push(W.str(r.notes));
+      L.push(label(r) + ': ' + parts.filter(Boolean).join('. '));
+    });
+    L.push('');
+    L.push('Our side');
+    L.push('Wedding party lead: ' + [W.str(o.lead.name), W.str(o.lead.cell)].filter(Boolean).join(', '));
+    L.push('Family contacts: ' + [[W.str(o.fam1.name), W.str(o.fam1.cell)].filter(Boolean).join(', '), [W.str(o.fam2.name), W.str(o.fam2.cell)].filter(Boolean).join(', ')].filter(Boolean).join('; '));
+    L.push('Our phones: ' + W.str(o.phones));
+    var RL = { cards: 'Carries the cards and gifts', envelopes: 'Holds the envelopes', rain: 'Makes the rain call', sendoff: 'Signals the send-off', deliveries: 'Signs for deliveries' };
+    Object.keys(RL).forEach(function (k) { L.push(RL[k] + ': ' + W.str(o.roles[k])); });
+    L.push('Vendor meals: ' + mealTotal() + '. Copies to hand out: ' + copies() + '.');
+    return L.join('\n');
+  }
+  function setPath(path, v) { var p = path.split('.'), o = state.ours; for (var i = 0; i < p.length - 1; i++) { if (!o[p[i]]) o[p[i]] = {}; o = o[p[i]]; } o[p[p.length - 1]] = v; }
+
+  root.addEventListener('input', function (e) {
+    var t = e.target; if (!t.getAttribute) return;
+    if (t.hasAttribute('data-h')) { state.head[t.getAttribute('data-h')] = t.value; light(); save(); return; }
+    if (t.hasAttribute('data-o')) { setPath(t.getAttribute('data-o'), t.value); light(); save(); return; }
+    var cardEl = t.closest('.t-vendor'); if (!cardEl) return;
+    var r = rowById(cardEl.getAttribute('data-rid')); if (!r) return;
+    if (t.hasAttribute('data-f')) { var f = t.getAttribute('data-f'); if (FIELDS.indexOf(f) >= 0) r[f] = t.value; if (f === 'role') { var hh = cardEl.querySelector('.t-card-head h3'); if (hh) hh.textContent = label(r); } light(); save(); return; }
+    if (t.hasAttribute('data-about')) { if (!r.talks) r.talks = {}; r.talks[t.getAttribute('data-about')] = t.value; light(); save(); return; }
+  });
+  root.addEventListener('change', function (e) {
+    var t = e.target; if (!t.hasAttribute || !t.hasAttribute('data-talk')) return;
+    var cardEl = t.closest('.t-vendor'); var r = rowById(cardEl.getAttribute('data-rid')); if (!r) return;
+    if (!r.talks) r.talks = {};
+    var oid = t.getAttribute('data-talk');
+    if (t.checked) { if (!Object.prototype.hasOwnProperty.call(r.talks, oid)) r.talks[oid] = ''; } else delete r.talks[oid];
+    render(); save();
+    var again = root.querySelector('#ts-' + r.id + '-talk-' + oid + (t.checked ? '-a' : '')); if (again) again.focus();
+  });
+  root.addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b || !root.contains(b)) return;
+    var act = b.getAttribute('data-act');
+    if (b.hasAttribute('data-role')) {
+      if (state.rows.length >= 24) { W.toast(root, 'Twenty-four is the limit here. Fold a role into another card.'); return; }
+      var role = b.getAttribute('data-role') === 'Other' ? '' : b.getAttribute('data-role');
+      var r = { id: 'r' + (state.nextId++), role: role, company: '', contact: '', cell: '', email: '', social: '', arrive: '', setup: '', depart: '', meals: '', mealsWhere: '', mealsWhen: '', talks: {}, notes: '', open: true };
+      state.rows.push(r); render(); save();
+      var first = root.querySelector('#ts-' + r.id + '-' + (role ? 'contact' : 'role')); if (first) first.focus();
+      return;
+    }
+    var cardEl = b.closest('.t-vendor');
+    if (cardEl && (act === 'collapse' || act === 'expand' || act === 'remove')) {
+      var row = rowById(cardEl.getAttribute('data-rid')); if (!row) return;
+      if (act === 'remove') { if (!confirm('Remove ' + label(row) + ' from the sheet?')) return; state.rows = state.rows.filter(function (x) { return x.id !== row.id; }); state.rows.forEach(function (x) { if (x.talks) delete x.talks[row.id]; }); }
+      else row.open = (act === 'expand');
+      render(); save();
+      if (act !== 'remove') { var again = root.querySelector('.t-vendor[data-rid="' + row.id + '"] button'); if (again) again.focus(); }
+      return;
+    }
+    if (act === 'copy') { W.copyText(copyTextOut(), function (ok) { W.toast(root, ok ? 'Copied. Paste it into the group text or the email to the team.' : 'Copy did not work here. Select the sheet and copy it by hand.'); }); return; }
+    if (act === 'share') { W.share('Team Sheet', copyTextOut(), function (r) { W.toast(root, r === 'shared' ? 'Shared.' : r === 'copied' ? 'Copied; your browser has no share sheet.' : 'Sharing did not work here.'); }); return; }
+    if (act === 'print') { renderSheet(); window.print(); return; }
+    if (act === 'save') { W.saveCopy(ID, state); return; }
+    if (act === 'load') { var fi = root.querySelector('#ts-load'); if (fi) fi.click(); return; }
+    if (act === 'reset') {
+      if (!confirm('Clear the Team Sheet on this phone?')) return;
+      state = blank(); W.remove(ID);
+      Array.prototype.forEach.call(root.querySelectorAll('[data-h],[data-o]'), function (i) { i.value = ''; });
+      render(); W.savedLine(root, null); W.toast(root, 'Cleared.'); return;
+    }
+  });
+  var loadInput = root.querySelector('#ts-load');
+  if (loadInput) loadInput.addEventListener('change', function () {
+    var f = loadInput.files && loadInput.files[0]; if (!f) return;
+    W.loadCopy(f, function (obj) {
+      if (!obj || !Array.isArray(obj.rows) || !obj.ours) { W.toast(root, 'That file is not a saved Team Sheet.'); return; }
+      state = obj; if (!state.head) state.head = blank().head; if (!state.nextId) state.nextId = state.rows.length + 1;
+      fillStatic(); render(); save(); W.toast(root, 'Loaded.');
+    });
+    loadInput.value = '';
+  });
+  function fillStatic() {
+    Array.prototype.forEach.call(root.querySelectorAll('[data-h]'), function (i) { i.value = W.str(state.head[i.getAttribute('data-h')]); });
+    Array.prototype.forEach.call(root.querySelectorAll('[data-o]'), function (i) { var p = i.getAttribute('data-o').split('.'), o = state.ours; for (var k = 0; k < p.length; k++) { o = o ? o[p[k]] : ''; } i.value = W.str(o); });
+  }
+  window.addEventListener('beforeprint', function () { renderSheet(); });
+  fillStatic(); render(); W.savedLine(root, state.savedAt);
+})();
+
+</script>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="shell">
+    <div class="foot-top">
+      <div>
+        <img class="foot-mark" src="/assets/img/ee-mark-white.png" alt="Ensemble Events">
+        <div class="foot-tag">Weddings, parties and content &middot; New Bedford, MA</div>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/wedding-packages/">Weddings</a>
+        <a href="/wedding-content-creation/">Content</a>
+        <a href="/game-shows/">Game Shows</a>
+        <a href="/holiday-parties/">Holiday</a>
+        <a href="/packages/">Pricing</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Check Your Date</a>
+        <a href="/the-method/">The Method</a>
+        <a href="/digital-day-of/">Digital Day-Of</a>
+        <a href="/wedding101/">Wedding101</a>
+        <a href="/senior-living/">Senior Living</a>
+        <a href="/corporate-holiday-party/">Corporate Parties</a>
+        <a href="/clientservices/">Client Services</a>
+      </nav>
+    </div>
+    </div>
+      <div class="areas">
+        <span><b>SouthCoast</b></span><span>New Bedford</span><span>Fall River</span><span>Dartmouth</span><span>Westport</span><span>Fairhaven</span><span>Mattapoisett</span><span>Marion</span><span>Wareham</span><span><b>South Shore</b></span><span>Plymouth</span><span>Duxbury</span><span>Kingston</span><span><b>Cape Cod</b></span><span>Falmouth</span><span>Bourne</span><span>Sandwich</span><span><b>Rhode Island</b></span><span>Newport</span><span>Providence</span>
+      </div>
+    <div class="foot-note">Prices shown are current and may change. Every date is quoted in writing before anything is booked.</div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<!-- pages: 1 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:,">
+<title>Team Sheet | Wedding 101 | Ensemble Events</title>
+<style>
+/* standalone printable: US Letter, ink on white, system fonts, no requests */
+@page{size:Letter landscape;margin:0.45in}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#0E1726}
+body{font:11pt/1.35 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.sheet{display:flex;flex-direction:column;min-height:7.3in}
+.sheet + .sheet{break-before:page}
+.sheet-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12pt;border-bottom:1.5pt solid #0E1726;padding:0 0 6pt;margin:0 0 10pt}
+.sheet-head h1{font:400 19pt/1.1 Georgia,"Times New Roman",serif;margin:0}
+.sheet-head .sub{font-size:9pt;color:#555B66;margin:3pt 0 0}
+.sheet-head .who{font-size:9pt;color:#555B66;text-align:right;flex:none}
+.sheet-head .who div{margin:2pt 0}
+.sheet-head .who span{display:inline-block;min-width:2in;border-bottom:1px solid #B8BCC4;margin-left:4pt;vertical-align:bottom}
+.sheet-foot{margin-top:auto;padding-top:5pt;border-top:1px solid #B8BCC4;font-size:8.5pt;color:#555B66;display:flex;justify-content:space-between;gap:12pt}
+h2{font:600 10pt/1.2 inherit;letter-spacing:.05em;text-transform:uppercase;margin:10pt 0 5pt}
+h2:first-of-type{margin-top:0}
+p{margin:0 0 5pt;font-size:10pt}
+.help{font-size:8.5pt;color:#555B66}
+.faint{color:#9AA0A8}
+.say{font-size:10pt;margin:0 0 8pt;padding:5pt 8pt;border-left:2pt solid #0E1726}
+table{width:100%;border-collapse:collapse;margin:0 0 8pt}
+th,td{border:1px solid #B8BCC4;padding:3pt 5pt;text-align:left;vertical-align:top;font-size:9.5pt;line-height:1.3}
+th{font-size:7.5pt;text-transform:uppercase;letter-spacing:.04em;color:#555B66;background:#F2F3F5;font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap}
+tr,.item,.row,.q,.box{break-inside:avoid}
+thead{display:table-header-group}
+.line{border-bottom:1px solid #B8BCC4;min-height:18pt}
+.line.tall{min-height:22pt}
+.lines .line{min-height:17pt}
+.check{display:inline-block;width:12pt;height:12pt;border:1px solid #0E1726;vertical-align:-2pt;margin-right:6pt;flex:none}
+.circle{display:inline-block;width:10pt;height:10pt;border:1px solid #0E1726;border-radius:50%;vertical-align:-1pt;margin-right:2pt}
+.item{display:flex;align-items:flex-start;padding:2pt 0;font-size:9.5pt;line-height:1.3}
+.item .own{flex:1;border-bottom:1px solid #B8BCC4;min-height:13pt;margin-top:1pt}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0 18pt;align-items:start}
+.box{border:1px solid #B8BCC4;padding:5pt 7pt;margin:0 0 8pt}
+.box h2{margin:0 0 3pt}
+.box .carry{font-size:8.5pt;color:#555B66;margin:0 0 4pt;display:flex;gap:4pt;align-items:baseline}
+.box .carry span{flex:1;border-bottom:1px solid #B8BCC4;min-height:12pt}
+.q{padding:3pt 0 5pt;border-bottom:1px solid #E3E5E8}
+.q .qt{font-size:9.5pt;line-height:1.3}
+.q.mine .qt{font-weight:700}
+.q .why{font-size:8pt;color:#555B66;line-height:1.25;margin:1pt 0 0}
+.q .line{min-height:15pt}
+.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10pt}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4pt 8pt;font-size:9.5pt;align-items:end}
+.kv b{font-weight:600;white-space:nowrap}
+.kv .line{min-height:15pt}
+.date{display:inline-block;min-width:1.1in;border-bottom:1px solid #B8BCC4;margin-left:6pt;vertical-align:bottom;min-height:12pt}
+.rate{display:flex;gap:14pt;font-size:9pt;margin:6pt 0 0;flex-wrap:wrap}
+.rate span{white-space:nowrap}
+
+.team td{height:16pt;padding:1.5pt 4pt}.team th{padding:2pt 4pt}.team td b{font-weight:600}.kv{gap:3pt 6pt;font-size:9pt}.kv .line{min-height:12pt}h2{margin:4pt 0 3pt}.sheet-head{margin-bottom:7pt}.sheet-head h1{font-size:17pt}.help{font-size:8pt}
+@media screen{body{padding:24px;max-width:11in;margin:0 auto}.sheet{border:1px solid #B8BCC4;padding:0.45in;margin:0 0 24px}}
+</style>
+</head>
+<body>
+<div class="sheet">
+<div class="sheet-head"><div><h1>Team Sheet</h1><p class="sub">One point of contact per provider. Everyone on this sheet gets a copy, with the run of show, 72 hours out.</p></div><div class="who"><div>Names <span></span></div><div>Date <span></span></div></div></div>
+<table class="team">
+<thead><tr><th style="width:1.35in">Role</th><th>Contact and company</th><th style="width:1.35in">Cell and email</th><th style="width:.7in">Arrives</th><th style="width:.7in">Leaves</th><th class="n" style="width:.5in">Meals</th><th style="width:1.3in">Talks to</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><b>Planner or day-of coordinator</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Venue manager</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Officiant</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Ceremony musicians</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Photographer</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Videographer or content creator</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>DJ or MC</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Band</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Caterer</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Florist</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Cake</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Hair</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Makeup</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Transportation</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Rentals or tent</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Photo booth</b></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody></table>
+<div class="cols" style="grid-template-columns:1.1fr 1fr 1fr">
+  <div><h2>Our side</h2><div class="kv"><b>Point person, the one number</b><div class="line"></div><b>Wedding party lead</b><div class="line"></div><b>Family contact</b><div class="line"></div><b>Family contact</b><div class="line"></div><b>Our phones will be</b><div class="line"></div></div></div>
+  <div><h2>Day-of roles</h2><div class="kv"><b>Carries the cards and gifts</b><div class="line"></div><b>Holds the envelopes</b><div class="line"></div><b>Makes the rain call</b><div class="line"></div><b>Signals the send-off</b><div class="line"></div><b>Signs for deliveries</b><div class="line"></div></div></div>
+  <div><h2>Vendor meals</h2><div class="kv"><b>How many</b><div class="line"></div><b>Where they eat</b><div class="line"></div><b>When</b><div class="line"></div></div><p class="help" style="margin-top:4pt">Usually with the guests' entrees, so the team is back before the first dance set.</p><h2 style="margin-top:5pt">Copies to</h2><p class="help" style="line-height:1.6"><span style="white-space:nowrap;display:inline-block;margin:0 7pt 0 0"><span class="check"></span>every row above</span><span style="white-space:nowrap;display:inline-block;margin:0 7pt 0 0"><span class="check"></span>point person</span><span style="white-space:nowrap;display:inline-block;margin:0 7pt 0 0"><span class="check"></span>party lead</span><span style="white-space:nowrap;display:inline-block;margin:0 7pt 0 0"><span class="check"></span>family contacts</span><span style="white-space:nowrap;display:inline-block;margin:0 7pt 0 0"><span class="check"></span>the kit</span></p></div>
+</div>
+<div class="sheet-foot"><span>Wedding 101 by Ensemble Events · ensemble-events.com/wedding101</span><span>Team Sheet</span></div>
+</div>
+</body>
+</html>

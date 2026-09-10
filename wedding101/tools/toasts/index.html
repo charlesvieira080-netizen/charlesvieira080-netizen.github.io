@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toast Planner | Wedding 101 Tools | Ensemble Events</title>
+<meta name="description" content="Who speaks, in what order, for how long, and who hands them the mic. Prints a card for each speaker.">
+
+<link rel="icon" href="/assets/img/ee-mark-white.png" type="image/png">
+<link rel="canonical" href="https://www.ensemble-events.com/wedding101/tools/toasts/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Toast Planner | Wedding 101 Tools | Ensemble Events">
+<meta property="og:description" content="Who speaks, in what order, for how long, and who hands them the mic. Prints a card for each speaker.">
+<meta property="og:url" content="https://www.ensemble-events.com/wedding101/tools/toasts/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="shell">
+    <a class="brandmark" href="/" aria-label="Ensemble Events, home"><img src="/assets/img/ee-logo-white.png" alt="Ensemble Events"></a>
+    <nav class="pages" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/wedding-packages/">Weddings</a>
+      <a href="/wedding-content-creation/">Content</a>
+      <a href="/game-shows/">Game Shows</a>
+      <a href="/holiday-parties/">Holiday</a>
+      <a href="/packages/">Pricing</a>
+      <a href="/about/">About</a>
+      <a class="cta" href="/contact/">Check Your Date</a>
+    </nav>
+  </div>
+</div>
+<main id="main">
+<div class="phead tool-head">
+  <div class="shell">
+    <span class="lab"><a href="/wedding101/">Wedding 101</a> &middot; Tool</span>
+    <h1>Toast Planner</h1>
+    <p>Who speaks, in what order, for how long, and who hands them the mic. Prints a card for each speaker.</p>
+    <div class="cta-row">
+      <a class="btn btn-s" href="/wedding101/printables/toasts/">Print the worksheet</a>
+      <a class="btn btn-s" href="/wedding101/">All of Wedding 101</a>
+    </div>
+  </div>
+</div>
+<section class="tool-page tool-toasts">
+  <div class="shell">
+<style>
+.tool-toasts .app{max-width:760px}
+.tool-toasts .meta{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:14px;color:var(--text-2);margin:0 0 22px}
+.tool-toasts .meta .saved{flex:1 1 220px}
+.tool-toasts .meta .link{background:none;border:0;padding:0;min-height:44px;color:var(--teal);font-family:var(--f-body);font-size:14px;font-weight:600;cursor:pointer;text-decoration:underline}
+.tool-toasts .noscript{background:var(--surface);border-left:3px solid var(--teal);padding:12px 16px;margin:0 0 20px;font-size:15px}
+.tool-toasts .noscript a,.tool-toasts .note a{color:var(--teal)}
+.tool-toasts .card{background:var(--surface);border:1px solid var(--line);padding:22px 18px;margin:0 0 16px}
+.tool-toasts .card h2{font-size:26px;line-height:1.1;margin:0 0 6px}
+.tool-toasts .card h2 .k{color:var(--teal)}
+.tool-toasts .card h3{font-family:var(--f-body);font-weight:600;font-size:17px;margin:20px 0 4px;letter-spacing:0}
+.tool-toasts .card p{margin:0 0 12px;color:var(--text-2);font-size:15px;line-height:1.55;max-width:60ch}
+.tool-toasts .card p.me{color:var(--text)}
+.tool-toasts .f{display:grid;gap:12px;margin:12px 0}
+.tool-toasts label .hint{text-transform:none;letter-spacing:0;font-weight:300;font-size:13px;color:var(--text-2);line-height:1.4}
+.tool-toasts label.chk{flex-direction:row;align-items:center;gap:12px;text-transform:none;letter-spacing:0;font-weight:400;font-size:15px;color:var(--text);min-height:44px;cursor:pointer}
+.tool-toasts label.chk .hint{display:block}
+.tool-toasts input[type=checkbox],.tool-toasts input[type=radio]{width:22px;height:22px;flex:none;margin:0;padding:0;accent-color:var(--teal);cursor:pointer}
+.tool-toasts input[type=number]{-moz-appearance:textfield}
+.tool-toasts fieldset{border:0;padding:0;margin:12px 0;min-width:0}
+.tool-toasts legend{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-2);padding:0;margin:0 0 8px}
+.tool-toasts legend .hint{display:block;text-transform:none;letter-spacing:0;font-weight:300;font-size:13px;margin-top:2px}
+.tool-toasts .seg{display:flex;flex-wrap:wrap;gap:8px}
+.tool-toasts .seg label{flex:1 1 auto;flex-direction:row;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 12px;border:1px solid var(--line);text-transform:none;letter-spacing:0;font-weight:400;font-size:15px;color:var(--text);cursor:pointer;text-align:center}
+.tool-toasts .seg label:has(input:checked){border-color:var(--teal);color:var(--teal)}
+.tool-toasts .seg input[type=radio]{width:18px;height:18px}
+.tool-toasts .row{border-top:1px solid var(--line);padding:14px 0 8px}
+.tool-toasts .row:first-child{border-top:0;padding-top:4px}
+.tool-toasts .row-h{display:flex;align-items:center;gap:8px;margin:0 0 6px}
+.tool-toasts .row-h .n{font-family:var(--f-disp);font-size:22px;color:var(--teal);min-width:28px}
+.tool-toasts .row-h .sp{flex:1}
+.tool-toasts .ib{min-width:44px;min-height:44px;background:none;border:1px solid var(--line);color:var(--text);font-size:15px;font-weight:600;cursor:pointer;padding:0 10px;font-family:var(--f-body);border-radius:0}
+.tool-toasts .ib:hover{border-color:var(--teal);color:var(--teal)}
+.tool-toasts .ib[aria-disabled=true]{opacity:.4}
+.tool-toasts .sf{display:grid;gap:7px}
+.tool-toasts .panel{scroll-margin-top:96px}
+.tool-toasts .tabs{position:sticky;top:0;z-index:4;background:var(--night);display:flex;gap:6px;overflow-x:auto;padding:10px 0;margin:0 0 14px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.tool-toasts .tabs a{flex:0 0 auto;min-width:92px;min-height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:var(--surface);border:1px solid var(--line);color:var(--text);text-decoration:none;font-family:var(--f-body);font-size:13px;font-weight:500;padding:6px 10px;cursor:pointer}
+.tool-toasts .tabs .k{font-family:var(--f-disp);font-size:20px;color:var(--teal);line-height:1}
+.tool-toasts .tabs [aria-selected=true]{border-color:var(--teal);color:var(--teal)}
+.tool-toasts .acc{border:1px solid var(--line);background:var(--surface);margin:0 0 12px}
+.tool-toasts .acc > summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:16px 18px;min-height:44px;font-family:var(--f-disp);font-size:22px;color:var(--text)}
+.tool-toasts .acc > summary::-webkit-details-marker{display:none}
+.tool-toasts .acc > summary .st{margin-left:auto;font-family:var(--f-body);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-2);white-space:nowrap}
+.tool-toasts .acc > summary .st.on{color:var(--teal)}
+.tool-toasts .acc > .in{padding:4px 18px 18px}
+.tool-toasts .acc .dec{border-top:1px solid var(--line);margin-top:14px;padding-top:6px}
+.tool-toasts .stepper{display:flex;align-items:center;gap:6px}
+.tool-toasts .stepper input{width:76px;text-align:center;flex:none}
+.tool-toasts .acts{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
+.tool-toasts button.btn{min-height:44px}
+.tool-toasts label.btn{display:inline-flex;align-items:center;min-height:44px;text-transform:uppercase;letter-spacing:.04em;font-size:14px;font-weight:600;color:var(--text)}
+.tool-toasts label.btn input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.tool-toasts label.btn:has(input:focus-visible){outline:2px solid var(--teal);outline-offset:3px}
+.tool-toasts .bar{position:sticky;bottom:0;background:var(--night);border-top:1px solid var(--line);padding:12px 0;margin-top:8px;display:flex;align-items:center;gap:10px 16px;flex-wrap:wrap;z-index:3}
+.tool-toasts .bar .tot{font-family:var(--f-disp);font-size:24px;color:var(--teal);line-height:1}
+.tool-toasts .bar .sub{font-size:14px;color:var(--text-2);flex:1 1 160px}
+.tool-toasts .note{font-size:14px;color:var(--text-2);margin:8px 0 0}
+.tool-toasts .warn{color:var(--text);background:var(--surface);border-left:3px solid var(--magenta);padding:10px 14px;margin:10px 0;font-size:15px;line-height:1.5}
+.tool-toasts .warn.ok{border-left-color:var(--teal)}
+.tool-toasts .warn ul{margin:6px 0 0;padding-left:18px}
+.tool-toasts .warn a{color:var(--teal)}
+.tool-toasts .w101-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--teal);color:var(--night);padding:10px 18px;font-weight:600;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:9}
+.tool-toasts .w101-toast.on{opacity:1}
+@media (prefers-reduced-motion:reduce){.tool-toasts .w101-toast{transition:none}}
+.tool-toasts details.more summary{cursor:pointer;color:var(--teal);font-size:14px;font-weight:600;min-height:44px;display:flex;align-items:center;list-style:none}
+.tool-toasts details.more summary::before{content:"+";display:inline-block;width:18px;font-size:18px}
+.tool-toasts details.more[open] summary::before{content:"\2013"}
+.tool-toasts details.more .f{margin-top:0}
+.tool-toasts textarea{min-height:84px}
+.tool-toasts .copy-out{margin-top:10px;min-height:160px;font-size:14px}
+.tool-toasts .sheet-view{display:none}
+.tool-toasts .cols{display:grid;gap:12px}
+@media(min-width:720px){.tool-toasts .f3{grid-template-columns:1fr 1fr 1fr}.tool-toasts .f2{grid-template-columns:1fr 1fr}.tool-toasts .cols{grid-template-columns:1fr 1fr}}
+
+@media print{
+@page{size:letter portrait;margin:0.6in}
+body:has(.tool-toasts){background:#fff;color:#0E1726}
+body:has(.tool-toasts) .topbar,body:has(.tool-toasts) footer,body:has(.tool-toasts) .skip,body:has(.tool-toasts) .phead,body:has(.tool-toasts) .band{display:none}
+.tool-toasts{padding:0}
+.tool-toasts .shell{padding:0;max-width:none}
+.tool-toasts .app,.tool-toasts .w101-toast,.tool-toasts .meta,.tool-toasts .noscript,.tool-toasts .bar{display:none}
+.tool-toasts .sheet-view{display:block;color:#0E1726;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:12pt;line-height:1.35;font-weight:400}
+.tool-toasts .sheet-view *{box-sizing:border-box}
+.tool-toasts .sheet-view .pg{break-after:page}
+.tool-toasts .sheet-view .pg:last-child{break-after:auto}
+.tool-toasts .sheet-view .sh{display:flex;justify-content:space-between;align-items:flex-end;gap:12pt;border-bottom:2pt solid #0E1726;padding-bottom:6pt;margin:0 0 8pt}
+.tool-toasts .sheet-view .sh h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:22pt;line-height:1.1;margin:0;color:#0E1726;letter-spacing:0}
+.tool-toasts .sheet-view .sh .lab{display:block;font-size:8.5pt;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#555B66;margin-bottom:2pt}
+.tool-toasts .sheet-view .sh .who{text-align:right;font-size:11pt;color:#0E1726}
+.tool-toasts .sheet-view .sh .who b{display:block;font-size:14pt}
+.tool-toasts .sheet-view h3{font-family:inherit;font-weight:700;font-size:12pt;text-transform:uppercase;letter-spacing:.06em;margin:12pt 0 4pt;padding-bottom:3pt;border-bottom:1.5pt solid #0E1726;color:#0E1726;line-height:1.2}
+.tool-toasts .sheet-view h3 .n{font-weight:400;color:#555B66;text-transform:none;letter-spacing:0;font-size:10.5pt;margin-left:8pt}
+.tool-toasts .sheet-view .r{display:grid;grid-template-columns:1.55in 1fr;gap:0 10pt;padding:5pt 0;border-bottom:1pt solid #B8BCC4;break-inside:avoid}
+.tool-toasts .sheet-view .r .c{font-size:10pt;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:#555B66;padding-top:3pt;line-height:1.25}
+.tool-toasts .sheet-view .r .c small{display:block;text-transform:none;letter-spacing:0;font-weight:400;font-size:9pt}
+.tool-toasts .sheet-view .r .s{font-size:14pt;font-weight:700;line-height:1.2}
+.tool-toasts .sheet-view .r .by{font-size:12pt;font-weight:400}
+.tool-toasts .sheet-view .r .nt{font-size:10.5pt;color:#555B66;line-height:1.3}
+.tool-toasts .sheet-view .blank{display:inline-block;min-width:2.6in;border-bottom:1pt solid #0E1726;height:15pt;vertical-align:bottom}
+.tool-toasts .sheet-view .kv{font-size:12pt;padding:3pt 0;line-height:1.35}
+.tool-toasts .sheet-view .kv b{font-weight:700}
+.tool-toasts .sheet-view .big{font-size:20pt;font-weight:700;line-height:1.2;margin:6pt 0;color:#0E1726;border:0;min-height:0;padding:0;letter-spacing:0;-webkit-text-stroke:0}
+.tool-toasts .sheet-view .card{border:1.5pt solid #0E1726;background:#fff;color:#0E1726}
+.tool-toasts .sheet-view td,.tool-toasts .sheet-view th{color:#0E1726;font-style:normal;white-space:normal}
+.tool-toasts .sheet-view .huge{font-size:28pt;font-weight:700;line-height:1.15;margin:8pt 0;border:1.5pt solid #0E1726;padding:8pt 10pt}
+.tool-toasts .sheet-view .list{columns:2;column-gap:18pt;font-size:12pt}
+.tool-toasts .sheet-view .list div{break-inside:avoid;padding:3pt 0;border-bottom:1pt solid #D9DCE1;line-height:1.3}
+.tool-toasts .sheet-view .list div b{font-weight:700}
+.tool-toasts .sheet-view .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10pt;font-size:11pt}
+.tool-toasts .sheet-view .grid3 b{display:block;font-size:9pt;text-transform:uppercase;letter-spacing:.06em;color:#555B66;margin-bottom:2pt}
+.tool-toasts .sheet-view .ft{margin-top:12pt;padding-top:5pt;border-top:1pt solid #B8BCC4;font-size:8.5pt;color:#555B66;display:flex;justify-content:space-between;gap:12pt}
+.tool-toasts .sheet-view .three{font-family:Georgia,"Times New Roman",serif;font-size:30pt;line-height:1.1;margin:6pt 0}
+.tool-toasts .sheet-view .sign{min-height:6in;display:flex;flex-direction:column;justify-content:center;text-align:center;border:2pt solid #0E1726;padding:.5in .4in;margin:14pt 0}
+.tool-toasts .sheet-view .sign .t{font-family:Georgia,"Times New Roman",serif;font-size:30pt;line-height:1.15}
+.tool-toasts .sheet-view .sign .m{font-size:13pt;color:#555B66;margin-top:14pt}
+.tool-toasts .sheet-view .card{border:1.5pt solid #0E1726;padding:16pt 18pt;margin:0 0 14pt;break-inside:avoid;background:#fff}
+.tool-toasts .sheet-view .card .nm{font-family:Georgia,"Times New Roman",serif;font-size:24pt;line-height:1.1;margin:0 0 8pt}
+.tool-toasts .sheet-view .card p{margin:0 0 6pt;font-size:13pt;color:#0E1726;max-width:none}
+.tool-toasts .sheet-view .card p.q{font-size:11pt;color:#555B66}
+.tool-toasts .sheet-view .cut{border-top:1pt dashed #555B66;margin:10pt 0 14pt;font-size:8.5pt;color:#555B66;text-align:center;line-height:0}
+.tool-toasts .sheet-view .cut span{background:#fff;padding:0 6pt;position:relative;top:-1pt}
+.tool-toasts .sheet-view .warnp{border-left:3pt solid #0E1726;padding:4pt 8pt;margin:6pt 0;font-size:11pt}
+.tool-toasts .sheet-view table{width:100%;border-collapse:collapse;font-size:11.5pt}
+.tool-toasts .sheet-view th{text-align:left;font-size:9pt;text-transform:uppercase;letter-spacing:.06em;color:#555B66;padding:3pt 4pt;border-bottom:1pt solid #0E1726;font-weight:600}
+.tool-toasts .sheet-view td{padding:5pt 4pt;border-bottom:1pt solid #B8BCC4;vertical-align:top}
+.tool-toasts .sheet-view tr{break-inside:avoid}
+.tool-toasts .sheet-view .dl{display:grid;grid-template-columns:1fr 1fr;gap:8pt 14pt}
+.tool-toasts .sheet-view .dl > div{border:1pt solid #B8BCC4;padding:6pt 8pt;break-inside:avoid}
+.tool-toasts .sheet-view .dl b{display:block;font-size:9pt;text-transform:uppercase;letter-spacing:.06em;color:#555B66;margin-bottom:2pt}
+.tool-toasts .sheet-view .dl .v{font-size:12pt;font-weight:600;min-height:14pt}
+.tool-toasts .sheet-view .dl .v.xl{font-size:18pt}
+.tool-toasts .sheet-view .wide{grid-column:1 / -1}
+}
+</style>
+<div class="app">
+  <div class="meta"><span class="saved" aria-live="polite">Everything you type stays on this phone.</span><button type="button" class="link" data-act="reset">Start over</button></div>
+  <noscript><p class="noscript">The clock and the cards need JavaScript. Without it, <a href="/wedding101/printables/toasts/">print the blank toast plan</a> and fill it in by hand.</p></noscript>
+  <p class="note">Prepare, prepare, prepare. That is the whole article, and this is the version with a clock on it. Put the speakers in order, give each one a number of minutes, and the plan works out when everyone is on and who hands them the mic.</p>
+
+  <div class="card">
+    <h2>The two of you</h2>
+    <div class="f f3">
+      <label>Your name <input data-key="name1" autocomplete="off"></label>
+      <label>Your partner's name <input data-key="name2" autocomplete="off"></label>
+      <label>Wedding date <input type="date" data-key="date"></label>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>When</h2>
+    
+<fieldset><legend>The toasts happen<span class="hint">Before dinner is my default: the room is seated, sober, and paying attention.</span></legend><div class="seg"><label><input type="radio" name="placement" data-key="placement" value="before" checked> Before dinner</label><label><input type="radio" name="placement" data-key="placement" value="between"> Between courses</label><label><input type="radio" name="placement" data-key="placement" value="after"> After dinner</label></div></fieldset>
+    <label>Toasts start at <span class="hint">The time the MC welcomes the room. If you built the Run of Show, its clock fills this in when you leave it blank.</span><input type="time" data-key="start"></label>
+  </div>
+
+  <div class="card">
+    <h2>Speakers</h2>
+    <p>Start with the people who already think they are giving one. Then narrow it to who really wants to, and who you really want. Order them here with Up and Down.</p>
+    <div data-list="speakers" data-max="8" data-min="3">
+<div class="row" data-row>
+  <div class="row-h"><span class="n" data-n>1</span><span class="sp"></span><button type="button" class="ib" data-act="up">Up</button><button type="button" class="ib" data-act="down">Down</button><button type="button" class="ib" data-act="remove">Remove</button></div>
+  <div class="f f2">
+    <label>Name <input data-key="name" autocomplete="off"></label>
+    <label>Who they are to you <input data-key="rel" placeholder="a sibling, the oldest friend, a parent"></label>
+  </div>
+  <div class="f f2">
+    <div class="sf"><label data-for="min" for="speakers-0-min">Minutes <span class="hint">Four is plenty. Past five the room is looking for the exit.</span></label>
+      <span class="stepper"><button type="button" class="ib" data-step="-1" aria-label="One minute less">&minus;</button><input type="number" inputmode="numeric" min="1" max="8" step="1" value="4" id="speakers-0-min" data-key="min"><button type="button" class="ib" data-step="1" aria-label="One minute more">+</button></span></div>
+    <fieldset><legend>The mic</legend><div class="seg"><label><input type="radio" name="speakers-0-mic" data-key="mic" value="stand" checked> At a stand</label><label><input type="radio" name="speakers-0-mic" data-key="mic" value="hold"> Holds it</label></div></fieldset>
+  </div>
+  <label>The one line the MC says to bring them up <textarea data-key="intro" rows="2" placeholder="Please welcome the person who introduced us, Jordan."></textarea></label>
+  <div class="f">
+    <label class="chk"><input type="checkbox" data-key="confirmed"> <span>They said yes and know the date</span></label>
+    <label class="chk"><input type="checkbox" data-key="notes"> <span>They have notes written</span></label>
+  </div>
+  <div class="acts" style="margin-top:8px"><button type="button" class="btn btn-s" data-act="card">Copy this speaker's card</button></div>
+</div>
+<div class="row" data-row>
+  <div class="row-h"><span class="n" data-n>2</span><span class="sp"></span><button type="button" class="ib" data-act="up">Up</button><button type="button" class="ib" data-act="down">Down</button><button type="button" class="ib" data-act="remove">Remove</button></div>
+  <div class="f f2">
+    <label>Name <input data-key="name" autocomplete="off"></label>
+    <label>Who they are to you <input data-key="rel" placeholder="a sibling, the oldest friend, a parent"></label>
+  </div>
+  <div class="f f2">
+    <div class="sf"><label data-for="min" for="speakers-1-min">Minutes <span class="hint">Four is plenty. Past five the room is looking for the exit.</span></label>
+      <span class="stepper"><button type="button" class="ib" data-step="-1" aria-label="One minute less">&minus;</button><input type="number" inputmode="numeric" min="1" max="8" step="1" value="4" id="speakers-1-min" data-key="min"><button type="button" class="ib" data-step="1" aria-label="One minute more">+</button></span></div>
+    <fieldset><legend>The mic</legend><div class="seg"><label><input type="radio" name="speakers-1-mic" data-key="mic" value="stand" checked> At a stand</label><label><input type="radio" name="speakers-1-mic" data-key="mic" value="hold"> Holds it</label></div></fieldset>
+  </div>
+  <label>The one line the MC says to bring them up <textarea data-key="intro" rows="2" placeholder="Please welcome the person who introduced us, Jordan."></textarea></label>
+  <div class="f">
+    <label class="chk"><input type="checkbox" data-key="confirmed"> <span>They said yes and know the date</span></label>
+    <label class="chk"><input type="checkbox" data-key="notes"> <span>They have notes written</span></label>
+  </div>
+  <div class="acts" style="margin-top:8px"><button type="button" class="btn btn-s" data-act="card">Copy this speaker's card</button></div>
+</div>
+<div class="row" data-row>
+  <div class="row-h"><span class="n" data-n>3</span><span class="sp"></span><button type="button" class="ib" data-act="up">Up</button><button type="button" class="ib" data-act="down">Down</button><button type="button" class="ib" data-act="remove">Remove</button></div>
+  <div class="f f2">
+    <label>Name <input data-key="name" autocomplete="off"></label>
+    <label>Who they are to you <input data-key="rel" placeholder="a sibling, the oldest friend, a parent"></label>
+  </div>
+  <div class="f f2">
+    <div class="sf"><label data-for="min" for="speakers-2-min">Minutes <span class="hint">Four is plenty. Past five the room is looking for the exit.</span></label>
+      <span class="stepper"><button type="button" class="ib" data-step="-1" aria-label="One minute less">&minus;</button><input type="number" inputmode="numeric" min="1" max="8" step="1" value="4" id="speakers-2-min" data-key="min"><button type="button" class="ib" data-step="1" aria-label="One minute more">+</button></span></div>
+    <fieldset><legend>The mic</legend><div class="seg"><label><input type="radio" name="speakers-2-mic" data-key="mic" value="stand" checked> At a stand</label><label><input type="radio" name="speakers-2-mic" data-key="mic" value="hold"> Holds it</label></div></fieldset>
+  </div>
+  <label>The one line the MC says to bring them up <textarea data-key="intro" rows="2" placeholder="Please welcome the person who introduced us, Jordan."></textarea></label>
+  <div class="f">
+    <label class="chk"><input type="checkbox" data-key="confirmed"> <span>They said yes and know the date</span></label>
+    <label class="chk"><input type="checkbox" data-key="notes"> <span>They have notes written</span></label>
+  </div>
+  <div class="acts" style="margin-top:8px"><button type="button" class="btn btn-s" data-act="card">Copy this speaker's card</button></div>
+</div></div>
+    <div class="acts"><button type="button" class="btn btn-s" data-add="speakers">Add a speaker</button></div>
+    <p class="note"><span data-count="speakers">0</span> speakers. Four is the most a room will sit through happily.</p>
+  </div>
+
+  <div class="card">
+    <h2>The blessing</h2>
+    <label>Who gives it <span class="hint">Optional. Two minutes, right before the meal. A relative, a close friend, or the officiant if you know them.</span><input data-key="bless.who" autocomplete="off"></label>
+  </div>
+
+  <div class="card">
+    <h2>More</h2>
+    <details class="more"><summary>Open mic, surprise toasts, the planned bit, the handoff</summary><div class="f">
+      <label class="chk"><input type="checkbox" data-key="surprise"> <span>Surprise toasts are allowed<span class="hint">Off by default. The MC calls up a name you chose ahead of time, and they get a mic and no warning. Choose your victims wisely.</span></span></label>
+      <label class="chk"><input type="checkbox" data-key="open.on"> <span>Open mic at the end<span class="hint">Off by default. It runs long every time, so it gets a cap.</span></span></label>
+      <div class="sf"><label for="toasts-open-cap">Open mic cap, in minutes</label>
+      <span class="stepper"><button type="button" class="ib" data-step="-5" aria-label="Five minutes less on the open mic">&minus;</button><input type="number" inputmode="numeric" min="5" max="30" step="5" value="10" id="toasts-open-cap" data-key="open.cap"><button type="button" class="ib" data-step="5" aria-label="Five minutes more on the open mic">+</button></span></div>
+      <label>The planned bit <span class="hint">Optional. The key bit is the classic: a few guests get a house key ahead of time, and during a toast the speaker asks anyone still holding a key to the couple's place to turn it in. Works best inside a scheduled toast.</span><input data-key="bit.name" placeholder="the key bit, or your own"></label>
+      <label>Who is in on it <input data-key="bit.people" placeholder="the speaker, three guests at table 4"></label>
+      <label>The two-line script <textarea data-key="bit.script" rows="2"></textarea></label>
+      <label>Who hands and takes the mic <span class="hint">One person, every time. The mic never gets passed down a table.</span><input data-key="hand.who" value="the MC"></label>
+    </div></details>
+  </div>
+
+  <div class="card">
+    <h2>The plan</h2>
+    <div data-plan aria-live="polite"></div>
+  </div>
+
+  <div class="acts">
+    <button type="button" class="btn btn-p" data-act="print">Print the plan and the cards</button>
+    <button type="button" class="btn btn-s" data-act="copy">Copy as text</button>
+    <button type="button" class="btn btn-s" data-act="share">Share</button>
+    <button type="button" class="btn btn-s" data-act="save">Save a copy</button>
+    <label class="btn btn-s">Load a copy<input type="file" accept="application/json,.json" data-load></label>
+  </div>
+  <textarea class="copy-out" hidden readonly aria-label="The toast plan as text"></textarea>
+  <div class="bar"><span class="tot" data-bar-total>0 min</span><span class="sub" data-bar-sub></span><button type="button" class="btn btn-s" data-act="print">Print</button></div>
+</div>
+<div class="sheet-view" aria-hidden="true"></div>
+<div class="w101-toast" role="status" aria-live="polite"></div>
+<script type="module">
+/* Wedding 101 tool runtime. Inlined in every tool on purpose: no shared module,
+ * no network, no accounts. Everything stays on this phone. */
+var ID = 'toasts', KEY = 'ee-w101-' + ID, PLAN = 'ee-w101-plan';
+var root = document.querySelector('.tool-' + ID);
+var storageOK = (function () { try { var k = 'ee-w101-probe'; localStorage.setItem(k, '1'); localStorage.removeItem(k); return true; } catch (e) { return false; } })();
+function read(key) { if (!storageOK) return null; try { var s = localStorage.getItem(key); return s ? JSON.parse(s) : null; } catch (e) { return null; } }
+function write(key, obj) { if (!storageOK) return false; try { localStorage.setItem(key, JSON.stringify(obj)); return true; } catch (e) { return false; } }
+function patchPlan(p) { var o = read(PLAN) || {}; Object.keys(p).forEach(function (k) { o[k] = p[k]; }); write(PLAN, o); }
+function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+function $(sel, el) { return (el || root).querySelector(sel); }
+function $$(sel, el) { return Array.prototype.slice.call((el || root).querySelectorAll(sel)); }
+function trim(s) { return String(s == null ? '' : s).replace(/\s+/g, ' ').trim(); }
+function fieldValue(el) { if (el.type === 'checkbox') return el.checked; if (el.type === 'radio') return el.checked ? el.value : undefined; return el.value; }
+function setField(el, v) { if (el.type === 'checkbox') { el.checked = !!v; } else if (el.type === 'radio') { el.checked = (el.value === v); } else { el.value = v == null ? '' : v; } }
+function resetField(el) { if (el.type === 'checkbox' || el.type === 'radio') { el.checked = el.hasAttribute('checked'); } else { el.value = el.defaultValue || ''; } }
+
+/* The form is the source of truth: state = serialize(form). Lists are
+ * [data-list] containers of [data-row] blocks; row fields carry data-key and get
+ * unique names on renumber so radios in different rows never share a group. */
+function serialize() {
+  var s = {};
+  $$('[data-key]').forEach(function (el) {
+    if (el.closest('[data-row]')) return;
+    var v = fieldValue(el); if (v !== undefined) s[el.getAttribute('data-key')] = v;
+  });
+  $$('[data-list]').forEach(function (list) {
+    s[list.getAttribute('data-list')] = $$('[data-row]', list).map(function (row) {
+      var r = {};
+      $$('[data-key]', row).forEach(function (el) { var v = fieldValue(el); if (v !== undefined) r[el.getAttribute('data-key')] = v; });
+      return r;
+    });
+  });
+  return s;
+}
+function rowHas(row) { var el = $('[data-key="name"]', row) || $('[data-key="title"]', row); return !!trim(el && el.value); }
+function rowLabel(row, i) {
+  var el = $('[data-key="name"]', row) || $('[data-key="title"]', row);
+  return trim(el && el.value) || ('row ' + (i + 1));
+}
+function renumber(list) {
+  var name = list.getAttribute('data-list');
+  var rows = $$('[data-row]', list);
+  /* renaming a radio moves it between groups, and a checked radio joining a group
+   * unchecks the one already there; remember every checked radio and put it back */
+  var checked = $$('input[type=radio]', list).filter(function (r) { return r.checked; });
+  rows.forEach(function (row, i) {
+    row.setAttribute('data-index', String(i));
+    $$('[data-key]', row).forEach(function (el) { el.name = name + '-' + i + '-' + el.getAttribute('data-key'); if (el.id) el.id = el.name; });
+    $$('label[data-for]', row).forEach(function (l) { l.htmlFor = name + '-' + i + '-' + l.getAttribute('data-for'); });
+    $$('[data-n]', row).forEach(function (el) { el.textContent = String(i + 1); });
+    var who = rowLabel(row, i);
+    $$('[data-act]', row).forEach(function (b) {
+      var act = b.getAttribute('data-act');
+      var word = act === 'up' ? 'Move up: ' : act === 'down' ? 'Move down: ' : act === 'remove' ? 'Remove: ' : act === 'card' ? 'Copy the card for ' : '';
+      if (word) b.setAttribute('aria-label', word + who);
+      if (act === 'up') b.setAttribute('aria-disabled', i === 0 ? 'true' : 'false');
+      if (act === 'down') b.setAttribute('aria-disabled', i === rows.length - 1 ? 'true' : 'false');
+    });
+  });
+  checked.forEach(function (r) { r.checked = true; });
+  var add = $('[data-add="' + name + '"]');
+  if (add) {
+    var max = Number(list.getAttribute('data-max') || 99);
+    add.disabled = rows.length >= max;
+    var c = $('[data-count="' + name + '"]');
+    if (c) c.textContent = String(rows.filter(rowHas).length);
+  }
+}
+function addRow(list) {
+  var rows = $$('[data-row]', list); var max = Number(list.getAttribute('data-max') || 99);
+  if (rows.length >= max) return null;
+  var row = rows[rows.length - 1].cloneNode(true);
+  /* the clone's radios get names of their own before it lands in the document,
+   * so appending it cannot uncheck the row it was cloned from */
+  var stamp = 'new-' + Date.now() + '-';
+  $$('[data-key]', row).forEach(function (el) { if (el.type === 'radio') el.name = stamp + el.getAttribute('data-key'); });
+  $$('[data-key]', row).forEach(resetField);
+  $$('details', row).forEach(function (d) { d.open = false; });
+  list.appendChild(row); renumber(list); return row;
+}
+function ensureRows(list, n) {
+  var rows = $$('[data-row]', list);
+  while (rows.length < n) { var r = addRow(list); if (!r) break; rows.push(r); }
+  while (rows.length > n && rows.length > 1) { rows.pop().remove(); }
+  renumber(list);
+}
+function restore(s) {
+  if (!s || typeof s !== 'object') return;
+  Object.keys(s).forEach(function (k) {
+    if (Array.isArray(s[k]) || k.charAt(0) === '_') return;
+    $$('[data-key="' + k + '"]').forEach(function (el) { if (el.closest('[data-row]')) return; setField(el, s[k]); });
+  });
+  $$('[data-list]').forEach(function (list) {
+    var rows = s[list.getAttribute('data-list')];
+    if (!Array.isArray(rows)) return;
+    ensureRows(list, Math.max(rows.length, 1));
+    $$('[data-row]', list).forEach(function (row, i) {
+      var r = rows[i] || {};
+      $$('[data-key]', row).forEach(function (el) { var k = el.getAttribute('data-key'); if (Object.prototype.hasOwnProperty.call(r, k)) setField(el, r[k]); else resetField(el); });
+    });
+  });
+}
+
+/* time and date helpers */
+function parseTime(t) { var m = /^(\d{1,2}):(\d{2})/.exec(trim(t)); if (!m) return null; return Number(m[1]) * 60 + Number(m[2]); }
+function fmtClock(min) { if (min == null || isNaN(min)) return ''; min = ((Math.round(min) % 1440) + 1440) % 1440; var h = Math.floor(min / 60), m = min % 60; var ap = h >= 12 ? 'PM' : 'AM'; h = h % 12; if (h === 0) h = 12; return h + ':' + (m < 10 ? '0' : '') + m + ' ' + ap; }
+function fmtDate(d) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(trim(d)); if (!m) return trim(d);
+  var dt = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+  return dt.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+}
+function fmtStamp(s) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/.exec(trim(s)); if (!m) return trim(s);
+  var dt = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]), Number(m[4]), Number(m[5]));
+  return dt.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }) + ', ' + fmtClock(Number(m[4]) * 60 + Number(m[5]));
+}
+function fmtWhen(dt) { return dt.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }); }
+function coupleNames(s, plan) {
+  var a = trim(s.name1) || trim(plan && plan.name1), b = trim(s.name2) || trim(plan && plan.name2);
+  if (a && b) return a + ' and ' + b; return a || b || (plan && trim(plan.names)) || '';
+}
+
+/* saved note, toast, copy, share, save a copy, load a copy, print */
+var toastEl = $('.w101-toast'), toastTimer = null;
+function toast(msg) { if (!toastEl) return; toastEl.textContent = msg; toastEl.classList.add('on'); clearTimeout(toastTimer); toastTimer = setTimeout(function () { toastEl.classList.remove('on'); }, 1800); }
+function showText(text) { var box = $('.copy-out'); if (!box) return; box.hidden = false; box.value = text; box.focus(); box.select(); }
+function fallbackCopy(text) {
+  var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.top = '-1000px';
+  document.body.appendChild(ta); ta.select(); var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; } ta.remove();
+  if (ok) toast('Copied'); else { toast('Select the text below and copy it'); showText(text); }
+}
+function copyText(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(text).then(function () { toast('Copied'); }, function () { fallbackCopy(text); });
+  }
+  fallbackCopy(text); return Promise.resolve();
+}
+function share(title, text) {
+  if (navigator.share) { navigator.share({ title: title, text: text }).catch(function () { }); return; }
+  copyText(text);
+}
+function saveCopy(s) {
+  var blob = new Blob([JSON.stringify(s, null, 2)], { type: 'application/json' });
+  var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'wedding101-' + ID + '.json';
+  document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 800);
+  toast('Saved a copy');
+}
+function loadCopy(file, done) {
+  var r = new FileReader();
+  r.onload = function () { try { var s = JSON.parse(r.result); if (!s || typeof s !== 'object') throw new Error('shape'); restore(s); done(); toast('Loaded'); } catch (e) { toast('That file is not a saved copy'); } };
+  r.readAsText(file);
+}
+
+var state = {}, timer = null;
+function paintSaved(ok) {
+  var el = $('.saved'); if (!el) return;
+  if (!storageOK) { el.textContent = 'Saving is off in this browser. Print or copy before you leave the page.'; return; }
+  if (ok === false) { el.textContent = 'Could not save on this phone. Print or copy before you leave the page.'; return; }
+  el.textContent = state._savedAt ? 'Saved on this phone at ' + fmtWhen(new Date(state._savedAt)) : 'Nothing saved yet. Everything you type stays on this phone.';
+}
+function save() {
+  clearTimeout(timer); timer = null;
+  state = serialize(); state._savedAt = new Date().toISOString();
+  var ok = write(KEY, state);
+  try { mirror(state); } catch (e) { }
+  paintSaved(ok);
+  return state;
+}
+function scheduleSave() { clearTimeout(timer); timer = setTimeout(save, 300); update(serialize()); }
+function startOver() {
+  if (!window.confirm('Start over? This clears everything in this tool on this phone.')) return;
+  try { localStorage.removeItem(KEY); } catch (e) { }
+  $$('[data-key]').forEach(resetField);
+  $$('[data-list]').forEach(function (list) { ensureRows(list, Number(list.getAttribute('data-min') || 1)); $$('[data-row] [data-key]', list).forEach(resetField); renumber(list); });
+  state = {}; paintSaved(); update(serialize()); toast('Cleared');
+}
+function printPage() { paintSheet(serialize()); window.print(); }
+
+function boot() {
+  var saved = read(KEY), plan = read(PLAN) || {};
+  if (saved) { state = saved; restore(saved); }
+  else { ['name1', 'name2', 'date'].forEach(function (k) { if (plan[k]) $$('[data-key="' + k + '"]').forEach(function (el) { setField(el, plan[k]); }); }); }
+  $$('[data-list]').forEach(renumber);
+  paintSaved();
+  root.addEventListener('input', scheduleSave);
+  root.addEventListener('change', function (e) {
+    if (e.target && e.target.getAttribute('data-load') !== null && e.target.files && e.target.files[0]) { loadCopy(e.target.files[0], function () { save(); update(serialize()); }); e.target.value = ''; return; }
+    scheduleSave();
+  });
+  root.addEventListener('click', function (e) {
+    var b = e.target.closest('button, a[data-tab]'); if (!b) return;
+    var act = b.getAttribute('data-act'), row = b.closest('[data-row]'), list = row && row.closest('[data-list]');
+    if (b.hasAttribute('data-step')) { e.preventDefault(); step(b); return; }
+    if (b.hasAttribute('data-add')) { e.preventDefault(); var l = $('[data-list="' + b.getAttribute('data-add') + '"]'); var r = l && addRow(l); if (r) { var f = $('input,textarea,select', r); if (f) f.focus(); scheduleSave(); } return; }
+    if (act === 'up' && row) { e.preventDefault(); var p = row.previousElementSibling; if (p && p.hasAttribute('data-row')) { list.insertBefore(row, p); renumber(list); b.focus(); scheduleSave(); } return; }
+    if (act === 'down' && row) { e.preventDefault(); var n = row.nextElementSibling; if (n && n.hasAttribute('data-row')) { list.insertBefore(n, row); renumber(list); b.focus(); scheduleSave(); } return; }
+    if (act === 'remove' && row) { e.preventDefault(); if ($$('[data-row]', list).length > 1) { row.remove(); } else { $$('[data-key]', row).forEach(resetField); } renumber(list); var add = $('[data-add="' + list.getAttribute('data-list') + '"]'); if (add) add.focus(); scheduleSave(); return; }
+    if (act === 'copy') { e.preventDefault(); copyText(textOut(serialize())); return; }
+    if (act === 'share') { e.preventDefault(); share(TITLE, textOut(serialize())); return; }
+    if (act === 'print') { e.preventDefault(); printPage(); return; }
+    if (act === 'save') { e.preventDefault(); saveCopy(serialize()); return; }
+    if (act === 'reset') { e.preventDefault(); startOver(); return; }
+    if (typeof extraClick === 'function') extraClick(b, act, row, list, e);
+  });
+  window.addEventListener('beforeprint', function () { paintSheet(serialize()); });
+  update(serialize());
+  paintSheet(serialize());
+}
+function step(btn) {
+  var wrap = btn.closest('.stepper'); var inp = wrap && $('input', wrap); if (!inp) return;
+  var d = Number(btn.getAttribute('data-step')); var min = inp.min === '' ? -1e9 : Number(inp.min), max = inp.max === '' ? 1e9 : Number(inp.max);
+  var v = Number(inp.value || 0) + d; v = Math.max(min, Math.min(max, v)); inp.value = String(v);
+  inp.dispatchEvent(new Event('input', { bubbles: true }));
+}
+
+/* Toast Planner: the clock, the flags, the handoff, the cards. */
+var TITLE = 'Toast Planner';
+var FOOT = 'Wedding 101 by Ensemble Events · ensemble-events.com/wedding101';
+var PLACE = { before: 'before dinner', between: 'between courses', after: 'after dinner' };
+function v(s, k) { return trim(s[k]); }
+function clampMin(x) { x = Number(x); if (!x || isNaN(x)) return 4; return Math.max(1, Math.min(8, Math.round(x))); }
+function compute(s) {
+  var sp = (s.speakers || []).map(function (r, i) { return { i: i, name: trim(r.name), rel: trim(r.rel), min: clampMin(r.min), intro: trim(r.intro), mic: r.mic === 'hold' ? 'hold' : 'stand', confirmed: !!r.confirmed, notes: !!r.notes }; }).filter(function (r) { return r.name; });
+  var bless = v(s, 'bless.who'), open = !!s['open.on'], cap = Math.max(5, Math.min(30, Number(s['open.cap']) || 10));
+  var start = parseTime(s.start), fromPlan = false;
+  if (start == null) { var p = read(PLAN) || {}; start = parseTime(p.toastsStart); fromPlan = start != null; }
+  var t = start == null ? 0 : start, items = [], total = 0;
+  if (bless) { items.push({ kind: 'bless', name: bless, min: 2, at: t, after: 'right after the welcome' }); t += 2; total += 2; }
+  sp.forEach(function (r, i) {
+    items.push({ kind: 'toast', r: r, name: r.name, min: r.min, at: t, after: i === 0 ? (bless ? 'right after the blessing' : 'right after the welcome') : 'right after ' + sp[i - 1].name });
+    t += r.min + 1; total += r.min + 1;
+  });
+  if (open) { items.push({ kind: 'open', name: 'Open mic', min: cap, at: t, after: sp.length ? 'after ' + sp[sp.length - 1].name : 'after the welcome' }); t += cap; total += cap; }
+  var flags = [];
+  sp.forEach(function (r) { if (r.min > 5) flags.push(r.name + ' is down for ' + r.min + ' minutes. Past five, the room is looking for the exit; past eight, you have lost them.'); });
+  if (total > 15) flags.push('That is ' + total + ' minutes of toasts. Past fifteen, dinner gets cold and so does the room.');
+  if (sp.length > 4) flags.push(sp.length + ' speakers. Four is the most a room will sit through happily.');
+  var todo = [];
+  sp.forEach(function (r) { if (!r.confirmed) todo.push(r.name + ' has not said yes yet'); if (!r.notes) todo.push(r.name + ' has no notes written'); });
+  return { sp: sp, items: items, total: total, start: start, fromPlan: fromPlan, flags: flags, todo: todo, bless: bless, open: open, cap: cap, end: t, hand: v(s, 'hand.who') || 'the MC', placement: PLACE[s.placement] || 'before dinner' };
+}
+function when(c, it) {
+  if (c.start == null) { var off = it.at - (c.items.length ? c.items[0].at : 0); return off === 0 ? 'first up' : 'about ' + off + ' minutes in'; }
+  return 'about ' + fmtClock(it.at);
+}
+function handoff(c) {
+  if (!c.sp.length) return c.hand + ' holds the mic until there is a speaker to hand it to.';
+  return c.hand + ' hands the mic to ' + c.sp.map(function (r, i) { return (i === 0 ? '' : i === c.sp.length - 1 ? 'then ' : 'then ') + r.name + (r.mic === 'hold' ? ' (holds it)' : ' (at the stand)'); }).join(', ') + ', and takes it back every time. The mic never travels down a table.';
+}
+function update(s) {
+  var c = compute(s), box = $('[data-plan]');
+  if (box) {
+    var H = '';
+    H += '<p class="me">Toasts <b>' + esc(c.placement) + '</b>' + (c.start != null ? ', starting about <b>' + esc(fmtClock(c.start)) + '</b>' + (c.fromPlan ? ' (from the Run of Show)' : '') : '') + '. ' + (c.start == null ? 'Type a start time above, or build the Run of Show, and every line below gets a clock time.' : '') + '</p>';
+    if (!c.items.length) H += '<p>Name a speaker and the order shows up here.</p>';
+    else {
+      H += '<ol class="order">' + c.items.map(function (it) {
+        var line = '<b>' + esc(when(c, it)) + '</b> ';
+        if (it.kind === 'bless') line += 'The blessing, ' + esc(it.name) + ', 2 minutes.';
+        else if (it.kind === 'open') line += 'Open mic, capped at ' + it.min + ' minutes, ' + esc(it.after) + '.';
+        else line += esc(it.name) + (it.r.rel ? ' (' + esc(it.r.rel) + ')' : '') + ', ' + it.min + ' minutes, ' + esc(it.after) + '. ' + (it.r.mic === 'hold' ? 'Holds the mic.' : 'At the stand.') + (it.r.intro ? ' Intro: "' + esc(it.r.intro) + '"' : '');
+        return '<li>' + line + '</li>';
+      }).join('') + '</ol>';
+      H += '<p class="me">Total: <b>' + c.total + ' minutes</b>' + (c.start != null ? ', done about ' + esc(fmtClock(c.end)) : '') + ', counting a minute of applause and walk-up per speaker' + (c.bless ? ', two for the blessing' : '') + (c.open ? ', and the open mic cap' : '') + '.</p>';
+    }
+    if (c.flags.length) H += '<div class="warn"><b>Heads up.</b><ul>' + c.flags.map(function (f) { return '<li>' + esc(f) + '</li>'; }).join('') + '</ul></div>';
+    else if (c.sp.length) H += '<div class="warn ok">Under fifteen minutes, nobody past five. That is a room that stays with you.</div>';
+    H += '<p><b>The mic:</b> ' + esc(handoff(c)) + '</p>';
+    if (c.todo.length) H += '<p class="note">Still to do: ' + esc(c.todo.join('; ')) + '.</p>';
+    box.innerHTML = H;
+  }
+  var bt = $('[data-bar-total]'); if (bt) bt.textContent = c.total + ' min';
+  var bs = $('[data-bar-sub]'); if (bs) bs.textContent = c.sp.length + (c.sp.length === 1 ? ' speaker, ' : ' speakers, ') + c.placement + (c.flags.length ? ', ' + c.flags.length + (c.flags.length === 1 ? ' flag' : ' flags') : '');
+}
+function mirror(s) {
+  var c = compute(s);
+  var p = { name1: v(s, 'name1'), name2: v(s, 'name2'), names: coupleNames(s, null), date: v(s, 'date'), toastsMinutes: c.total, toastsCount: c.sp.length, toastsPlacement: s.placement || 'before', toastsBlessing: !!c.bless, toastsOpenMic: c.open ? c.cap : 0 };
+  if (v(s, 'start')) p.toastsStart = v(s, 'start');
+  patchPlan(p);
+}
+function cardText(s, c, it) {
+  var names = coupleNames(s, read(PLAN)), r = it.r;
+  return [
+    'TOAST CARD' + (names ? ': ' + names : '') + (v(s, 'date') ? ', ' + fmtDate(s.date) : ''),
+    r.name,
+    'You are on ' + when(c, it) + ', ' + it.after + '.',
+    'You have ' + r.min + ' minutes.',
+    c.hand + ' hands you the mic and takes it back. ' + (r.mic === 'hold' ? 'Hold it close to your mouth.' : 'It is on a stand; step up to it.'),
+    'Speak into it, not around it.',
+    'Notes on paper beat notes on a phone.',
+    names ? 'Thank you, ' + names : ''
+  ].filter(function (x) { return x !== ''; }).join('\n');
+}
+function extraClick(b, act, row, list) {
+  if (act !== 'card' || !row) return;
+  var i = Number(row.getAttribute('data-index')); var c = compute(serialize());
+  var it = null; c.items.forEach(function (x) { if (x.kind === 'toast' && x.r.i === i) it = x; });
+  if (!it) { toast('Give them a name first'); return; }
+  copyText(cardText(serialize(), c, it));
+}
+function textOut(s) {
+  var c = compute(s), names = coupleNames(s, read(PLAN)), L = [];
+  L.push('TOASTS' + (names ? ': ' + names : '') + (v(s, 'date') ? ', ' + fmtDate(s.date) : ''));
+  L.push('When: ' + c.placement + (c.start != null ? ', starting about ' + fmtClock(c.start) : ' (start time to come)'));
+  L.push('');
+  L.push('THE ORDER');
+  if (!c.items.length) L.push('(no speakers yet)');
+  c.items.forEach(function (it, i) {
+    var line = (i + 1) + '. ' + when(c, it) + ': ';
+    if (it.kind === 'bless') line += 'the blessing, ' + it.name + ', 2 minutes';
+    else if (it.kind === 'open') line += 'open mic, capped at ' + it.min + ' minutes';
+    else { line += it.name + (it.r.rel ? ' (' + it.r.rel + ')' : '') + ', ' + it.min + ' minutes, ' + it.after + ', ' + (it.r.mic === 'hold' ? 'holds the mic' : 'at the stand'); if (it.r.intro) line += '\n   Intro: "' + it.r.intro + '"'; }
+    L.push(line);
+  });
+  L.push('Total: ' + c.total + ' minutes, counting a minute of applause and walk-up per speaker' + (c.bless ? ', two for the blessing' : '') + (c.open ? ', and the open mic cap' : '') + '.');
+  c.flags.forEach(function (f) { L.push('Heads up: ' + f); });
+  L.push('');
+  L.push('THE MIC');
+  L.push(handoff(c));
+  if (v(s, 'bit.name')) { L.push(''); L.push('THE PLANNED BIT: ' + v(s, 'bit.name')); if (v(s, 'bit.people')) L.push('Who is in on it: ' + v(s, 'bit.people')); if (v(s, 'bit.script')) L.push(v(s, 'bit.script')); }
+  L.push('Surprise toasts: ' + (s.surprise ? 'allowed' : 'no'));
+  if (c.todo.length) { L.push(''); L.push('STILL TO DO'); c.todo.forEach(function (t) { L.push('- ' + t); }); }
+  L.push('');
+  L.push(FOOT);
+  return L.join('\n');
+}
+function head(s, sub) {
+  var names = coupleNames(s, read(PLAN));
+  return '<div class="sh"><div><span class="lab">Wedding 101 · Toast Planner</span><h2>' + esc(sub) + '</h2></div><div class="who"><b>' + (names ? esc(names) : '<span class="blank"></span>') + '</b>' + (v(s, 'date') ? esc(fmtDate(s.date)) : '') + '</div></div>';
+}
+function foot(n, total) { return '<div class="ft"><span>' + esc(FOOT) + '</span><span>Toast Planner · page ' + n + ' of ' + total + '</span></div>'; }
+function paintSheet(s) {
+  var el = $('.sheet-view'); if (!el) return;
+  var c = compute(s), names = coupleNames(s, read(PLAN));
+  var toasts = c.items.filter(function (it) { return it.kind === 'toast'; });
+  var pages = 1 + Math.ceil(toasts.length / 2), H = '';
+  H += '<div class="pg">' + head(s, 'The toast plan');
+  H += '<div class="kv"><b>When:</b> ' + esc(c.placement) + (c.start != null ? ', starting about ' + esc(fmtClock(c.start)) + ', done about ' + esc(fmtClock(c.end)) : '') + '. <b>Total:</b> ' + c.total + ' minutes.</div>';
+  H += '<h3>The order</h3>';
+  if (!c.items.length) H += '<div class="kv">No speakers named yet.</div>';
+  else {
+    H += '<table><thead><tr><th style="width:1.1in">When</th><th>Who</th><th style="width:.7in">Minutes</th><th>The intro line</th><th style="width:.8in">Mic</th></tr></thead><tbody>';
+    c.items.forEach(function (it) {
+      H += '<tr><td><b>' + esc(when(c, it)) + '</b></td><td>' + (it.kind === 'bless' ? 'The blessing: <b>' + esc(it.name) + '</b>' : it.kind === 'open' ? '<b>Open mic</b>, capped' : '<b>' + esc(it.name) + '</b>' + (it.r.rel ? '<br><span style="color:#555B66">' + esc(it.r.rel) + '</span>' : '')) + '</td><td>' + it.min + '</td><td>' + (it.kind === 'toast' ? esc(it.r.intro || '') : it.kind === 'bless' ? 'Before the meal' : esc(it.after)) + '</td><td>' + (it.kind === 'toast' ? (it.r.mic === 'hold' ? 'holds it' : 'stand') : '') + '</td></tr>';
+    });
+    H += '</tbody></table>';
+  }
+  H += '<h3>The rules I use</h3><div class="kv">Four minutes each is plenty. Past five, the room is looking for the exit; past eight, you have lost them. Four speakers is the most a room will sit through happily, and fifteen minutes is the most a dinner will forgive. Every speaker gets a minute of applause and walk-up in the count.</div>';
+  if (c.flags.length) H += '<div class="warnp"><b>Heads up:</b> ' + c.flags.map(esc).join(' ') + '</div>';
+  H += '<h3>The mic</h3><div class="kv">' + esc(handoff(c)) + '</div>';
+  if (v(s, 'bit.name')) H += '<h3>The planned bit</h3>' + '<div class="kv"><b>' + esc(v(s, 'bit.name')) + '</b>' + (v(s, 'bit.people') ? '. In on it: ' + esc(v(s, 'bit.people')) : '') + (v(s, 'bit.script') ? '<br>' + esc(v(s, 'bit.script')) : '') + '</div>';
+  H += '<div class="kv"><b>Surprise toasts:</b> ' + (s.surprise ? 'allowed' : 'no') + '. <b>Open mic:</b> ' + (c.open ? 'yes, capped at ' + c.cap + ' minutes' : 'no') + '.</div>';
+  if (c.todo.length) H += '<div class="kv"><b>Still to do:</b> ' + esc(c.todo.join('; ')) + '.</div>';
+  H += foot(1, pages) + '</div>';
+  toasts.forEach(function (it, i) {
+    if (i % 2 === 0) H += '<div class="pg">';
+    H += '<div class="card"><span class="lab" style="display:block;font-size:8.5pt;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#555B66">Toast card' + (names ? ' · ' + esc(names) : '') + (v(s, 'date') ? ' · ' + esc(fmtDate(s.date)) : '') + '</span>'
+      + '<div class="nm">' + esc(it.name) + '</div>'
+      + '<p>You are on <b>' + esc(when(c, it)) + '</b>, ' + esc(it.after) + '.</p>'
+      + '<p>You have <b>' + it.min + ' minutes</b>.</p>'
+      + '<p>' + esc(c.hand.charAt(0).toUpperCase() + c.hand.slice(1)) + ' hands you the mic and takes it back. ' + (it.r.mic === 'hold' ? 'Hold it close to your mouth.' : 'It is on a stand; step up to it.') + '</p>'
+      + '<p>Speak into it, not around it.</p>'
+      + '<p>Notes on paper beat notes on a phone.</p>'
+      + (names ? '<p class="q">Thank you, ' + esc(names) + '</p>' : '')
+      + '</div>';
+    if (i % 2 === 0 && i + 1 < toasts.length) H += '<div class="cut"><span>cut here</span></div>';
+    if (i % 2 === 1 || i === toasts.length - 1) H += foot(2 + Math.floor(i / 2), pages) + '</div>';
+  });
+  el.innerHTML = H;
+}
+boot();
+</script>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="shell">
+    <div class="foot-top">
+      <div>
+        <img class="foot-mark" src="/assets/img/ee-mark-white.png" alt="Ensemble Events">
+        <div class="foot-tag">Weddings, parties and content &middot; New Bedford, MA</div>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/wedding-packages/">Weddings</a>
+        <a href="/wedding-content-creation/">Content</a>
+        <a href="/game-shows/">Game Shows</a>
+        <a href="/holiday-parties/">Holiday</a>
+        <a href="/packages/">Pricing</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Check Your Date</a>
+        <a href="/the-method/">The Method</a>
+        <a href="/digital-day-of/">Digital Day-Of</a>
+        <a href="/wedding101/">Wedding101</a>
+        <a href="/senior-living/">Senior Living</a>
+        <a href="/corporate-holiday-party/">Corporate Parties</a>
+        <a href="/clientservices/">Client Services</a>
+      </nav>
+    </div>
+    </div>
+      <div class="areas">
+        <span><b>SouthCoast</b></span><span>New Bedford</span><span>Fall River</span><span>Dartmouth</span><span>Westport</span><span>Fairhaven</span><span>Mattapoisett</span><span>Marion</span><span>Wareham</span><span><b>South Shore</b></span><span>Plymouth</span><span>Duxbury</span><span>Kingston</span><span><b>Cape Cod</b></span><span>Falmouth</span><span>Bourne</span><span>Sandwich</span><span><b>Rhode Island</b></span><span>Newport</span><span>Providence</span>
+      </div>
+    <div class="foot-note">Prices shown are current and may change. Every date is quoted in writing before anything is booked.</div>
+  </div>
+</footer>
+</body>
+</html>

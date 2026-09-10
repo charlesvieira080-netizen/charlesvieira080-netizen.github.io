@@ -1,0 +1,39 @@
+{
+  "place": "New Bedford, Massachusetts",
+  "lat": 41.6362,
+  "lon": -70.9342,
+  "source": "US Naval Observatory Astronomical Applications API (aa.usno.navy.mil/api/rstt/oneday), coordinates 41.6362 N, 70.9342 W, calendar year 2027, local clock as marked",
+  "pulled": "2026-09-08",
+  "note": "Year-to-year drift for the same calendar day is under two minutes. The tools interpolate linearly between rows in standard time and apply the daylight-saving offset by date. Within a few minutes for the whole South Coast, the South Shore, Cape Cod, and Rhode Island. Check the exact minute for the venue and date when printing.",
+  "dst": {
+    "2026": ["03-08", "11-01"],
+    "2027": ["03-14", "11-07"],
+    "2028": ["03-12", "11-05"]
+  },
+  "rows": [
+    { "m": 1, "d": 1, "sunset": "16:24", "dusk": "16:55", "zone": "EST" },
+    { "m": 1, "d": 15, "sunset": "16:38", "dusk": "17:09", "zone": "EST" },
+    { "m": 2, "d": 1, "sunset": "16:59", "dusk": "17:29", "zone": "EST" },
+    { "m": 2, "d": 15, "sunset": "17:17", "dusk": "17:45", "zone": "EST" },
+    { "m": 3, "d": 1, "sunset": "17:34", "dusk": "18:02", "zone": "EST" },
+    { "m": 3, "d": 15, "sunset": "18:50", "dusk": "19:18", "zone": "EDT" },
+    { "m": 4, "d": 1, "sunset": "19:09", "dusk": "19:37", "zone": "EDT" },
+    { "m": 4, "d": 15, "sunset": "19:24", "dusk": "19:53", "zone": "EDT" },
+    { "m": 5, "d": 1, "sunset": "19:42", "dusk": "20:12", "zone": "EDT" },
+    { "m": 5, "d": 15, "sunset": "19:56", "dusk": "20:28", "zone": "EDT" },
+    { "m": 6, "d": 1, "sunset": "20:12", "dusk": "20:45", "zone": "EDT" },
+    { "m": 6, "d": 15, "sunset": "20:20", "dusk": "20:54", "zone": "EDT" },
+    { "m": 7, "d": 1, "sunset": "20:22", "dusk": "20:56", "zone": "EDT" },
+    { "m": 7, "d": 15, "sunset": "20:17", "dusk": "20:50", "zone": "EDT" },
+    { "m": 8, "d": 1, "sunset": "20:02", "dusk": "20:33", "zone": "EDT" },
+    { "m": 8, "d": 15, "sunset": "19:44", "dusk": "20:13", "zone": "EDT" },
+    { "m": 9, "d": 1, "sunset": "19:17", "dusk": "19:46", "zone": "EDT" },
+    { "m": 9, "d": 15, "sunset": "18:53", "dusk": "19:21", "zone": "EDT" },
+    { "m": 10, "d": 1, "sunset": "18:26", "dusk": "18:53", "zone": "EDT" },
+    { "m": 10, "d": 15, "sunset": "18:03", "dusk": "18:31", "zone": "EDT" },
+    { "m": 11, "d": 1, "sunset": "17:39", "dusk": "18:07", "zone": "EDT" },
+    { "m": 11, "d": 15, "sunset": "16:24", "dusk": "16:53", "zone": "EST" },
+    { "m": 12, "d": 1, "sunset": "16:14", "dusk": "16:45", "zone": "EST" },
+    { "m": 12, "d": 15, "sunset": "16:14", "dusk": "16:46", "zone": "EST" }
+  ]
+}

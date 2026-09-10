@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunset and Photo Window | Wedding 101 Tools | Ensemble Events</title>
+<meta name="description" content="Pick your date. Get sunset, golden hour, last light, and the time your ceremony should end for the photos you want, for a Massachusetts wedding.">
+
+<link rel="icon" href="/assets/img/ee-mark-white.png" type="image/png">
+<link rel="canonical" href="https://www.ensemble-events.com/wedding101/tools/sunset/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sunset and Photo Window | Wedding 101 Tools | Ensemble Events">
+<meta property="og:description" content="Pick your date. Get sunset, golden hour, last light, and the time your ceremony should end for the photos you want, for a Massachusetts wedding.">
+<meta property="og:url" content="https://www.ensemble-events.com/wedding101/tools/sunset/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="shell">
+    <a class="brandmark" href="/" aria-label="Ensemble Events, home"><img src="/assets/img/ee-logo-white.png" alt="Ensemble Events"></a>
+    <nav class="pages" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/wedding-packages/">Weddings</a>
+      <a href="/wedding-content-creation/">Content</a>
+      <a href="/game-shows/">Game Shows</a>
+      <a href="/holiday-parties/">Holiday</a>
+      <a href="/packages/">Pricing</a>
+      <a href="/about/">About</a>
+      <a class="cta" href="/contact/">Check Your Date</a>
+    </nav>
+  </div>
+</div>
+<main id="main">
+<div class="phead tool-head">
+  <div class="shell">
+    <span class="lab"><a href="/wedding101/">Wedding 101</a> &middot; Tool</span>
+    <h1>Sunset and Photo Window</h1>
+    <p>Pick your date. Get sunset, golden hour, last light, and the time your ceremony should end for the photos you want, for a Massachusetts wedding.</p>
+    <div class="cta-row">
+      <a class="btn btn-s" href="/wedding101/printables/sunset/">Print the worksheet</a>
+      <a class="btn btn-s" href="/wedding101/">All of Wedding 101</a>
+    </div>
+  </div>
+</div>
+<section class="tool-page tool-sunset">
+  <div class="shell">
+<style>
+.tool-sunset .w1-sun{display:grid;gap:20px;max-width:680px}
+.tool-sunset .w1-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0 0 14px}
+.tool-sunset .w1-facts div{border:1px solid var(--line);padding:12px 14px;background:var(--night)}
+.tool-sunset .w1-facts .k{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--text-2);font-weight:600}
+.tool-sunset .w1-facts .v{font-family:var(--f-disp);font-size:26px;color:var(--text);line-height:1.1;margin-top:4px}
+.tool-sunset .w1-card.teal{max-width:680px}
+</style>
+<div class="w1 w1-ui" id="sun">
+  <p class="w1-intro">The question the photographer article tells you to ask, answered without a lookup. The table is built in for New Bedford, Massachusetts, and it is within a few minutes for the whole South Coast, the South Shore, Cape Cod, and Rhode Island. Sunset moves about a minute a day, so check the exact minute for your date when you print.</p>
+  <p class="w1-saved" id="sun-saved">Saved on this phone as you go. Nothing leaves it.</p>
+  <div id="sun-form" role="form" aria-label="Sunset inputs" class="w1-sun">
+    <div class="w1-two">
+      <label for="sun-date">Wedding date<input type="date" id="sun-date" name="date"></label>
+      <label for="sun-ceremonyStart">Ceremony starts<input type="time" id="sun-ceremonyStart" name="ceremonyStart" value="16:00" step="300"></label>
+    </div>
+    <label for="sun-ceremonyLen">Ceremony length<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-5" aria-label="Five minutes less ceremony">&minus;</button><input type="number" id="sun-ceremonyLen" name="ceremonyLen" value="30" min="15" max="75" step="5" inputmode="numeric"><button type="button" data-step="5" aria-label="Five minutes more ceremony">+</button></span><span class="w1-unit">minutes</span></span></label>
+    <div class="w1-two">
+      <div>
+        <span class="w1-lab" id="sun-firstLook-lab">First look before the ceremony</span>
+        <div class="w1-radio" role="radiogroup" aria-labelledby="sun-firstLook-lab" data-name="firstLook" data-type="bool">
+          <button type="button" role="radio" aria-checked="true" data-value="false">No</button>
+          <button type="button" role="radio" aria-checked="false" data-value="true">Yes</button>
+        </div>
+      </div>
+      <div>
+        <span class="w1-lab" id="sun-outdoor-lab">Ceremony outdoors</span>
+        <div class="w1-radio" role="radiogroup" aria-labelledby="sun-outdoor-lab" data-name="outdoor" data-type="bool">
+          <button type="button" role="radio" aria-checked="true" data-value="false">No</button>
+          <button type="button" role="radio" aria-checked="false" data-value="true">Yes</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="w1-lab" id="sun-portraits-lab">We want sunset portraits</span>
+      <div class="w1-radio" role="radiogroup" aria-labelledby="sun-portraits-lab" data-name="portraits" data-type="bool">
+        <button type="button" role="radio" aria-checked="true" data-value="false">No</button>
+        <button type="button" role="radio" aria-checked="false" data-value="true">Yes, a 15-minute step-out</button>
+      </div>
+    </div>
+    <label for="sun-override">Sunset from your own lookup<input type="time" id="sun-override" name="override" step="60"><span class="w1-help">Optional. If you checked the exact minute for your venue, type it here and the card uses it. Clear it to go back to the table.</span></label>
+  </div>
+
+  <div id="sun-card" class="w1-card teal">
+    <h3>Your window</h3>
+    <p>Pick a date and the card fills in: sunset, golden hour, last light, when the ceremony should end for daylight photos, and when to step out for sunset portraits.</p>
+    <p class="w1-help">The rules I use: with no first look, end the ceremony about two hours before sunset for family photos and portraits in daylight. With a first look, an hour before is enough. Outdoors, end by thirty minutes before sunset or the recessional walks out in the dark. Sunset portraits are a fifteen-minute step-out at thirty minutes before sunset.</p>
+  </div>
+
+  <div class="w1-actions">
+    <button type="button" class="btn btn-p" id="sun-copy">Copy as text</button>
+    <button type="button" class="btn btn-s" id="sun-share">Share</button>
+    <button type="button" class="btn btn-s" id="sun-print">Print this</button>
+    <button type="button" class="btn btn-s" id="sun-reset">Start over</button>
+  </div>
+  <noscript><p class="w1-help">This card does its math in your browser, and JavaScript is off here. The full-year table with the same rules prints from <a class="w1-link" href="/wedding101/printables/sunset/">the printable page</a>.</p></noscript>
+</div>
+<div class="sheet-view" id="sun-sheet"></div>
+<script type="module">
+import { store, plan, defaults, bind, time as T, sunset, copyText, share, toast, printPage, ensureStyles, savedNote, text, esc, dateInfo, clamp, num } from '/wedding101/tools/_shared/w101.js';
+ensureStyles();
+const SD = defaults.sunset;
+const RC = defaults.runOfShow.ceremony;
+const ID = 'sunset';
+const S = store(ID);
+const root = document.getElementById('sun');
+const q = (sel) => root.querySelector(sel);
+/* the print view lives outside the tool container, so it is looked up on the document */
+const sheetEl = document.getElementById('sun-sheet');
+const DEF = { date: '', ceremonyStart: '16:00', ceremonyLen: RC.minutes, firstLook: false, outdoor: false, portraits: false, override: '', _saved: 0 };
+
+const saved = S.get() || {};
+const st = Object.assign({}, DEF, saved);
+let P = plan.get() || {};
+const pw = P._w || {};
+const mine = num(saved._saved, 0);
+const fresher = (w) => num(pw[w], 0) > mine;
+if (!saved._saved || fresher('run-of-show')) {
+  if (P.date) st.date = P.date;
+  if (P.ceremonyStart) st.ceremonyStart = P.ceremonyStart;
+  if (P.ceremonyLen) st.ceremonyLen = clamp(num(P.ceremonyLen, RC.minutes), RC.min, RC.max);
+  if (P.firstLook !== undefined) st.firstLook = !!P.firstLook;
+  if (P.outdoor !== undefined) st.outdoor = !!P.outdoor;
+  if (P.sunsetPortraits !== undefined) st.portraits = !!P.sunsetPortraits;
+}
+if (!saved._saved && P.sunsetOverride) st.override = P.sunsetOverride;
+
+function compute(s) {
+  const di = dateInfo(s.date);
+  if (!di) return null;
+  const sun = sunset(di.m, di.d, di.y, s.override);
+  const start = T.parse(s.ceremonyStart);
+  const len = clamp(num(s.ceremonyLen, RC.minutes), RC.min, RC.max);
+  const end = start === null ? null : start + len;
+  const endBy = sun.sunset - (s.firstLook ? SD.ceremonyEndBefore.firstLook : SD.ceremonyEndBefore.noFirstLook);
+  const outdoorBy = sun.sunset - SD.outdoorEndBefore;
+  const portraitsAt = sun.sunset - SD.portraitsBefore;
+  const lines = [];
+  if (end !== null) {
+    if (end <= endBy) lines.push('Your ceremony ends at ' + T.format(end) + ', inside that line. The photos happen in daylight.');
+    else lines.push('Your ceremony ends at ' + T.format(end) + ', ' + (end - endBy) + ' minutes past that line. ' + (s.firstLook ? 'Ask the photographer what they can do in the light that is left, or start earlier.' : 'A first look moves most of the portraits before the ceremony and buys the hour back; so does an earlier start.'));
+  }
+  let outdoorLine = '';
+  if (s.outdoor) {
+    outdoorLine = 'Outdoors, end the ceremony by ' + T.format(outdoorBy) + ' or the recessional walks out in the dark.';
+    if (end !== null && end > outdoorBy) outdoorLine += ' You end at ' + T.format(end) + ', which is ' + (end - outdoorBy) + ' minutes past it.';
+  }
+  let portraitsLine = '';
+  if (s.portraits) {
+    if (end !== null && portraitsAt < end) portraitsLine = 'Sunset is during or before your ceremony, so there is no step-out to take; the golden light is what you get during the ceremony itself.';
+    else portraitsLine = 'Step out for sunset portraits at ' + T.format(portraitsAt) + ', fifteen minutes, then back before anyone notices. The Run of Show marks where that lands.';
+  }
+  return { di, sun, end, endBy, outdoorBy, portraitsAt, lines, outdoorLine, portraitsLine };
+}
+
+function facts(m) {
+  const f = (k, v) => '<div><div class="k">' + k + '</div><div class="v">' + v + '</div></div>';
+  return '<div class="w1-facts">' + f('Sunset ' + m.sun.label, T.format(m.sun.sunset)) + f('Golden hour from', T.format(m.sun.golden)) + f('Last light', T.format(m.sun.dusk)) + f('Ceremony ends by', T.format(m.endBy)) + (m.portraitsLine && m.end !== null && m.portraitsAt >= m.end ? f('Portraits at', T.format(m.portraitsAt)) : '') + '</div>';
+}
+
+function render(s, persist) {
+  const m = compute(s);
+  const card = q('#sun-card');
+  if (!m) {
+    card.innerHTML = '<h3>Your window</h3><p>Pick a date and the card fills in: sunset, golden hour, last light, when the ceremony should end for daylight photos, and when to step out for sunset portraits.</p><p class="w1-help">The rules I use: with no first look, end the ceremony about two hours before sunset for family photos and portraits in daylight. With a first look, an hour before is enough. Outdoors, end by thirty minutes before sunset or the recessional walks out in the dark. Sunset portraits are a fifteen-minute step-out at thirty minutes before sunset.</p>';
+  } else {
+    let html = '<h3>' + esc(m.di.long) + '</h3>' + facts(m);
+    html += '<p>' + (s.firstLook ? 'With a first look, ending the ceremony an hour before sunset (' + T.format(m.endBy) + ') is enough for the portraits in daylight.' : 'With no first look, the ceremony should end about two hours before sunset (' + T.format(m.endBy) + ') for family photos and portraits in daylight.') + '</p>';
+    for (const l of m.lines) html += '<p>' + esc(l) + '</p>';
+    if (m.outdoorLine) html += '<p>' + esc(m.outdoorLine) + '</p>';
+    if (m.portraitsLine) html += '<p>' + esc(m.portraitsLine) + '</p>';
+    if (m.sun.overridden) html += '<p class="w1-help">Using the sunset you typed. Last light moved by the same amount.</p>';
+    if (m.sun.dstNote) html += '<p class="w1-help">' + esc(m.sun.dstNote) + '</p>';
+    html += '<p class="w1-help">Sunset moves about a minute a day, so check the exact minute for your date when you print. Table: ' + esc(m.sun.source) + '.</p>';
+    card.innerHTML = html;
+  }
+  sheetEl.innerHTML = sheet(m, s);
+  if (persist === false) return;
+  s._saved = Date.now();
+  S.set(s);
+  plan.patch({ date: s.date, ceremonyStart: s.ceremonyStart, ceremonyLen: clamp(num(s.ceremonyLen, RC.minutes), RC.min, RC.max), firstLook: !!s.firstLook, outdoor: !!s.outdoor, sunsetPortraits: !!s.portraits, sunsetOverride: s.override || '' }, ID);
+}
+
+function sheet(m, s) {
+  const foot = '<div class="sheet-foot"><span>Wedding 101 by Ensemble Events · ensemble-events.com/wedding101</span><span>Sunset table: US Naval Observatory, New Bedford, MA</span></div>';
+  if (!m) return '<section class="sheet"><div class="sheet-head"><div><div class="names">Sunset and photo window</div></div><div class="kind">Wedding 101</div></div><p>No date set.</p>' + foot + '</section>';
+  const row = (k, v) => '<tr><td>' + k + '</td><td class="t">' + v + '</td></tr>';
+  let t = '<table><tbody>' + row('Sunset (' + m.sun.label + ')', T.format(m.sun.sunset)) + row('Golden hour from', T.format(m.sun.golden)) + row('Last usable light', T.format(m.sun.dusk)) + row('Ceremony should end by' + (s.firstLook ? ' (with a first look)' : ' (no first look)'), T.format(m.endBy));
+  if (s.outdoor) t += row('Outdoor ceremony, end by', T.format(m.outdoorBy));
+  if (s.portraits) t += row('Sunset portraits, step out at', T.format(m.portraitsAt));
+  if (m.end !== null) t += row('Your ceremony ends', T.format(m.end));
+  t += '</tbody></table>';
+  return '<section class="sheet"><div class="sheet-head"><div><div class="names">Sunset and photo window</div><div class="sub">' + esc(m.di.long) + '</div></div><div class="kind">Wedding 101</div></div>' + t + (m.lines.length ? '<p style="margin-top:8pt">' + esc(m.lines[0]) + '</p>' : '') + (m.outdoorLine ? '<p>' + esc(m.outdoorLine) + '</p>' : '') + (m.portraitsLine ? '<p>' + esc(m.portraitsLine) + '</p>' : '') + '<p class="gray small">Sunset moves about a minute a day; check the exact minute for your venue and date.</p>' + foot + '</section>';
+}
+
+function textModel(s) {
+  const m = compute(s);
+  if (!m) return null;
+  return {
+    dateLabel: m.di.long, sunset: T.format(m.sun.sunset), label: m.sun.label, golden: T.format(m.sun.golden), lastLight: T.format(m.sun.dusk),
+    endBy: T.format(m.endBy), endByRule: s.firstLook ? 'with a first look' : 'no first look',
+    outdoorLine: m.outdoorLine, portraits: s.portraits && m.end !== null && m.portraitsAt >= m.end ? T.format(m.portraitsAt) : '',
+    note: 'Sunset moves about a minute a day; check the exact minute for your date.'
+  };
+}
+
+const b = bind(q('#sun-form'), st, (s) => render(s));
+savedNote(q('#sun-saved'), S);
+render(st);
+
+q('#sun-copy').addEventListener('click', async () => {
+  const tm = textModel(st);
+  if (!tm) { toast('Pick a date first.'); return; }
+  toast((await copyText(text.sunsetCard(tm))) ? 'Copied. Paste it into a text or an email.' : 'Could not copy here.');
+});
+q('#sun-share').addEventListener('click', async () => {
+  const tm = textModel(st);
+  if (!tm) { toast('Pick a date first.'); return; }
+  const r = await share('Sunset on our date', text.sunsetCard(tm));
+  if (r === 'copied') toast('No share sheet here, so it is on your clipboard.');
+  else if (r === 'failed') toast('Could not share or copy here.');
+});
+q('#sun-print').addEventListener('click', () => printPage(() => S.flush()));
+q('#sun-reset').addEventListener('click', () => {
+  if (!confirm('Start over? This clears the sunset card saved on this phone.')) return;
+  S.clear();
+  Object.assign(st, DEF);
+  b.refresh(); render(st, false);
+  toast('Cleared.');
+});
+</script>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="shell">
+    <div class="foot-top">
+      <div>
+        <img class="foot-mark" src="/assets/img/ee-mark-white.png" alt="Ensemble Events">
+        <div class="foot-tag">Weddings, parties and content &middot; New Bedford, MA</div>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/wedding-packages/">Weddings</a>
+        <a href="/wedding-content-creation/">Content</a>
+        <a href="/game-shows/">Game Shows</a>
+        <a href="/holiday-parties/">Holiday</a>
+        <a href="/packages/">Pricing</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Check Your Date</a>
+        <a href="/the-method/">The Method</a>
+        <a href="/digital-day-of/">Digital Day-Of</a>
+        <a href="/wedding101/">Wedding101</a>
+        <a href="/senior-living/">Senior Living</a>
+        <a href="/corporate-holiday-party/">Corporate Parties</a>
+        <a href="/clientservices/">Client Services</a>
+      </nav>
+    </div>
+    </div>
+      <div class="areas">
+        <span><b>SouthCoast</b></span><span>New Bedford</span><span>Fall River</span><span>Dartmouth</span><span>Westport</span><span>Fairhaven</span><span>Mattapoisett</span><span>Marion</span><span>Wareham</span><span><b>South Shore</b></span><span>Plymouth</span><span>Duxbury</span><span>Kingston</span><span><b>Cape Cod</b></span><span>Falmouth</span><span>Bourne</span><span>Sandwich</span><span><b>Rhode Island</b></span><span>Newport</span><span>Providence</span>
+      </div>
+    <div class="foot-note">Prices shown are current and may change. Every date is quoted in writing before anything is booked.</div>
+  </div>
+</footer>
+</body>
+</html>

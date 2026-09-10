@@ -1,0 +1,1041 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Run of Show Builder | Wedding 101 Tools | Ensemble Events</title>
+<meta name="description" content="Type your ceremony time and the venue's hard stop. Get the whole night, timed the way I time it, and see exactly how much dance floor you are left with.">
+
+<link rel="icon" href="/assets/img/ee-mark-white.png" type="image/png">
+<link rel="canonical" href="https://www.ensemble-events.com/wedding101/tools/run-of-show/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Run of Show Builder | Wedding 101 Tools | Ensemble Events">
+<meta property="og:description" content="Type your ceremony time and the venue's hard stop. Get the whole night, timed the way I time it, and see exactly how much dance floor you are left with.">
+<meta property="og:url" content="https://www.ensemble-events.com/wedding101/tools/run-of-show/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="shell">
+    <a class="brandmark" href="/" aria-label="Ensemble Events, home"><img src="/assets/img/ee-logo-white.png" alt="Ensemble Events"></a>
+    <nav class="pages" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/wedding-packages/">Weddings</a>
+      <a href="/wedding-content-creation/">Content</a>
+      <a href="/game-shows/">Game Shows</a>
+      <a href="/holiday-parties/">Holiday</a>
+      <a href="/packages/">Pricing</a>
+      <a href="/about/">About</a>
+      <a class="cta" href="/contact/">Check Your Date</a>
+    </nav>
+  </div>
+</div>
+<main id="main">
+<div class="phead tool-head">
+  <div class="shell">
+    <span class="lab"><a href="/wedding101/">Wedding 101</a> &middot; Tool</span>
+    <h1>Run of Show Builder</h1>
+    <p>Type your ceremony time and the venue's hard stop. Get the whole night, timed the way I time it, and see exactly how much dance floor you are left with.</p>
+    <div class="cta-row">
+      <a class="btn btn-s" href="/wedding101/printables/run-of-show/">Print the worksheet</a>
+      <a class="btn btn-s" href="/wedding101/">All of Wedding 101</a>
+    </div>
+  </div>
+</div>
+<section class="tool-page tool-run-of-show">
+  <div class="shell">
+<style>
+.tool-run-of-show .w1-cond[hidden]{display:none}
+.tool-run-of-show #ros-moments .w1-mom{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--line)}
+.tool-run-of-show #ros-moments .w1-mom:first-child{border-top:0}
+.tool-run-of-show #ros-moments .w1-mom-h{display:flex;justify-content:space-between;gap:12px;align-items:center;font-weight:500}
+.tool-run-of-show #ros-moments .w1-mom-h span{color:var(--text-2);font-size:13px;font-weight:300}
+.tool-run-of-show .w1-copies ul{margin:0;padding-left:20px}
+.tool-run-of-show textarea{min-height:80px}
+</style>
+<div class="w1 w1-ui" id="ros">
+  <p class="w1-intro">Three times in, the whole night out. I start at the ceremony and work forward the way I do it on the day: the cocktail hour covers your photos, the cake goes about a half hour after the last plate, the parent dances follow the cake while the room is still seated, and whatever is left is your dance floor. Change anything and the clock moves with it.</p>
+  <p class="w1-saved" id="ros-saved">Saved on this phone as you go. Nothing leaves it.</p>
+  <div class="w1-bar" id="ros-bar">Dance floor 105 min &middot; Music ends 10:00 PM &middot; 5 h 30 m from cocktails to last song</div>
+
+  <div class="w1-grid">
+  <div id="ros-form" role="form" aria-label="Run of show inputs">
+
+    <details class="w1-step" id="step-anchors" open>
+      <summary><span class="w1-n" aria-hidden="true">1</span>Anchors</summary>
+      <div class="w1-fields">
+        <div class="w1-two">
+          <label for="ros-names">Your names<input type="text" id="ros-names" name="names" placeholder="Jordan and Sam" maxlength="80"></label>
+          <label for="ros-date">Wedding date<input type="date" id="ros-date" name="date"></label>
+        </div>
+        <label for="ros-venue">Venue<input type="text" id="ros-venue" name="venue" placeholder="Where the reception is" maxlength="80"></label>
+        <div class="w1-two">
+          <label for="ros-ceremonyStart">Ceremony starts<input type="time" id="ros-ceremonyStart" name="ceremonyStart" value="16:00" step="300"></label>
+          <label for="ros-musicEnd">Music must end by<input type="time" id="ros-musicEnd" name="musicEnd" value="22:00" step="300"></label>
+        </div>
+        <label for="ros-outBy">Everyone out by<input type="time" id="ros-outBy" name="outBy" value="22:30" step="300"><span class="w1-help">The venue's contract line. Information only; the music line above is the one that runs the night.</span></label>
+        <div>
+          <span class="w1-lab" id="ros-presets-lab">One tap to start from</span>
+          <div class="w1-presets" role="group" aria-labelledby="ros-presets-lab">
+            <button type="button" class="w1-chip" data-preset="two">2 o'clock ceremony</button>
+            <button type="button" class="w1-chip" data-preset="four">4 o'clock</button>
+            <button type="button" class="w1-chip" data-preset="five">5 o'clock</button>
+            <button type="button" class="w1-chip" data-preset="six">6 o'clock</button>
+            <button type="button" class="w1-chip" data-preset="noparty">No wedding party</button>
+          </div>
+          <p class="w1-help">The presets fill the anchors and stay editable.</p>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-pace-lab">Pace</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-pace-lab" data-name="pace">
+            <button type="button" role="radio" aria-checked="false" data-value="relaxed">Relaxed</button>
+            <button type="button" role="radio" aria-checked="true" data-value="mixed">Mixed</button>
+            <button type="button" role="radio" aria-checked="false" data-value="fast">Fast</button>
+          </div>
+          <p class="w1-why">Relaxed adds five minutes of air after every formality. Mixed, my usual, adds it after the toasts and after dinner. Fast adds none, and I advise against it unless the night is short.</p>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-backward-lab">Work backward from the venue's end time</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-backward-lab" data-name="backward" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="false">No, forward from the ceremony</button>
+            <button type="button" role="radio" aria-checked="false" data-value="true">Yes, tell me when to start</button>
+          </div>
+          <p class="w1-why">For the couple whose venue fixed the end before the church fixed the start. The ceremony time becomes the answer.</p>
+        </div>
+        <div class="w1-cond" data-show="backward=true">
+          <label for="ros-floorTarget">Dance floor you want<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-15" aria-label="Fifteen minutes less dance floor">&minus;</button><input type="number" id="ros-floorTarget" name="floorTarget" value="90" min="30" max="300" step="15" inputmode="numeric"><button type="button" data-step="15" aria-label="Fifteen minutes more dance floor">+</button></span><span class="w1-unit">minutes</span></span></label>
+        </div>
+      </div>
+    </details>
+
+    <details class="w1-step" id="step-ceremony">
+      <summary><span class="w1-n" aria-hidden="true">2</span>Ceremony and photos</summary>
+      <div class="w1-fields">
+        <label for="ros-ceremonyLen">Ceremony length<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-5" aria-label="Five minutes less ceremony">&minus;</button><input type="number" id="ros-ceremonyLen" name="ceremonyLen" value="30" min="15" max="75" step="5" inputmode="numeric"><button type="button" data-step="5" aria-label="Five minutes more ceremony">+</button></span><span class="w1-unit">minutes</span></span><span class="w1-help">Twenty to thirty is most ceremonies. A full religious service runs an hour or more.</span></label>
+        <div>
+          <span class="w1-lab" id="ros-outdoor-lab">Ceremony outdoors</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-outdoor-lab" data-name="outdoor" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="false">No</button>
+            <button type="button" role="radio" aria-checked="false" data-value="true">Yes</button>
+          </div>
+          <p class="w1-why">Outdoors turns on the sunset warnings once you set a date.</p>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-sameSite-lab">Ceremony at the same site as the reception</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-sameSite-lab" data-name="sameSite" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="true">Yes</button>
+            <button type="button" role="radio" aria-checked="false" data-value="false">No, we travel</button>
+          </div>
+        </div>
+        <div class="w1-cond" data-show="sameSite=false">
+          <label for="ros-travel">Travel time<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-5" aria-label="Five minutes less travel">&minus;</button><input type="number" id="ros-travel" name="travel" value="20" min="5" max="120" step="5" inputmode="numeric"><button type="button" data-step="5" aria-label="Five minutes more travel">+</button></span><span class="w1-unit">minutes, door to door</span></span></label>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-receiving-lab">Receiving line at the ceremony</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-receiving-lab" data-name="receivingLine" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="false">No</button>
+            <button type="button" role="radio" aria-checked="false" data-value="true">Yes, add 15 minutes</button>
+          </div>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-firstLook-lab">First look before the ceremony</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-firstLook-lab" data-name="firstLook" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="false">No</button>
+            <button type="button" role="radio" aria-checked="false" data-value="true">Yes</button>
+          </div>
+          <p class="w1-why">With a first look, most of the portraits happen before the ceremony and the cocktail hour is yours.</p>
+        </div>
+        <div id="ros-compare" class="w1-card teal" hidden></div>
+        <div class="w1-two">
+          <label for="ros-groupings">Family groupings<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-1" aria-label="One fewer family grouping">&minus;</button><input type="number" id="ros-groupings" name="groupings" value="15" min="0" max="40" step="1" inputmode="numeric"><button type="button" data-step="1" aria-label="One more family grouping">+</button></span></span><span class="w1-help" id="ros-groupings-help">15 groupings is about 45 minutes at three minutes each.</span></label>
+          <label for="ros-photoMin">Photo time after the ceremony<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-5" aria-label="Five minutes less photo time">&minus;</button><input type="number" id="ros-photoMin" name="photoMin" value="45" min="10" max="120" step="5" inputmode="numeric"><button type="button" data-step="5" aria-label="Five minutes more photo time">+</button></span><span class="w1-unit">minutes</span></span><span class="w1-help">Ask the photographer for this number. Forty-five minutes to an hour is what I see; twenty with a first look.</span></label>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-portraits-lab">We want sunset portraits</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-portraits-lab" data-name="sunsetPortraits" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="false">No</button>
+            <button type="button" role="radio" aria-checked="false" data-value="true">Yes, a 15-minute step-out</button>
+          </div>
+          <p class="w1-why">Set a date and the schedule marks where the step-out lands. If it lands on the toasts, you will hear about it.</p>
+        </div>
+        <label for="ros-doorsOpen">Reception doors open<input type="time" id="ros-doorsOpen" name="doorsOpen" step="300"><span class="w1-help">Leave it blank unless the venue opens later than your guests arrive. If there is a gap, it shows up on the clock, because your guests will notice it.</span></label>
+        <div class="w1-two">
+          <label for="ros-photogStart">Photographer's coverage starts<input type="time" id="ros-photogStart" name="photogStart" step="300"></label>
+          <label for="ros-photogHours">Hours booked<input type="number" id="ros-photogHours" name="photogHours" min="1" max="14" step="0.5" inputmode="decimal" placeholder="8"><span class="w1-help">The schedule marks where coverage ends. Blank is fine.</span></label>
+        </div>
+      </div>
+    </details>
+
+    <details class="w1-step" id="step-cocktail">
+      <summary><span class="w1-n" aria-hidden="true">3</span>Cocktail hour</summary>
+      <div class="w1-fields">
+        <label for="ros-cocktailLen">Cocktail hour length<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-15" aria-label="Fifteen minutes less cocktail hour">&minus;</button><input type="number" id="ros-cocktailLen" name="cocktailLen" value="60" min="45" max="90" step="15" inputmode="numeric"><button type="button" data-step="15" aria-label="Fifteen minutes more cocktail hour">+</button></span><span class="w1-unit">minutes</span></span><span class="w1-help">The hour covers your photos. When the photos need more, the hour stretches and I tell you by how much.</span></label>
+        <div>
+          <span class="w1-lab" id="ros-otherRoom-lab">Cocktail hour in a different room from dinner</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-otherRoom-lab" data-name="cocktailOtherRoom" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="false">No</button>
+            <button type="button" role="radio" aria-checked="false" data-value="true">Yes</button>
+          </div>
+          <p class="w1-why">Moving a room takes longer than turning one: seating goes from fifteen minutes to twenty-five.</p>
+        </div>
+        <label for="ros-guests">Guest count<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-10" aria-label="Ten fewer guests">&minus;</button><input type="number" id="ros-guests" name="guests" value="120" min="10" max="500" step="10" inputmode="numeric"><button type="button" data-step="10" aria-label="Ten more guests">+</button></span><span class="w1-unit">guests</span></span><span class="w1-help">Dinner gets ten minutes longer for every fifty guests over a hundred. Two hundred or more takes longer to seat.</span></label>
+      </div>
+    </details>
+
+    <details class="w1-step" id="step-dinner">
+      <summary><span class="w1-n" aria-hidden="true">4</span>Dinner and toasts</summary>
+      <div class="w1-fields">
+        <div>
+          <span class="w1-lab" id="ros-entrance-lab">Grand entrance</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-entrance-lab" data-name="entrance">
+            <button type="button" role="radio" aria-checked="true" data-value="party">Wedding party too</button>
+            <button type="button" role="radio" aria-checked="false" data-value="couple">Just the two of you</button>
+            <button type="button" role="radio" aria-checked="false" data-value="none">Skip it</button>
+          </div>
+          <p class="w1-why">Five minutes for the two of you, a minute for every two pairs announced, never more than fifteen. It sets the tone, so I never rush it.</p>
+        </div>
+        <div class="w1-cond" data-show="entrance=party">
+          <label for="ros-pairs">Pairs or people announced before you<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-1" aria-label="One fewer pair announced">&minus;</button><input type="number" id="ros-pairs" name="pairs" value="4" min="0" max="30" step="1" inputmode="numeric"><button type="button" data-step="1" aria-label="One more pair announced">+</button></span></span></label>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-fd-lab">First dance</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-fd-lab" data-name="firstDancePlace">
+            <button type="button" role="radio" aria-checked="true" data-value="entrance">Right after the entrance</button>
+            <button type="button" role="radio" aria-checked="false" data-value="after">After the cake</button>
+            <button type="button" role="radio" aria-checked="false" data-value="none">No first dance</button>
+          </div>
+          <p class="w1-why">Right after the entrance is the East Coast habit: the room is standing and cheering anyway. After the cake makes it the start of a dance set.</p>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-welcome-lab">Welcome or blessing</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-welcome-lab" data-name="welcome" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="true">Yes, 5 minutes</button>
+            <button type="button" role="radio" aria-checked="false" data-value="false">No</button>
+          </div>
+        </div>
+        <div class="w1-two">
+          <label for="ros-toastSpeakers">Toast speakers<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-1" aria-label="One fewer toast speaker">&minus;</button><input type="number" id="ros-toastSpeakers" name="toastSpeakers" value="2" min="0" max="8" step="1" inputmode="numeric"><button type="button" data-step="1" aria-label="One more toast speaker">+</button></span></span></label>
+          <label for="ros-toastMin">Minutes each<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-1" aria-label="One minute less per toast">&minus;</button><input type="number" id="ros-toastMin" name="toastMin" value="4" min="1" max="8" step="1" inputmode="numeric"><button type="button" data-step="1" aria-label="One minute more per toast">+</button></span></span><span class="w1-help">The Toast Planner fills these in when you use it.</span></label>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-toastPlace-lab">Toasts happen</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-toastPlace-lab" data-name="toastPlace">
+            <button type="button" role="radio" aria-checked="true" data-value="before">Before dinner</button>
+            <button type="button" role="radio" aria-checked="false" data-value="between">Between courses</button>
+            <button type="button" role="radio" aria-checked="false" data-value="after">After dinner</button>
+          </div>
+          <p class="w1-why">Before dinner gets them done while everyone is seated and sober. Between courses only works with a plated meal.</p>
+        </div>
+        <label for="ros-dinnerStyle">Dinner style<select id="ros-dinnerStyle" name="dinnerStyle">
+          <option value="plated2" selected>Plated, two courses</option>
+          <option value="plated3">Plated, three courses</option>
+          <option value="buffet">Buffet</option>
+          <option value="stations">Stations</option>
+          <option value="family">Family style</option>
+          <option value="cocktail">Cocktail-style reception</option>
+        </select><span class="w1-help">Plated two courses runs about an hour, three courses seventy-five minutes, a buffet forty-five. Ask your caterer how long they take to feed your count and type it into the clock if they say different.</span></label>
+        <div class="w1-cond" data-show="dinnerStyle=buffet">
+          <span class="w1-lab" id="ros-buffet-lab">Buffet line</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-buffet-lab" data-name="buffetLines">
+            <button type="button" role="radio" aria-checked="true" data-value="two">Two-sided</button>
+            <button type="button" role="radio" aria-checked="false" data-value="one">Single line, add 10 minutes</button>
+          </div>
+        </div>
+        <div class="w1-cond" data-show="dinnerStyle=buffet">
+          <label for="ros-tableRelease">Table release order<textarea id="ros-tableRelease" name="tableRelease" rows="4" placeholder="Head table, then tables 1 and 2, then 3 and 4"></textarea><span class="w1-help">The order the MC sends tables up. It prints on the vendor copy.</span></label>
+        </div>
+      </div>
+    </details>
+
+    <details class="w1-step" id="step-dancing">
+      <summary><span class="w1-n" aria-hidden="true">5</span>Dancing and moments</summary>
+      <div class="w1-fields">
+        <div>
+          <span class="w1-lab" id="ros-cake-lab">Cake cutting</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-cake-lab" data-name="cake" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="true">Yes</button>
+            <button type="button" role="radio" aria-checked="false" data-value="false">No</button>
+          </div>
+        </div>
+        <div class="w1-cond" data-show="cake=true">
+          <label for="ros-cakeGap">Gap between the last plate and the cake<span class="w1-inline"><span class="w1-stepper"><button type="button" data-step="-5" aria-label="Five minutes less before the cake">&minus;</button><input type="number" id="ros-cakeGap" name="cakeGap" value="30" min="0" max="90" step="5" inputmode="numeric"><button type="button" data-step="5" aria-label="Five minutes more before the cake">+</button></span><span class="w1-unit">minutes</span></span><span class="w1-help">I put the cake about a half hour after the last plate goes. Served right at the end of the meal, it goes uneaten; wait a bit and people have a sweet tooth.</span></label>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-pd-lab">Parent dances</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-pd-lab" data-name="parentDances">
+            <button type="button" role="radio" aria-checked="false" data-value="none">None</button>
+            <button type="button" role="radio" aria-checked="false" data-value="one">One</button>
+            <button type="button" role="radio" aria-checked="true" data-value="two">Two</button>
+            <button type="button" role="radio" aria-checked="false" data-value="shared">Two sharing one song</button>
+          </div>
+          <p class="w1-why">Each of you with a parent or whoever you choose. I put them right after the cake, while everyone is seated and already watching.</p>
+        </div>
+        <div>
+          <span class="w1-lab">Moments inside open dancing</span>
+          <div id="ros-moments">
+            <p class="w1-help">Pick your moments in the events picker and they show up here with a place in the dancing.</p>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="w1-step" id="step-ending">
+      <summary><span class="w1-n" aria-hidden="true">6</span>The ending</summary>
+      <div class="w1-fields">
+        <div>
+          <span class="w1-lab" id="ros-last-lab">Last song</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-last-lab" data-name="lastSong" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="true">Yes, called by the MC</button>
+            <button type="button" role="radio" aria-checked="false" data-value="false">No, the music just ends</button>
+          </div>
+          <p class="w1-why">End on a high note while people still have some energy. The last song sits five minutes before the music has to stop.</p>
+        </div>
+        <div class="w1-cond" data-show="lastSong=true">
+          <span class="w1-lab" id="ros-encore-lab">An encore after a slow last dance</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-encore-lab" data-name="encore" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="false">No</button>
+            <button type="button" role="radio" aria-checked="false" data-value="true">Yes, add 5 minutes</button>
+          </div>
+        </div>
+        <div class="w1-cond" data-show="lastSong=true">
+          <span class="w1-lab" id="ros-private-lab">A private last dance while guests line up outside</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-private-lab" data-name="privateLast" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="false">No</button>
+            <button type="button" role="radio" aria-checked="false" data-value="true">Yes, add 5 minutes</button>
+          </div>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-sendoff-lab">Send-off</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-sendoff-lab" data-name="sendoff" data-type="bool">
+            <button type="button" role="radio" aria-checked="true" data-value="true">Yes, 10 minutes</button>
+            <button type="button" role="radio" aria-checked="false" data-value="false">No</button>
+          </div>
+        </div>
+        <div class="w1-cond" data-show="sendoff=true">
+          <label for="ros-sendoffType">Send-off type<select id="ros-sendoffType" name="sendoffType">
+            <option value="bubbles" selected>Bubbles</option>
+            <option value="petals">Petals</option>
+            <option value="glow">Glow sticks</option>
+            <option value="wands">Light-up wands</option>
+            <option value="ribbon">Ribbon wands</option>
+            <option value="tunnel">The human tunnel</option>
+            <option value="paparazzi">The paparazzi exit</option>
+            <option value="other">Something of your own</option>
+          </select><span class="w1-help">The MC lines guests up ten minutes before the last song ends. Sparklers are fireworks under Massachusetts law; the events picker has the detail.</span></label>
+        </div>
+        <div>
+          <span class="w1-lab" id="ros-print-lab">Print which copy</span>
+          <div class="w1-radio" role="radiogroup" aria-labelledby="ros-print-lab" data-name="printMode">
+            <button type="button" role="radio" aria-checked="true" data-value="couple">The couple's copy</button>
+            <button type="button" role="radio" aria-checked="false" data-value="vendor">The vendor copy</button>
+          </div>
+          <p class="w1-why">The couple's copy has a blank column for changes on the day. The vendor copy carries who cues what, their day-of numbers from the Team Sheet, the table release order, and the rain plan.</p>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <section class="w1-out" aria-labelledby="ros-h">
+    <h2 id="ros-h">The night</h2>
+    <div id="ros-warn" hidden></div>
+    <ol class="w1-sched" id="ros-sched">
+      <li><div class="w1-row"><span class="t">4:00 PM</span><span class="w">Ceremony</span><span class="m">30 min</span><span class="c">cue: officiant, DJ or MC</span></div></li>
+      <li><div class="w1-row"><span class="t">4:30 PM</span><span class="w">Cocktail hour</span><span class="m">60 min</span><span class="c">cue: caterer, photographer. Photos 45 min.</span></div></li>
+      <li><div class="w1-row"><span class="t">5:30 PM</span><span class="w">Guests seated</span><span class="m">15 min</span><span class="c">cue: DJ or MC, caterer</span></div></li>
+      <li><div class="w1-row"><span class="t">5:45 PM</span><span class="w">Grand entrance</span><span class="m">10 min</span><span class="c">cue: DJ or MC. 4 pairs, then the two of you.</span></div></li>
+      <li><div class="w1-row"><span class="t">5:55 PM</span><span class="w">First dance</span><span class="m">5 min</span><span class="c">cue: DJ or MC</span></div></li>
+      <li><div class="w1-row"><span class="t">6:00 PM</span><span class="w">Welcome or blessing</span><span class="m">5 min</span><span class="c">cue: DJ or MC, the couple</span></div></li>
+      <li><div class="w1-row"><span class="t">6:05 PM</span><span class="w">Toasts</span><span class="m">10 min</span><span class="c">cue: DJ or MC. 2 speakers at 4 min.</span></div></li>
+      <li class="soft"><div class="w1-row"><span class="t">6:15 PM</span><span class="w">Breathing room</span><span class="m">5 min</span><span class="c">the mixed pace adds five here</span></div></li>
+      <li><div class="w1-row"><span class="t">6:20 PM</span><span class="w">Dinner, plated, two courses</span><span class="m">60 min</span><span class="c">cue: caterer</span></div></li>
+      <li class="soft"><div class="w1-row"><span class="t">7:20 PM</span><span class="w">Breathing room</span><span class="m">5 min</span><span class="c">the mixed pace adds five here</span></div></li>
+      <li><div class="w1-row"><span class="t">7:25 PM</span><span class="w">Table visits, floor opens</span><span class="m">30 min</span><span class="c">cue: the couple</span></div></li>
+      <li><div class="w1-row"><span class="t">7:55 PM</span><span class="w">Cake cutting</span><span class="m">5 min</span><span class="c">cue: caterer, DJ or MC, photographer</span></div></li>
+      <li><div class="w1-row"><span class="t">8:00 PM</span><span class="w">Parent dances</span><span class="m">10 min</span><span class="c">cue: DJ or MC</span></div></li>
+      <li><div class="w1-row"><span class="t">8:10 PM</span><span class="w">Open dancing</span><span class="m">105 min</span><span class="c">cue: DJ or MC</span></div></li>
+      <li><div class="w1-row"><span class="t">9:55 PM</span><span class="w">Last song</span><span class="m">5 min</span><span class="c">cue: DJ or MC</span></div></li>
+      <li><div class="w1-row"><span class="t">10:00 PM</span><span class="w">Send-off, bubbles</span><span class="m">10 min</span><span class="c">cue: DJ or MC, planner</span></div></li>
+    </ol>
+    <p class="w1-help" style="margin-top:10px">Tap a row to open the step that sets it. The note button adds a line that prints.</p>
+    <div id="ros-sunset"></div>
+    <div id="ros-copies" class="w1-card w1-copies"></div>
+    <div class="w1-actions">
+      <button type="button" class="btn btn-p" id="ros-print">Print this</button>
+      <button type="button" class="btn btn-s" id="ros-copy">Copy as text</button>
+      <button type="button" class="btn btn-s" id="ros-share">Share</button>
+      <button type="button" class="btn btn-s" id="ros-save">Save a copy</button>
+      <label class="btn btn-s btn-file" for="ros-load">Load a copy<input type="file" id="ros-load" name="loadFile" accept="application/json,.json"></label>
+      <button type="button" class="btn btn-s" id="ros-reset">Start over</button>
+    </div>
+  </section>
+  </div>
+  <noscript><p class="w1-help">This builder does its math in your browser, and JavaScript is off here. The night above is my default clock for a 4:00 PM ceremony with the music ending at 10:00 PM. The blank worksheet prints from <a class="w1-link" href="/wedding101/printables/run-of-show/">the printable page</a>.</p></noscript>
+</div>
+<div class="sheet-view" id="ros-sheet"></div>
+<script type="module">
+import { store, plan, planFacts, defaults, bind, time as T, sunset, copyText, share, saveCopy, loadCopy, toast, live, warn, printPage, ensureStyles, savedNote, text, esc, dateInfo, clamp, num } from '/wedding101/tools/_shared/w101.js';
+ensureStyles();
+const R = defaults.runOfShow;
+const SD = defaults.sunset;
+const ID = 'run-of-show';
+const S = store(ID);
+const root = document.getElementById('ros');
+const q = (sel, r) => (r || root).querySelector(sel);
+/* the print view lives outside the tool container, so it is looked up on the document */
+const sheetEl = document.getElementById('ros-sheet');
+
+const DINNER = { plated2: 'plated, two courses', plated3: 'plated, three courses', buffet: 'buffet', stations: 'stations', family: 'family style', cocktail: 'cocktail-style' };
+const SENDOFF = { bubbles: 'bubbles', petals: 'petals', glow: 'glow sticks', wands: 'light-up wands', ribbon: 'ribbon wands', tunnel: 'the human tunnel', paparazzi: 'the paparazzi exit', other: 'your own' };
+const LOCAL_MOMENTS = { bouquet: 'Bouquet toss', garter: 'Garter', money: 'Money dance', anniversary: 'Anniversary dance', slideshow: 'Slideshow' };
+const FORMAL = ['entrance', 'firstDance', 'welcome', 'toasts'];
+const PACE_NOTE = { relaxed: 'the relaxed pace adds five here', mixed: 'the mixed pace adds five here', fast: '' };
+const CUE_MATCH = [['officiant', /officiant|clergy|celebrant/i], ['DJ or MC', /\b(dj|mc|band|entertain|emcee)/i], ['caterer', /cater|chef|food|venue/i], ['photographer', /photo/i], ['planner', /plann|coordinat/i], ['transportation', /transport|limo|shuttle|bus|trolley/i]];
+
+const DEF = {
+  names: '', date: '', venue: '', ceremonyStart: '16:00', ceremonyLen: R.ceremony.minutes, sameSite: true, travel: R.travel,
+  receivingLine: false, firstLook: false, groupings: R.photos.groupings, photoMin: R.photos.noFirstLook, outdoor: false,
+  sunsetPortraits: false, doorsOpen: '', photogStart: '', photogHours: '', cocktailLen: R.cocktail.minutes, cocktailOtherRoom: false,
+  guests: R.guests, entrance: 'party', pairs: R.entrance.pairs, firstDancePlace: 'entrance', welcome: true,
+  toastSpeakers: R.toasts.speakers, toastMin: R.toasts.minutesEach, toastPlace: 'before', dinnerStyle: 'plated2', buffetLines: 'two',
+  tableRelease: '', pace: 'mixed', cake: true, cakeGap: R.cakeGap, parentDances: 'two', lastSong: true, encore: false,
+  privateLast: false, sendoff: true, sendoffType: 'bubbles', musicEnd: '22:00', outBy: '22:30', backward: false,
+  floorTarget: R.floorTarget, printMode: 'couple', flTouched: false, eventsSeen: 0, toastTotal: '', entranceFromSheet: '', _saved: 0
+};
+
+/* ---- load: own record first, then the shared plan (read through planFacts, which knows every builder's keys) ---- */
+const saved = S.get() || {};
+const st = Object.assign({}, DEF, saved);
+st._ext = Object.assign({}, saved._ext || {});
+let P = plan.get() || {};
+const F = planFacts(P);
+const pw = F.stamps;
+const mine = num(saved._saved, 0);
+const fresher = (writer) => num(pw[writer], 0) > mine;
+const firstVisit = !saved._saved;
+if (firstVisit) {
+  if (F.names) st.names = F.names;
+  for (const k of ['date', 'venue', 'ceremonyStart', 'musicEnd', 'outBy', 'dinnerStyle']) if (F[k]) st[k] = F[k];
+  if (F.guests !== null) st.guests = clamp(F.guests, 10, 500);
+  if (F.ceremonyLen !== null) st.ceremonyLen = clamp(F.ceremonyLen, R.ceremony.min, R.ceremony.max);
+  for (const k of ['firstLook', 'outdoor', 'sunsetPortraits']) if (F[k] !== null) st[k] = F[k];
+} else if (fresher('sunset')) {
+  if (F.date) st.date = F.date;
+  for (const k of ['firstLook', 'outdoor', 'sunsetPortraits']) if (F[k] !== null) st[k] = F[k];
+}
+/* facts from the other builders' tools, which do not stamp _w: taken whenever they change, so a
+ * fresh number from the Toast Planner or the DJ Sheet lands here, and an edit made here holds
+ * until that tool changes its mind again */
+function takeExternal(key, value, apply) {
+  if (value === undefined || value === null || value === '') return;
+  const j = JSON.stringify(value);
+  if (st._ext[key] === j) return;
+  apply(value);
+  st._ext[key] = j;
+}
+if (!firstVisit) takeExternal('names', F.names, (n) => { if (n) st.names = n; });
+takeExternal('guestCount', F.guestCount, (g) => { st.guests = clamp(g, 10, 500); });
+/* keyed without toastsStart, which this tool writes back and must not count as the planner changing its mind */
+if (F.toasts) takeExternal('toasts', { count: F.toasts.count, minutes: F.toasts.minutes, total: F.toasts.total, placement: F.toasts.placement, blessing: F.toasts.blessing, openMic: F.toasts.openMic }, (t) => {
+  if (t.count !== null) st.toastSpeakers = clamp(t.count, 0, 8);
+  if (t.minutes) st.toastMin = clamp(t.minutes, 1, 8);
+  st.toastTotal = t.total !== null && t.total > 0 ? t.total : '';
+  if (/between/i.test(t.placement)) st.toastPlace = 'between'; else if (/after/i.test(t.placement)) st.toastPlace = 'after'; else if (/before/i.test(t.placement)) st.toastPlace = 'before';
+});
+takeExternal('entranceMinutes', F.entranceMinutes, (n) => { st.entranceFromSheet = n > 0 ? n : ''; if (n > 0 && st.entrance === 'none') st.entrance = 'party'; });
+if (F.parentDances) takeExternal('parentDances', F.parentDances, (p) => { st.parentDances = p.count === 0 ? 'none' : (p.count === 1 ? 'one' : (p.shared ? 'shared' : 'two')); });
+if (F.lastSong) takeExternal('lastSong', F.lastSong, (l) => { st.lastSong = true; st.encore = !!l.encore; st.privateLast = !!l.privateLastDance; });
+const planEvents = F.events && F.events.length ? F.events : null;
+if (F.anniversaryDance !== null) takeExternal('anniversaryDance', F.anniversaryDance, (on) => { if (!planEvents) st['lm-anniversary'] = !!on; });
+if (planEvents && (firstVisit || fresher('events') || num(P.eventsUpdated, 0) > num(st.eventsSeen, 0))) {
+  applyEventPicks(planEvents);
+  st.eventsSeen = Date.now();
+}
+const planTeam = F.team;
+
+function applyEventPicks(list) {
+  const pick = (id) => { const e = list.find(x => x && x.id === id); return e ? e.pick : null; };
+  const p = pick('entrance');
+  if (p === 'skip') st.entrance = 'none'; else if (p === 'keep' && st.entrance === 'none') st.entrance = 'party';
+  const f = pick('firstDance');
+  if (f === 'skip') st.firstDancePlace = 'none'; else if (f === 'keep' && st.firstDancePlace === 'none') st.firstDancePlace = 'entrance';
+  for (const pair of [['welcome', 'welcome'], ['cake', 'cake'], ['lastDance', 'lastSong'], ['sendoff', 'sendoff']]) {
+    const v = pick(pair[0]);
+    if (v === 'skip') st[pair[1]] = false; else if (v === 'keep') st[pair[1]] = true;
+  }
+  const pd = pick('parentDances');
+  if (pd === 'skip') st.parentDances = 'none'; else if (pd === 'keep' && st.parentDances === 'none') st.parentDances = 'two';
+  const so = list.find(x => x && x.id === 'sendoff');
+  if (so && so.type && SENDOFF[so.type]) st.sendoffType = so.type;
+}
+
+/* ---- the moments list in step 5, built once from the plan (or a local fallback) ---- */
+function stepperHtml(name, value, min, max, step, less, more) {
+  return '<span class="w1-stepper"><button type="button" data-step="-' + step + '" aria-label="' + esc(less) + '">&minus;</button><input type="number" id="ros-' + name + '" name="' + name + '" value="' + value + '" min="' + min + '" max="' + max + '" step="' + step + '" inputmode="numeric"><button type="button" data-step="' + step + '" aria-label="' + esc(more) + '">+</button></span>';
+}
+function momentRow(id, label, minutesText, offset) {
+  return '<div class="w1-mom"><div class="w1-mom-h"><span class="w1-mom-name">' + esc(label) + '</span><span>' + esc(minutesText) + '</span></div>' +
+    '<label for="ros-off-' + id + '">Minutes into the dancing<span class="w1-inline">' + stepperHtml('off-' + id, offset, 0, 240, 5, 'Five minutes earlier in the dancing', 'Five minutes later in the dancing') + '</span></label></div>';
+}
+function renderMomentsUI() {
+  const box = q('#ros-moments');
+  let html = '';
+  if (planEvents) {
+    const kept = planEvents.filter(e => e && e.inside && e.pick === 'keep');
+    if (!kept.length) {
+      html = '<p class="w1-help">Nothing picked for the dancing yet. Keep a bouquet toss, a money dance, or a slideshow in <a class="w1-link" href="/wedding101/tools/events/">the events picker</a> and it lands here.</p>';
+    } else {
+      for (const e of kept) {
+        const d = R.moments[e.id] || R.moments.custom;
+        html += momentRow(e.id, e.label || e.id, num(e.minutes, d.minutes) + ' min', num(st['off-' + e.id], d.offset));
+      }
+      html += '<p class="w1-help">Minutes come from <a class="w1-link" href="/wedding101/tools/events/">the events picker</a>; the place in the dancing is set here.</p>';
+    }
+  } else {
+    for (const id of Object.keys(LOCAL_MOMENTS)) {
+      const d = R.moments[id];
+      html += '<div class="w1-mom"><label class="w1-check" for="ros-lm-' + id + '"><input type="checkbox" id="ros-lm-' + id + '" name="lm-' + id + '">' + esc(LOCAL_MOMENTS[id]) + ' (' + d.minutes + ' min)</label>' +
+        '<div class="w1-cond" data-show="lm-' + id + '=true"><label for="ros-off-' + id + '">Minutes into the dancing<span class="w1-inline">' + stepperHtml('off-' + id, num(st['off-' + id], d.offset), 0, 240, 5, 'Five minutes earlier in the dancing', 'Five minutes later in the dancing') + '</span></label></div></div>';
+    }
+    html += '<p class="w1-help">The full list, with what each one needs, is in <a class="w1-link" href="/wedding101/tools/events/">the events picker</a>. Whatever you keep there replaces this short list.</p>';
+  }
+  box.innerHTML = html;
+}
+renderMomentsUI();
+
+function currentMoments(s) {
+  const out = [];
+  if (planEvents) {
+    for (const e of planEvents) {
+      if (!e || !e.inside || e.pick !== 'keep') continue;
+      const d = R.moments[e.id] || R.moments.custom;
+      out.push({ id: e.id, label: e.label || e.id, minutes: clamp(num(e.minutes, d.minutes), 0, 120), offset: clamp(num(s['off-' + e.id], d.offset), 0, 240), note: e.detail || '' });
+    }
+  } else {
+    for (const id of Object.keys(LOCAL_MOMENTS)) {
+      if (!s['lm-' + id]) continue;
+      const d = R.moments[id];
+      out.push({ id, label: LOCAL_MOMENTS[id], minutes: d.minutes, offset: clamp(num(s['off-' + id], d.offset), 0, 240), note: '' });
+    }
+  }
+  out.sort((a, b) => a.offset - b.offset);
+  return out;
+}
+
+/* ---- the math (TOOLS-SPEC 3.1) ---- */
+function why(id) {
+  return {
+    ceremony: 'Twenty to thirty minutes is most ceremonies; a full service runs an hour or more.',
+    receiving: 'Everyone files past the two of you on the way out. Fifteen minutes, more with a big room.',
+    travel: 'The clock your guests keep, door to door.',
+    gap: 'A gap is the thing guests complain about. Tell them ahead of time and give them something to do.',
+    cocktail: 'The hour covers your photos. When the photos run long, the hour stretches and the guests wait.',
+    seated: 'Fifteen minutes to get a room to its seats; twenty-five when it is another room or two hundred people.',
+    entrance: 'Five minutes for the two of you, a minute for every two pairs, never more than fifteen.',
+    firstDance: 'One song. Invite the wedding party in after about a minute if you want company out there.',
+    welcome: 'Five minutes: a thank-you, a blessing, or both, while the room is still standing.',
+    toasts: 'Speakers times minutes, rounded up. Past fifteen minutes the room is looking at the kitchen.',
+    dinner: 'The base for the style, plus ten minutes for every fifty guests over a hundred.',
+    dinner2: 'The entrees, after the toasts.',
+    cakeGap: 'About a half hour between the last plate and the cake. Let people dance a bit and get a sweet tooth.',
+    cake: 'Five minutes. Knife and plates on the table before the MC says a word.',
+    parentDances: 'Right after the cake, while the room is seated and already watching.',
+    dancing: 'Everything that is left. Ninety minutes or more is what a five-hour night usually gives it.',
+    lastSlow: 'A slow last dance, then the encore brings everyone back in.',
+    lastSong: 'Five minutes before the music has to stop. End on a high note, not a fade.',
+    privateLast: 'The room empties to line up outside, and the two of you get one song alone.',
+    sendoff: 'The MC lines guests up ten minutes before the last song ends.',
+    stepout: 'Fifteen minutes at sunset minus thirty, then back before anyone notices.',
+    coverage: 'Lots happens in the last hour, and often the photographer is gone for it.'
+  }[id] || '';
+}
+
+function layout(s, start, w) {
+  const rows = [];
+  let t = start;
+  const push = (r) => { r.time = t; rows.push(r); t += r.minutes; return r; };
+  const cushionAfter = new Set(R.pace[s.pace] || R.pace.mixed);
+  const cushion = (key) => { if (cushionAfter.has(key)) push({ id: 'cushion-' + key, what: 'Breathing room', minutes: R.cushion, cue: '', step: 'anchors', soft: true, note: '', why: PACE_NOTE[s.pace] || '' }); };
+
+  const cLen = clamp(num(s.ceremonyLen, R.ceremony.minutes), R.ceremony.min, R.ceremony.max);
+  push({ id: 'ceremony', what: 'Ceremony', minutes: cLen, cue: 'officiant, DJ or MC', step: 'ceremony', note: s.outdoor ? 'outdoors' : '' });
+  const ceremonyEnd = t;
+  if (s.receivingLine) push({ id: 'receiving', what: 'Receiving line', minutes: R.receivingLine, cue: 'the couple', step: 'ceremony', note: '' });
+  if (!s.sameSite) push({ id: 'travel', what: 'Travel to the reception', minutes: clamp(num(s.travel, R.travel), 5, 120), cue: 'transportation', step: 'ceremony', note: '' });
+  const doors = T.parse(s.doorsOpen);
+  if (doors !== null && !s.backward) {
+    const d = doors < start ? doors + 1440 : doors;
+    if (d > t + 4) push({ id: 'gap', what: 'Gap: guests on their own', minutes: d - t, cue: '', step: 'ceremony', soft: true, note: '' });
+  }
+  const photoNeed = clamp(num(s.photoMin, R.photos.noFirstLook), 0, 180);
+  const chosen = clamp(num(s.cocktailLen, R.cocktail.minutes), R.cocktail.min, R.cocktail.max);
+  const cocktail = Math.max(chosen, T.ceilTo(photoNeed, R.cocktail.roundTo));
+  const cocktailStart = t;
+  push({ id: 'cocktail', what: 'Cocktail hour', minutes: cocktail, cue: 'caterer, photographer', step: 'cocktail', note: 'photos ' + photoNeed + ' min' + (s.firstLook ? ' after a first look' : '') });
+  if (cocktail > chosen) w.push({ id: 'W1', text: 'Your photos run past the hour. Guests wait ' + (cocktail - chosen) + ' minutes.', fix: 'A first look or fewer groupings gets the hour back.' });
+
+  const guests = clamp(num(s.guests, R.guests), 2, 1000);
+  const seated = (s.cocktailOtherRoom || guests >= R.seated.bigCount) ? R.seated.otherRoomOrBig : R.seated.minutes;
+  push({ id: 'seated', what: 'Guests seated', minutes: seated, cue: 'DJ or MC, caterer', step: 'cocktail', note: seated > R.seated.minutes ? (s.cocktailOtherRoom ? 'another room takes longer' : guests + ' guests take longer to seat') : '' });
+
+  if (s.entrance !== 'none') {
+    let em = R.entrance.coupleOnly;
+    const pairs = clamp(num(s.pairs, R.entrance.pairs), 0, 40);
+    const sheet = num(s.entranceFromSheet, 0);
+    let enote = 'just the two of you';
+    if (s.entrance === 'party' && sheet > 0) { em = Math.min(30, T.ceilTo(sheet, R.roundTo)); enote = 'the lineup on the DJ Sheet, ' + sheet + ' min'; }
+    else if (s.entrance === 'party') { em = Math.min(R.entrance.cap, T.ceilTo(R.entrance.base + Math.ceil(pairs / R.entrance.pairsPerMinute), R.roundTo)); enote = pairs + ' pairs, then the two of you'; }
+    push({ id: 'entrance', what: 'Grand entrance', minutes: em, cue: 'DJ or MC', step: 'dinner', note: enote });
+    cushion('entrance');
+  }
+  if (s.firstDancePlace === 'entrance') { push({ id: 'firstDance', what: 'First dance', minutes: R.firstDance, cue: 'DJ or MC', step: 'dinner', note: '' }); cushion('firstDance'); }
+  if (s.welcome) { push({ id: 'welcome', what: 'Welcome or blessing', minutes: R.welcome, cue: 'DJ or MC, the couple', step: 'dinner', note: '' }); cushion('welcome'); }
+
+  const speakers = clamp(num(s.toastSpeakers, R.toasts.speakers), 0, 12);
+  const each = clamp(num(s.toastMin, R.toasts.minutesEach), 1, 15);
+  const plannerTotal = num(s.toastTotal, 0);
+  const toastMin = plannerTotal > 0 ? T.ceilTo(plannerTotal, R.toasts.roundTo) : (speakers ? T.ceilTo(speakers * each, R.toasts.roundTo) : 0);
+  let toastsAt = null;
+  const toastRow = () => {
+    if (!toastMin) return;
+    toastsAt = t;
+    push({ id: 'toasts', what: 'Toasts', minutes: toastMin, cue: 'DJ or MC', step: 'dinner', note: plannerTotal > 0 ? speakers + (speakers === 1 ? ' speaker, ' : ' speakers, ') + plannerTotal + ' min from the Toast Planner' : speakers + (speakers === 1 ? ' speaker' : ' speakers') + ' at ' + each + ' min' });
+    if (toastMin > R.toasts.warnOver) w.push({ id: 'W3', text: 'Toasts run ' + toastMin + ' minutes. Past fifteen minutes the room is looking at the kitchen.', fix: 'Fewer speakers, or three minutes each, and have every one of them prepare.' });
+    cushion('toasts');
+  };
+  const plated = s.dinnerStyle === 'plated2' || s.dinnerStyle === 'plated3';
+  const place = s.toastPlace === 'between' && !plated ? 'after' : s.toastPlace;
+  if (place === 'before') toastRow();
+
+  const base = R.dinner.bases[s.dinnerStyle] || R.dinner.bases.plated2;
+  const extra = guests > R.dinner.over ? Math.floor((guests - R.dinner.over) / 50) * R.dinner.perFifty : 0;
+  const single = s.dinnerStyle === 'buffet' && s.buffetLines === 'one' ? R.dinner.singleLine : 0;
+  const dinner = base + extra + single;
+  const dinnerNote = [extra ? '+' + extra + ' for ' + guests + ' guests' : '', single ? '+' + single + ' for a single line' : ''].filter(Boolean).join(', ');
+  const dinnerStart = t;
+  if (place === 'between') {
+    const first = Math.min(R.toasts.firstCourse, dinner - 10);
+    push({ id: 'dinner', what: 'Dinner, first course', minutes: first, cue: 'caterer', step: 'dinner', note: DINNER[s.dinnerStyle] });
+    toastRow();
+    push({ id: 'dinner2', what: 'Dinner, entrees', minutes: dinner - first, cue: 'caterer', step: 'dinner', note: dinnerNote });
+  } else {
+    push({ id: 'dinner', what: 'Dinner, ' + (DINNER[s.dinnerStyle] || DINNER.plated2), minutes: dinner, cue: 'caterer', step: 'dinner', note: dinnerNote });
+  }
+  cushion('dinner');
+  if (place === 'after') toastRow();
+
+  let cakeAt = null;
+  if (s.cake) {
+    push({ id: 'cakeGap', what: 'Table visits, floor opens', minutes: clamp(num(s.cakeGap, R.cakeGap), 0, 90), cue: 'the couple', step: 'dancing', note: '' });
+    cakeAt = t;
+    push({ id: 'cake', what: 'Cake cutting', minutes: R.cake, cue: 'caterer, DJ or MC, photographer', step: 'dancing', note: '' });
+    cushion('cake');
+  }
+  if (s.firstDancePlace === 'after') { push({ id: 'firstDance', what: 'First dance', minutes: R.firstDance, cue: 'DJ or MC', step: 'dinner', note: '' }); cushion('firstDance'); }
+  const pd = s.parentDances;
+  if (pd && pd !== 'none') {
+    const pm = pd === 'two' ? R.parentDances.each * 2 : (pd === 'shared' ? R.parentDances.shared : R.parentDances.each);
+    push({ id: 'parentDances', what: pd === 'shared' ? 'Parent dances, one song' : (pd === 'two' ? 'Parent dances' : 'Parent dance'), minutes: pm, cue: 'DJ or MC', step: 'dancing', note: '' });
+    cushion('parentDances');
+  }
+  return { rows, danceStart: t, ceremonyEnd, cocktailStart, dinnerStart, dinnerMinutes: dinner, toastsAt, cakeAt, guests, photoNeed, cocktail, chosen };
+}
+
+function compute(s) {
+  const w = [];
+  const di = dateInfo(s.date);
+  let start = T.parse(s.ceremonyStart);
+  if (start === null) start = 16 * 60;
+  const roll = (t) => (t === null ? null : (t < start ? t + 1440 : t));
+  const musicEndRaw = T.parse(s.musicEnd);
+  let musicEnd = roll(musicEndRaw === null ? 22 * 60 : musicEndRaw);
+  const outBy = roll(T.parse(s.outBy));
+  const sun = di ? sunset(di.m, di.d, di.y, P.sunsetOverride) : null;
+  const moments = currentMoments(s);
+  const momentsSum = moments.reduce((a, m) => a + m.minutes, 0);
+
+  const ending = [];
+  if (s.lastSong) {
+    if (s.encore) ending.push({ id: 'lastSlow', what: 'Last dance, slow', minutes: R.lastSong, cue: 'DJ or MC', step: 'ending', note: '' });
+    ending.push({ id: 'lastSong', what: s.encore ? 'Encore, everyone in' : 'Last song', minutes: R.lastSong, cue: 'DJ or MC', step: 'ending', note: '' });
+    if (s.privateLast) ending.push({ id: 'privateLast', what: 'Private last dance', minutes: R.privateLastDance, cue: 'DJ or MC', step: 'ending', note: 'guests line up outside' });
+  }
+  const endingMin = ending.reduce((a, r) => a + r.minutes, 0);
+
+  let L = layout(s, start, w);
+  let computedStart = null;
+  if (s.backward) {
+    const fixed = L.danceStart - start;
+    const need = clamp(num(s.floorTarget, R.floorTarget), 30, 300) + momentsSum;
+    const ns = T.round5(musicEnd - endingMin - need - fixed);
+    if (ns !== start) {
+      /* the music end stays where the venue put it; only the start moves */
+      w.length = 0;
+      start = ns;
+      L = layout(s, start, w);
+    }
+    computedStart = start;
+  }
+
+  const rows = L.rows.slice();
+  let dancing = musicEnd - endingMin - L.danceStart;
+  if (dancing < 0) {
+    w.push({ id: 'W0', text: 'The formalities run ' + (-dancing) + ' minutes past the music. Nothing is left for the floor.', fix: 'A later end, a shorter cocktail hour, or fewer formalities.' });
+    dancing = 0;
+  }
+  const dancingRow = { id: 'dancing', what: 'Open dancing', minutes: dancing, cue: 'DJ or MC', step: 'dancing', note: moments.length ? moments.length + (moments.length === 1 ? ' moment inside' : ' moments inside') : '', time: L.danceStart };
+  rows.push(dancingRow);
+  let floor = dancing;
+  for (const m of moments) {
+    let tm = L.danceStart + m.offset;
+    if (tm + m.minutes > L.danceStart + dancing) tm = Math.max(L.danceStart, L.danceStart + dancing - m.minutes);
+    rows.push({ id: 'moment-' + m.id, what: m.label, minutes: m.minutes, cue: 'DJ or MC', step: 'dancing', note: m.note, time: tm, indent: true });
+    floor -= m.minutes;
+  }
+  floor = Math.max(0, floor);
+
+  /* sunset step-out and the outdoor warning */
+  let sunsetLine = '', stepOutAt = null, stepOutIn = '';
+  if (sun) {
+    const sunsetAbs = roll(sun.sunset);
+    sunsetLine = 'Sunset ' + T.format(sun.sunset) + ' · golden hour from ' + T.format(sun.golden) + ' · last light ' + T.format(sun.dusk);
+    if (s.outdoor && L.ceremonyEnd > sunsetAbs - SD.outdoorEndBefore) {
+      w.push({ id: 'W4', text: 'Your ceremony ends at ' + T.format(L.ceremonyEnd) + ' and sunset is ' + T.format(sun.sunset) + '. Outdoors, end by ' + T.format(sun.sunset - SD.outdoorEndBefore) + ' or the recessional walks out in the dark.', fix: 'An earlier start, or a shorter ceremony.' });
+    }
+    if (s.sunsetPortraits) {
+      const t0 = sunsetAbs - R.sunsetStepOut.before;
+      if (t0 < start + num(s.ceremonyLen, 30)) {
+        w.push({ id: 'W4b', text: 'Sunset is at ' + T.format(sun.sunset) + ', during or before your ceremony, so there is no step-out to take.', fix: 'The golden light is what you get during the ceremony itself.' });
+      } else if (t0 >= musicEnd) {
+        w.push({ id: 'W4c', text: 'Sunset is at ' + T.format(sun.sunset) + ', after the music ends.', fix: 'No step-out needed; the whole night is in daylight.' });
+      } else {
+        const host = rows.filter(r => !r.indent && r.time <= t0 && t0 < r.time + r.minutes).pop();
+        stepOutAt = t0;
+        stepOutIn = host ? host.what : '';
+        rows.push({ id: 'stepout', what: 'Sunset portraits, step out', minutes: R.sunsetStepOut.minutes, cue: 'photographer, DJ or MC', step: 'ceremony', note: host ? 'during ' + host.what.toLowerCase() : '', time: t0, indent: true });
+        if (host && FORMAL.indexOf(host.id) >= 0) {
+          w.push({ id: 'W4', text: 'Sunset portraits land on ' + host.what.toLowerCase() + ' at ' + T.format(t0) + '.', fix: 'Move the toasts after dinner, or take the step-out during the cake gap instead.' });
+        }
+        if (host && host.id === 'dancing') floor = Math.max(0, floor - R.sunsetStepOut.minutes);
+      }
+    }
+  }
+
+  /* the ending, the send-off, and the coverage marker */
+  let te = musicEnd - endingMin;
+  for (const r of ending) { r.time = te; rows.push(r); te += r.minutes; }
+  let sendoffEnd = musicEnd;
+  if (s.sendoff) {
+    rows.push({ id: 'sendoff', what: 'Send-off, ' + (SENDOFF[s.sendoffType] || SENDOFF.other), minutes: R.sendoff, cue: 'DJ or MC, planner', step: 'ending', note: '', time: musicEnd });
+    sendoffEnd = musicEnd + R.sendoff;
+    if (outBy !== null && sendoffEnd > outBy) w.push({ id: 'W6', text: 'The send-off runs ' + (sendoffEnd - outBy) + ' minutes past the out time.', fix: 'End the music a little earlier, or ask the venue for the minutes now, not that night.' });
+  }
+  const ps = T.parse(s.photogStart), ph = num(s.photogHours, 0);
+  let coverageEnd = null;
+  if (ps !== null && ph > 0) {
+    coverageEnd = roll(ps) + Math.round(ph * 60);
+    rows.push({ id: 'coverage', what: 'Photographer coverage ends', minutes: 0, cue: '', step: 'ceremony', note: '', time: coverageEnd, marker: true });
+    const lastThing = s.sendoff ? sendoffEnd : musicEnd;
+    if (coverageEnd < lastThing) w.push({ id: 'W8', text: 'Your photographer leaves at ' + T.format(coverageEnd) + ', before the ' + (s.sendoff ? 'send-off' : 'last song') + '.', fix: 'The last hour is the one people remember; the photographer article says what to ask.' });
+  }
+
+  /* order: main rows by time, indented rows after their host, the marker where it falls */
+  rows.sort((a, b) => a.time - b.time || (a.marker ? -1 : b.marker ? 1 : 0) || (a.indent === b.indent ? 0 : a.indent ? 1 : -1));
+
+  if (floor < R.floorWarnUnder && dancing >= 0) w.push({ id: 'W2', text: 'Your floor gets ' + floor + ' minutes. Five hours usually gives it ninety or more.', fix: 'Toasts before dinner, one parent song, or a first look each buys some back.' });
+  const span = musicEnd - L.cocktailStart;
+  if (span > R.longNightHours * 60) w.push({ id: 'W5', text: 'Cocktails to the last song runs ' + T.hm(span) + '. Six hours is the long end of what I have seen work.', fix: 'The longest I have done is eight, and it took planning.' });
+  if (di && di.isSaturday && start < T.parse(R.saturdayGap.ceremonyBefore) && L.cocktailStart > T.parse(R.saturdayGap.receptionAfter)) {
+    w.push({ id: 'W7', text: 'A Saturday ceremony before one and a reception after five: that gap is the one guests complain about.', fix: 'The time article has the fix: move one of them, or fill the gap on purpose and tell people.' });
+  }
+
+  const summary = 'Dance floor ' + floor + ' min · Music ends ' + T.format(musicEnd) + ' · ' + T.hm(span) + ' from cocktails to last song';
+  return { rows, warnings: w, floor, dancing, summary, sun, sunsetLine, di, start, computedStart, musicEnd, outBy, cocktailStart: L.cocktailStart, ceremonyEnd: L.ceremonyEnd, dinnerMinutes: L.dinnerMinutes, toastsAt: L.toastsAt, cakeAt: L.cakeAt, danceStart: L.danceStart, guests: L.guests, photoNeed: L.photoNeed, cocktail: L.cocktail, chosen: L.chosen, stepOutAt, stepOutIn, coverageEnd, moments };
+}
+
+/* ---- rendering ---- */
+const bar = live(q('#ros-bar'));
+const openNotes = new Set();
+function rowHtml(r, s) {
+  const note = s['note-' + r.id] || '';
+  const bits = [];
+  if (r.cue) bits.push('cue: ' + r.cue);
+  if (r.note) bits.push(r.note);
+  const w = why(r.id) || (r.id.indexOf('cushion') === 0 ? (PACE_NOTE[s.pace] || '') : '');
+  if (w && !r.marker) bits.push(w);
+  const cls = [r.indent ? 'indent' : '', r.soft ? 'soft' : '', r.marker ? 'marker' : ''].filter(Boolean).join(' ');
+  return '<li' + (cls ? ' class="' + cls + '"' : '') + '>' +
+    '<button type="button" class="w1-row" data-goto="' + esc(r.step) + '" aria-label="' + esc(r.what + ' at ' + T.format(r.time) + '. Open the step that sets it.') + '">' +
+    '<span class="t">' + T.format(r.time) + '</span><span class="w">' + esc(r.what) + '</span><span class="m">' + (r.marker ? '' : r.minutes + ' min') + '</span>' +
+    (bits.length || note ? '<span class="c">' + esc(bits.join('. ')) + (note ? (bits.length ? '. ' : '') + 'Note: ' + esc(note) : '') + '</span>' : '') + '</button>' +
+    (r.marker ? '' : '<button type="button" class="w1-notebtn" data-note="' + esc(r.id) + '" aria-expanded="' + (openNotes.has(r.id) || note ? 'true' : 'false') + '" aria-controls="ros-noteline-' + esc(r.id) + '">Note</button>' +
+    '<div class="w1-noteline" id="ros-noteline-' + esc(r.id) + '"' + (openNotes.has(r.id) || note ? '' : ' hidden') + '><label for="ros-note-' + esc(r.id) + '">Note for ' + esc(r.what.toLowerCase()) + '<input type="text" id="ros-note-' + esc(r.id) + '" name="note-' + esc(r.id) + '" value="' + esc(note) + '" maxlength="120" placeholder="Prints on the sheet"></label></div>') +
+    '</li>';
+}
+function renderSchedule(m, s) {
+  q('#ros-sched').innerHTML = m.rows.map(r => rowHtml(r, s)).join('');
+}
+function renderSunset(m, s) {
+  const box = q('#ros-sunset');
+  if (!m.sun) { box.innerHTML = '<div class="w1-card"><h3>Sunset</h3><p>Set the date in step 1 and I put sunset, golden hour, and last light on the clock. Massachusetts table built in; nothing is looked up.</p></div>'; return; }
+  const sun = m.sun;
+  const endBy = sun.sunset - (s.firstLook ? SD.ceremonyEndBefore.firstLook : SD.ceremonyEndBefore.noFirstLook);
+  const ce = ((m.ceremonyEnd % 1440) + 1440) % 1440;
+  const lines = [];
+  lines.push('<p><span class="big">' + T.format(sun.sunset) + '</span> sunset ' + sun.label + (sun.overridden ? ', from your own lookup' : '') + ' on ' + esc(m.di.label) + '. Golden hour from ' + T.format(sun.golden) + '; last usable light ' + T.format(sun.dusk) + '.</p>');
+  lines.push('<p>Your ceremony ends at ' + T.format(m.ceremonyEnd) + '. ' + (s.firstLook ? 'With a first look, ending an hour before sunset (' + T.format(endBy) + ') is enough for the portraits in daylight.' : 'With no first look, the ceremony should end about two hours before sunset (' + T.format(endBy) + ') for family photos and portraits in daylight.') + (ce > endBy ? ' You are ' + (ce - endBy) + ' minutes past that line.' : ' You are inside that line.') + '</p>');
+  if (s.outdoor) lines.push('<p>Outdoors, the ceremony should end by ' + T.format(sun.sunset - SD.outdoorEndBefore) + ' or the recessional walks out in the dark.</p>');
+  if (s.sunsetPortraits && m.stepOutAt !== null) lines.push('<p>Sunset portraits: step out at ' + T.format(m.stepOutAt) + ' for fifteen minutes' + (m.stepOutIn ? ', during ' + esc(m.stepOutIn.toLowerCase()) : '') + '.</p>');
+  if (sun.dstNote) lines.push('<p>' + esc(sun.dstNote) + '</p>');
+  lines.push('<p class="w1-help">Sunset moves about a minute a day, so check the exact minute for your date when you print. <a class="w1-link" href="/wedding101/tools/sunset/">The sunset tool</a> has the whole picture.</p>');
+  box.innerHTML = '<div class="w1-card teal"><h3>Sunset on your date</h3>' + lines.join('') + '</div>';
+}
+function contactFor(cueName) {
+  const pair = CUE_MATCH.find(p => p[0] === cueName);
+  if (!pair || !planTeam.length) return '';
+  const t = planTeam.find(x => pair[1].test(x.role || ''));
+  return t ? [t.name, t.cell].filter(Boolean).join(' ') : '';
+}
+function renderCopies() {
+  const box = q('#ros-copies');
+  const point = F.pointPerson ? '<p><strong>Point person on the day:</strong> ' + esc([F.pointPerson.name, F.pointPerson.cell].filter(Boolean).join(', ')) + '. The one number vendors call.</p>' : '';
+  if (!planTeam.length) {
+    box.innerHTML = '<h3>Who needs a copy</h3><p>Everyone on your team, seventy-two hours out. Fill in <a class="w1-link" href="/wedding101/tools/team-sheet/">the Team Sheet</a> and the list appears here and on the vendor copy.</p>' + point;
+    return;
+  }
+  const items = planTeam.map(t => '<li>' + esc([t.role, t.name].filter(Boolean).join(': ')) + (t.cell ? ' <span class="w1-help">' + esc(t.cell) + '</span>' : '') + '</li>').join('');
+  box.innerHTML = '<h3>Who needs a copy</h3><p>' + planTeam.length + (planTeam.length === 1 ? ' copy' : ' copies') + ', seventy-two hours out, plus one for the kit.</p><ul>' + items + '</ul>' + point;
+}
+function renderCompare(s) {
+  const box = q('#ros-compare');
+  if (!s.flTouched) { box.hidden = true; return; }
+  const a = compute(Object.assign({}, s, { firstLook: true, photoMin: R.photos.firstLook }));
+  const b = compute(Object.assign({}, s, { firstLook: false, photoMin: R.photos.noFirstLook }));
+  const col = (title, m, fl) => {
+    const endBy = m.sun ? T.format(m.sun.sunset - (fl ? SD.ceremonyEndBefore.firstLook : SD.ceremonyEndBefore.noFirstLook)) : '';
+    return '<div><h4>' + title + '</h4><p>Photos after the ceremony: ' + m.photoNeed + ' min.</p><p>Cocktail hour: ' + m.cocktail + ' min' + (m.cocktail > m.chosen ? ', stretched ' + (m.cocktail - m.chosen) + ' for the photos' : '') + '.</p><p>Dance floor: ' + m.floor + ' min.</p>' + (endBy ? '<p>Ceremony should end by ' + endBy + ' for daylight.</p>' : '') + '</div>';
+  };
+  box.hidden = false;
+  box.innerHTML = '<h3>Both paths, side by side</h3><div class="w1-compare">' + col('First look', a, true) + col('No first look', b, false) + '</div><p class="w1-help">A first look costs you the moment at the top of the aisle and buys back most of your cocktail hour. Neither is wrong.</p>';
+}
+function showConditionals(s) {
+  root.querySelectorAll('[data-show]').forEach(el => {
+    const rule = el.dataset.show;
+    const i = rule.indexOf('=');
+    const key = i < 0 ? rule : rule.slice(0, i);
+    const want = i < 0 ? 'true' : rule.slice(i + 1);
+    el.hidden = String(s[key]) !== want;
+  });
+  const cs = q('#ros-ceremonyStart');
+  cs.readOnly = !!s.backward;
+  if (s.backward) cs.setAttribute('aria-describedby', 'ros-backward-lab'); else cs.removeAttribute('aria-describedby');
+}
+function sheetHtml(m, s) {
+  const names = s.names || 'Run of show';
+  const sub = [m.di ? m.di.long : '', s.venue].filter(Boolean).join(' · ');
+  const vendor = s.printMode === 'vendor';
+  const head = '<div class="sheet-head"><div><div class="names">' + esc(names) + '</div>' + (sub ? '<div class="sub">' + esc(sub) + '</div>' : '') + '</div><div class="kind">Run of show<br>' + (vendor ? 'the vendor copy' : 'the couple\'s copy') + '</div></div>';
+  const foot = '<div class="sheet-foot"><span>Wedding 101 by Ensemble Events · ensemble-events.com/wedding101</span><span>Printed ' + esc(new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })) + '</span></div>';
+  let body = '<table><thead><tr><th>Time</th><th>What</th><th>Min</th><th>Cue</th><th>Notes</th>' + (vendor ? '' : '<th style="width:1.5in">Changes on the day</th>') + '</tr></thead><tbody>';
+  for (const r of m.rows) {
+    const note = [r.note, s['note-' + r.id]].filter(Boolean).join('. ');
+    let cue = r.cue || '';
+    if (vendor && cue) cue = cue.split(', ').map(c => { const k = contactFor(c); return k ? c + ' (' + k + ')' : c; }).join(', ');
+    body += '<tr class="' + [r.indent ? 'indent' : '', r.soft ? 'soft' : '', r.marker ? 'marker' : ''].filter(Boolean).join(' ') + '"><td class="t">' + T.format(r.time) + '</td><td>' + esc(r.what) + '</td><td class="num">' + (r.marker ? '' : r.minutes) + '</td><td>' + esc(cue) + '</td><td>' + esc(note) + '</td>' + (vendor ? '' : '<td></td>') + '</tr>';
+  }
+  body += '</tbody></table><p class="b" style="margin-top:8pt">' + esc(m.summary) + '</p>';
+  if (m.sunsetLine) body += '<p class="gray small">' + esc(m.sunsetLine) + '. Sunset moves about a minute a day; check the exact minute for your date.</p>';
+  let html = '<section class="sheet">' + head + body + foot + '</section>';
+  if (vendor) {
+    let two = '<h2>Who needs a copy</h2>';
+    if (planTeam.length) two += '<ul>' + planTeam.map(t => '<li>' + esc([t.role, t.name, t.cell].filter(Boolean).join(', ')) + '</li>').join('') + '</ul><p>' + planTeam.length + ' copies, seventy-two hours out, and one in the kit.</p>';
+    else two += '<p class="gray">Fill in the Team Sheet and the list prints here.</p>';
+    if (F.pointPerson) two += '<p><span class="b">Point person on the day:</span> ' + esc([F.pointPerson.name, F.pointPerson.cell].filter(Boolean).join(', ')) + '</p>';
+    if (F.dayRoles) {
+      const RL = { cards: 'carries the cards and gifts', envelopes: 'holds the envelopes', rain: 'makes the rain call', sendoff: 'signals the send-off', deliveries: 'signs for deliveries' };
+      const roles = Object.keys(RL).filter(k => F.dayRoles[k]).map(k => '<li>' + esc(String(F.dayRoles[k])) + ' ' + RL[k] + '</li>');
+      if (roles.length) two += '<h2>Day-of roles</h2><ul>' + roles.join('') + '</ul>';
+    }
+    if (F.vendorMeals !== null && F.vendorMeals > 0) two += '<p><span class="b">Vendor meals:</span> ' + F.vendorMeals + ', with the entrees, so the team is back before the first dance set.</p>';
+    if (s.dinnerStyle === 'buffet') {
+      const lines = String(s.tableRelease || '').split(/\n+/).map(x => x.trim()).filter(Boolean);
+      two += '<h2>Table release order</h2>' + (lines.length ? '<ol>' + lines.map(l => '<li>' + esc(l) + '</li>').join('') + '</ol>' : '<p class="gray">Type the order in step 4 and it prints here.</p>');
+    }
+    two += '<h2>If it rains</h2>';
+    if (F.planB && (F.planB.lines.length || F.planB.decided !== null)) {
+      if (F.planB.lines.length) two += '<ul>' + F.planB.lines.map(l => '<li>' + esc(l) + '</li>').join('') + '</ul>';
+      if (F.planB.decided !== null) two += '<p class="gray small">' + F.planB.decided + ' of 9 decided on the Plan B Card.</p>';
+    } else {
+      two += '<p class="gray">Set the rain plan on the Plan B Card and the alternate lines print here: cocktail hour plus thirty, ceremony at the tables, photos indoors.</p>';
+    }
+    html += '<section class="sheet">' + head + two + foot + '</section>';
+  }
+  return html;
+}
+
+let lastModel = null;
+function render(s, name, persist) {
+  const m = compute(s);
+  lastModel = m;
+  bar(m.summary);
+  warn(q('#ros-warn'), m.warnings);
+  if (!name || name.indexOf('note-') !== 0) renderSchedule(m, s);
+  renderSunset(m, s);
+  renderCompare(s);
+  showConditionals(s);
+  q('#ros-groupings-help').textContent = num(s.groupings, 0) + (num(s.groupings, 0) === 1 ? ' grouping is about ' : ' groupings are about ') + T.ceilTo(num(s.groupings, 0) * R.photos.perGrouping, 5) + ' minutes at three minutes each.';
+  if (s.backward && m.computedStart !== null) {
+    const v = T.hhmm(m.computedStart);
+    if (s.ceremonyStart !== v) { s.ceremonyStart = v; q('#ros-ceremonyStart').value = v; }
+  }
+  sheetEl.innerHTML = sheetHtml(m, s);
+  if (persist === false) return;
+  s._saved = Date.now();
+  /* the guest count goes out under both names; remember it so the alias coming back is not taken as news */
+  s._ext.guestCount = JSON.stringify(m.guests);
+  S.set(s);
+  const out = {
+    names: s.names, date: s.date, venue: s.venue, guests: m.guests, guestCount: m.guests, ceremonyStart: s.ceremonyStart, ceremonyLen: num(s.ceremonyLen, R.ceremony.minutes),
+    musicEnd: s.musicEnd, outBy: s.outBy, dinnerStyle: s.dinnerStyle, dinnerMinutes: m.dinnerMinutes, firstLook: !!s.firstLook, outdoor: !!s.outdoor,
+    sunsetPortraits: !!s.sunsetPortraits, tableRelease: s.tableRelease,
+    runOfShow: { toastsAt: m.toastsAt === null ? '' : T.hhmm(m.toastsAt), cakeAt: m.cakeAt === null ? '' : T.hhmm(m.cakeAt), danceStart: T.hhmm(m.danceStart), musicEnd: T.hhmm(m.musicEnd), floor: m.floor, ceremonyStart: T.hhmm(m.start) }
+  };
+  /* the Toast Planner reads toastsStart back for its speaker cards */
+  if (m.toastsAt !== null) out.toastsStart = T.hhmm(m.toastsAt);
+  plan.patch(out, ID);
+}
+
+/* ---- wiring ---- */
+const b = bind(q('#ros-form'), st, (s, name) => {
+  if (name === 'firstLook') {
+    s.flTouched = true;
+    if (s.firstLook && num(s.photoMin, 0) === R.photos.noFirstLook) s.photoMin = R.photos.firstLook;
+    if (!s.firstLook && num(s.photoMin, 0) === R.photos.firstLook) s.photoMin = R.photos.noFirstLook;
+    b.refresh();
+  }
+  if (name === 'groupings') {
+    const g = num(s.groupings, 0);
+    if (g > 0) { s.photoMin = clamp(T.ceilTo(g * R.photos.perGrouping, 5), R.photos.min, R.photos.max); b.refresh(); }
+  }
+  /* an edit made here outranks the number another tool sent, until that tool changes it again */
+  if (name === 'toastSpeakers' || name === 'toastMin') s.toastTotal = '';
+  if (name === 'pairs' || name === 'entrance') s.entranceFromSheet = '';
+  render(s, name);
+});
+/* the note inputs live in the schedule list, outside the form; bind them the same way */
+bind(q('#ros-sched'), st, (s, name) => render(s, name));
+savedNote(q('#ros-saved'), S);
+renderCopies();
+render(st);
+
+root.addEventListener('click', e => {
+  const preset = e.target.closest('[data-preset]');
+  if (preset) {
+    const k = preset.dataset.preset;
+    if (k === 'noparty') { st.entrance = 'couple'; st.pairs = 0; }
+    else { const p = R.presets[k]; if (p) { st.ceremonyStart = p.ceremonyStart; st.musicEnd = p.musicEnd; st.outBy = p.outBy; st.backward = false; } }
+    b.refresh(); render(st);
+    toast(k === 'noparty' ? 'Set for the two of you. Toasts are whoever you choose.' : 'Anchors set. Everything stays editable.');
+    return;
+  }
+  const rowBtn = e.target.closest('.w1-row[data-goto]');
+  if (rowBtn) {
+    const d = document.getElementById('step-' + rowBtn.dataset.goto);
+    if (d) { d.open = true; d.scrollIntoView({ behavior: 'smooth', block: 'start' }); const f = d.querySelector('input,select,textarea,[role=radio][tabindex="0"]'); if (f) setTimeout(() => f.focus({ preventScroll: true }), 350); }
+    return;
+  }
+  const nb = e.target.closest('.w1-notebtn');
+  if (nb) {
+    const id = nb.dataset.note;
+    const line = document.getElementById('ros-noteline-' + id);
+    const open = line.hidden;
+    line.hidden = !open;
+    nb.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) { openNotes.add(id); line.querySelector('input').focus(); } else openNotes.delete(id);
+  }
+});
+
+q('#ros-print').addEventListener('click', () => printPage(() => { S.flush(); }));
+q('#ros-copy').addEventListener('click', async () => {
+  const m = lastModel || compute(st);
+  const ok = await copyText(text.runOfShow(textModel(m, st)));
+  toast(ok ? 'Copied. Paste it into a text or an email.' : 'Could not copy here. Select the schedule and copy it by hand.');
+});
+q('#ros-share').addEventListener('click', async () => {
+  const m = lastModel || compute(st);
+  const r = await share('Run of show', text.runOfShow(textModel(m, st)));
+  if (r === 'copied') toast('No share sheet here, so it is on your clipboard.');
+  else if (r === 'failed') toast('Could not share or copy here.');
+});
+q('#ros-save').addEventListener('click', () => { saveCopy(ID, st); toast('Saved as wedding101-run-of-show.json.'); });
+q('#ros-load').addEventListener('change', e => {
+  const f = e.target.files && e.target.files[0];
+  if (!f) return;
+  loadCopy(ID, f, (loaded, err) => {
+    if (err) { toast(err); return; }
+    for (const k of Object.keys(st)) if (!(k in DEF)) delete st[k];
+    Object.assign(st, DEF, loaded);
+    st._ext = Object.assign({}, loaded._ext || {});
+    b.refresh(); render(st);
+    toast('Loaded your copy.');
+  });
+  e.target.value = '';
+});
+q('#ros-reset').addEventListener('click', () => {
+  if (!confirm('Start over? This clears the run of show saved on this phone.')) return;
+  S.clear();
+  for (const k of Object.keys(st)) if (!(k in DEF)) delete st[k];
+  Object.assign(st, DEF);
+  st._ext = {};
+  openNotes.clear();
+  b.refresh(); render(st, null, false);
+  toast('Cleared. Back to my default night.');
+});
+
+function textModel(m, s) {
+  return {
+    names: s.names, dateLabel: m.di ? m.di.label : '',
+    rows: m.rows.map(r => ({ timeLabel: T.format(r.time), what: r.what, minutes: r.minutes, cue: r.cue, note: [r.note, s['note-' + r.id]].filter(Boolean).join('. '), indent: !!r.indent, marker: !!r.marker })),
+    floor: m.floor, sunsetLine: m.sunsetLine
+  };
+}
+</script>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="shell">
+    <div class="foot-top">
+      <div>
+        <img class="foot-mark" src="/assets/img/ee-mark-white.png" alt="Ensemble Events">
+        <div class="foot-tag">Weddings, parties and content &middot; New Bedford, MA</div>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/wedding-packages/">Weddings</a>
+        <a href="/wedding-content-creation/">Content</a>
+        <a href="/game-shows/">Game Shows</a>
+        <a href="/holiday-parties/">Holiday</a>
+        <a href="/packages/">Pricing</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Check Your Date</a>
+        <a href="/the-method/">The Method</a>
+        <a href="/digital-day-of/">Digital Day-Of</a>
+        <a href="/wedding101/">Wedding101</a>
+        <a href="/senior-living/">Senior Living</a>
+        <a href="/corporate-holiday-party/">Corporate Parties</a>
+        <a href="/clientservices/">Client Services</a>
+      </nav>
+    </div>
+    </div>
+      <div class="areas">
+        <span><b>SouthCoast</b></span><span>New Bedford</span><span>Fall River</span><span>Dartmouth</span><span>Westport</span><span>Fairhaven</span><span>Mattapoisett</span><span>Marion</span><span>Wareham</span><span><b>South Shore</b></span><span>Plymouth</span><span>Duxbury</span><span>Kingston</span><span><b>Cape Cod</b></span><span>Falmouth</span><span>Bourne</span><span>Sandwich</span><span><b>Rhode Island</b></span><span>Newport</span><span>Providence</span>
+      </div>
+    <div class="foot-note">Prices shown are current and may change. Every date is quoted in writing before anything is booked.</div>
+  </div>
+</footer>
+</body>
+</html>

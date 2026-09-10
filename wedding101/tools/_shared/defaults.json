@@ -1,0 +1,175 @@
+{
+  "_about": "Wedding 101 defaults. Every duration, share, cap, and threshold the tools use, from TOOLS-SPEC.md sections 3.1 to 3.10 and 4.3. The tools read this file and nowhere else; the articles phase reads it for its how-long lines. Change a number here and every tool follows. The keys listed in _chuck are his to confirm (spec section 6).",
+  "_updated": "2026-09-08",
+  "_chuck": [
+    "runOfShow.dinner.bases",
+    "runOfShow.cakeGap",
+    "runOfShow.seated",
+    "runOfShow.floorTarget",
+    "runOfShow.longNightHours",
+    "runOfShow.saturdayGap",
+    "budget.shares",
+    "music.mustPlayCap",
+    "toasts.warnEachOver",
+    "toasts.warnTotalOver",
+    "toasts.warnSpeakersOver",
+    "planB.rainChance",
+    "planB.lowTemp",
+    "planB.deadline"
+  ],
+  "runOfShow": {
+    "roundTo": 5,
+    "ceremony": { "minutes": 30, "min": 15, "max": 75, "step": 5 },
+    "travel": 20,
+    "receivingLine": 15,
+    "photos": { "noFirstLook": 45, "firstLook": 20, "perGrouping": 3, "groupings": 15, "min": 10, "max": 120, "step": 5 },
+    "cocktail": { "minutes": 60, "min": 45, "max": 90, "step": 15, "roundTo": 15 },
+    "seated": { "minutes": 15, "otherRoomOrBig": 25, "bigCount": 200 },
+    "guests": 120,
+    "entrance": { "coupleOnly": 5, "base": 5, "pairsPerMinute": 2, "cap": 15, "pairs": 4 },
+    "firstDance": 5,
+    "welcome": 5,
+    "toasts": { "speakers": 2, "minutesEach": 4, "roundTo": 5, "warnOver": 15, "firstCourse": 20 },
+    "dinner": {
+      "bases": { "plated2": 60, "plated3": 75, "buffet": 45, "stations": 60, "family": 50, "cocktail": 45 },
+      "over": 100,
+      "perFifty": 10,
+      "singleLine": 10
+    },
+    "cakeGap": 30,
+    "cake": 5,
+    "parentDances": { "each": 5, "shared": 5 },
+    "moments": {
+      "bouquet": { "minutes": 10, "offset": 30 },
+      "garter": { "minutes": 5, "offset": 40 },
+      "money": { "minutes": 15, "offset": 45 },
+      "anniversary": { "minutes": 5, "offset": 60 },
+      "slideshow": { "minutes": 5, "offset": 15 },
+      "centerpiece": { "minutes": 5, "offset": 75 },
+      "shoe": { "minutes": 10, "offset": 50 },
+      "special": { "minutes": 5, "offset": 20 },
+      "surprise": { "minutes": 5, "offset": 90 },
+      "custom": { "minutes": 5, "offset": 30 }
+    },
+    "lastSong": 5,
+    "encore": 5,
+    "privateLastDance": 5,
+    "sendoff": 10,
+    "cushion": 5,
+    "pace": {
+      "relaxed": ["entrance", "firstDance", "welcome", "toasts", "dinner", "cake", "parentDances"],
+      "mixed": ["toasts", "dinner"],
+      "fast": []
+    },
+    "floorTarget": 90,
+    "floorWarnUnder": 90,
+    "longNightHours": 6,
+    "longestDoneHours": 8,
+    "saturdayGap": { "ceremonyBefore": "13:00", "receptionAfter": "17:00" },
+    "sunsetStepOut": { "before": 30, "minutes": 15 },
+    "presets": {
+      "two": { "ceremonyStart": "14:00", "musicEnd": "20:00", "outBy": "20:30" },
+      "four": { "ceremonyStart": "16:00", "musicEnd": "22:00", "outBy": "22:30" },
+      "five": { "ceremonyStart": "17:00", "musicEnd": "23:00", "outBy": "23:30" },
+      "six": { "ceremonyStart": "18:00", "musicEnd": "23:30", "outBy": "00:00" }
+    }
+  },
+  "events": {
+    "list": [
+      { "id": "entrance", "label": "Grand entrance", "minutes": 10, "pick": "keep", "inside": false },
+      { "id": "firstDance", "label": "First dance", "minutes": 5, "pick": "keep", "inside": false },
+      { "id": "welcome", "label": "Welcome or blessing", "minutes": 5, "pick": "keep", "inside": false },
+      { "id": "toasts", "label": "Toasts", "minutes": 10, "pick": "keep", "inside": false, "from": "toasts" },
+      { "id": "meal", "label": "The meal", "minutes": 60, "pick": "keep", "inside": false, "from": "run-of-show" },
+      { "id": "cake", "label": "Cake cutting", "minutes": 5, "pick": "keep", "inside": false },
+      { "id": "parentDances", "label": "Parent dances", "minutes": 10, "pick": "keep", "inside": false },
+      { "id": "anniversary", "label": "Anniversary dance", "minutes": 5, "pick": "maybe", "inside": true },
+      { "id": "bouquet", "label": "Bouquet toss", "minutes": 10, "pick": "maybe", "inside": true },
+      { "id": "garter", "label": "Garter", "minutes": 5, "pick": "maybe", "inside": true },
+      { "id": "money", "label": "Money dance", "minutes": 15, "pick": "maybe", "inside": true },
+      { "id": "centerpiece", "label": "Centerpiece giveaway", "minutes": 5, "pick": "skip", "inside": true },
+      { "id": "slideshow", "label": "Slideshow or montage", "minutes": 5, "pick": "skip", "inside": true },
+      { "id": "shoe", "label": "The shoe game", "minutes": 10, "pick": "skip", "inside": true },
+      { "id": "special", "label": "Special or sorority songs", "minutes": 5, "pick": "skip", "inside": true },
+      { "id": "surprise", "label": "A surprise performance", "minutes": 5, "pick": "skip", "inside": true },
+      { "id": "lastDance", "label": "Last dance", "minutes": 5, "pick": "keep", "inside": false },
+      { "id": "sendoff", "label": "Send-off", "minutes": 10, "pick": "keep", "inside": false },
+      { "id": "custom1", "label": "Something of your own", "minutes": 5, "pick": "skip", "inside": true, "custom": true },
+      { "id": "custom2", "label": "Something of your own", "minutes": 5, "pick": "skip", "inside": true, "custom": true },
+      { "id": "custom3", "label": "Something of your own", "minutes": 5, "pick": "skip", "inside": true, "custom": true }
+    ],
+    "moneyDance": { "perParticipant": 0.6, "roundTo": 5, "participants": 20 },
+    "momentsWarnOver": 30,
+    "sendoff": { "perGuest": 1, "extraShare": 0.1, "lineUpBefore": 10 }
+  },
+  "budget": {
+    "shares": {
+      "venue": 22,
+      "food": 28,
+      "photo": 12,
+      "entertainment": 8,
+      "flowers": 8,
+      "attire": 6,
+      "cake": 2,
+      "stationery": 2,
+      "officiant": 2,
+      "transportation": 2,
+      "favors": 2,
+      "rings": 2,
+      "cushion": 4
+    },
+    "great": 1.4,
+    "notPriority": 0.6,
+    "maxGreat": 3,
+    "cushionAmberUnder": 3,
+    "roundDollars": 10
+  },
+  "toasts": {
+    "minutes": 4,
+    "maxMinutes": 8,
+    "applause": 1,
+    "blessing": 2,
+    "openMicCap": 10,
+    "warnEachOver": 5,
+    "warnTotalOver": 15,
+    "warnSpeakersOver": 4
+  },
+  "music": {
+    "mustPlayCap": 20,
+    "preludeBefore": 20
+  },
+  "planB": {
+    "rainChance": 50,
+    "lowTemp": 60,
+    "deadline": "the morning before",
+    "cocktailPlus": 30,
+    "latePhotos": 20,
+    "lateParty": 15
+  },
+  "sunset": {
+    "goldenHourBefore": 60,
+    "ceremonyEndBefore": { "noFirstLook": 120, "firstLook": 60 },
+    "outdoorEndBefore": 30,
+    "portraitsBefore": 30,
+    "portraitsMinutes": 15,
+    "dstNoteDays": 7
+  },
+  "teamSheet": {
+    "copiesHoursBefore": 72,
+    "printRows": 12
+  },
+  "checklist": {
+    "hoursBefore": 72,
+    "licenseDays": 60,
+    "noticeDays": 3
+  },
+  "seating": {
+    "round60": 8,
+    "round72": 10,
+    "round48": 6,
+    "rect": 8
+  },
+  "rsvp": {
+    "pendingShare": 0.6
+  }
+}

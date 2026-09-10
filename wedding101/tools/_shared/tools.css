@@ -1,0 +1,154 @@
+/* Wedding 101 tools: the screen styles every tool shares (TOOLS-SPEC 5.1, 5.3).
+ * Appended to site.css by the build; until then w101.js links it from the tool page.
+ * Booth Light rules: radius 0, no gradients, Poppins body, teal accents. Magenta is a rule, a
+ * border, or a glyph, never a fill behind white text. Tokens come from the site stylesheet. */
+:root{--w101-css:1}
+
+/* the site's primary button is magenta under white text (3.27:1); on a tool page the primary is
+   teal under ground-colored text (7.52:1), and nothing else about the button changes */
+.tool-page .btn-p{background:var(--teal);color:var(--night);border-color:var(--teal)}
+.tool-page .btn-p:hover{background:#3FD0D2;color:var(--night)}
+.tool-page .btn{min-height:44px}
+
+.w1{max-width:1100px}
+.w1-intro{font-size:17px;max-width:62ch;margin:0 0 10px;color:var(--text-2)}
+.w1-saved{font-size:13px;color:var(--text-2);margin:0 0 22px}
+
+/* the sticky summary: a bar under the title on wide screens, a footer bar on phones */
+.w1-bar{position:sticky;top:72px;z-index:20;background:var(--surface);border:1px solid var(--teal);padding:12px 16px;font-weight:500;font-size:15px;margin:0 0 20px;line-height:1.45}
+@media(max-width:979px){
+  .w1-bar{position:fixed;top:auto;bottom:0;left:0;right:0;margin:0;border-width:1px 0 0;padding:12px 20px;font-size:14px}
+  .w1{padding-bottom:96px}
+}
+
+.w1-grid{display:grid;gap:28px}
+@media(min-width:980px){
+  .w1-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start}
+  .w1-grid > .w1-out{position:sticky;top:140px;max-height:calc(100vh - 156px);overflow:auto}
+}
+
+/* collapsible steps: native details, so they work with JavaScript off */
+.w1-step{background:var(--surface);border:1px solid var(--line);margin:0 0 12px}
+.w1-step summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px;min-height:56px;padding:12px 18px;font-family:var(--f-disp);font-size:22px;line-height:1.1;color:var(--text)}
+.w1-step summary::-webkit-details-marker{display:none}
+.w1-step summary::after{content:"+";margin-left:auto;color:var(--teal);font-family:var(--f-body);font-size:26px;font-weight:300}
+.w1-step[open] summary::after{content:"\2212"}
+.w1-n{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border:1px solid var(--teal);color:var(--teal);font-family:var(--f-body);font-size:13px;font-weight:600;flex:none}
+.w1-fields{padding:6px 18px 22px;display:grid;gap:20px}
+.w1-two{display:grid;gap:16px}
+@media(min-width:560px){.w1-two{grid-template-columns:1fr 1fr}}
+
+.w1 label{display:flex;flex-direction:column;gap:7px}
+.w1-lab{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-2);display:block;margin:0 0 8px}
+.w1-help{font-size:13px;color:var(--text-2);text-transform:none;letter-spacing:0;font-weight:300;line-height:1.55;margin:0}
+p.w1-help{margin:0}
+.w1-why{font-size:14px;color:var(--text-2);line-height:1.55;margin:8px 0 0}
+.w1-hint{font-size:13px;color:var(--teal);text-transform:none;letter-spacing:0;font-weight:400}
+.w1 input[type=time],.w1 input[type=date]{max-width:220px}
+.w1 input[type=number]{max-width:160px}
+
+/* two- and three-button pickers */
+.w1-radio{display:flex;flex-wrap:wrap;gap:8px}
+.w1-radio [role=radio]{min-height:44px;min-width:44px;padding:0 16px;background:var(--night);border:1px solid var(--line);color:var(--text);font-family:var(--f-body);font-size:15px;font-weight:400;cursor:pointer;border-radius:0;text-align:center}
+.w1-radio [role=radio]:hover{border-color:var(--teal)}
+.w1-radio [role=radio][aria-checked=true]{border-color:var(--teal);color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal);font-weight:500}
+
+/* steppers: real buttons around a real number input */
+.w1-stepper{display:inline-flex;align-items:stretch;border:1px solid var(--line);background:var(--night);vertical-align:middle}
+.w1-stepper button{width:48px;min-height:44px;background:none;border:0;border-right:1px solid var(--line);color:var(--teal);font-size:22px;font-weight:300;cursor:pointer;font-family:var(--f-body);line-height:1}
+.w1-stepper button:last-child{border-right:0;border-left:1px solid var(--line)}
+.w1-stepper button:disabled{color:var(--text-2);opacity:.35;cursor:default}
+.w1-stepper input{width:4.6em;border:0;text-align:center;padding:10px 4px;font-weight:500;font-size:16px;-moz-appearance:textfield;appearance:textfield;max-width:none}
+.w1-stepper input::-webkit-outer-spin-button,.w1-stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.w1-unit{font-size:13px;color:var(--text-2);text-transform:none;letter-spacing:0;font-weight:300}
+.w1-inline{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+
+/* checkboxes with the label as the tap target; the selector outranks the site's column-flex label rule */
+.w1 label.w1-check,.w1-check{display:flex;flex-direction:row;align-items:center;gap:12px;min-height:44px;text-transform:none;letter-spacing:0;font-size:15px;font-weight:400;color:var(--text);cursor:pointer}
+.w1-check input{width:24px;height:24px;margin:0;accent-color:var(--teal);flex:none}
+
+.w1-presets{display:flex;flex-wrap:wrap;gap:8px}
+.w1-chip{min-height:44px;padding:0 14px;background:none;border:1px solid var(--line);color:var(--text);font-family:var(--f-body);font-size:14px;cursor:pointer;border-radius:0}
+.w1-chip:hover{border-color:var(--teal);color:var(--teal)}
+
+/* the output block is a section, and the site pads every section by 72px; this one sits inside the tool */
+.w1-out{padding:0}
+.w1-out h2{font-size:clamp(26px,3vw,34px);margin:0 0 14px}
+.w1-card{background:var(--surface);border:1px solid var(--line);padding:18px 20px;margin:16px 0}
+.w1-card h3{font-size:20px;margin:0 0 8px}
+.w1-card p{margin:0 0 8px;font-size:15px;color:var(--text-2);line-height:1.6}
+.w1-card p:last-child{margin-bottom:0}
+.w1-card.teal{border-color:var(--teal)}
+.w1-card .big{font-family:var(--f-disp);font-size:clamp(30px,5vw,44px);color:var(--text);line-height:1;margin:0 0 6px}
+.w1-card ul{margin:0;padding-left:20px;color:var(--text-2);font-size:15px}
+.w1-card li{margin:0 0 6px}
+.w1-compare{display:grid;gap:12px}
+@media(min-width:560px){.w1-compare{grid-template-columns:1fr 1fr}}
+.w1-compare > div{border:1px solid var(--line);padding:12px 14px}
+.w1-compare h4{margin:0 0 6px;font-size:14px;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:.04em}
+
+/* warnings: a glyph and text, the magenta rule is decoration */
+.w1-warn{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+.w1-warn li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--magenta);padding:12px 14px;font-size:15px;line-height:1.5;color:var(--text-2)}
+.w1-warn strong{font-weight:600;color:var(--text)}
+.w1-glyph{flex:none;width:24px;height:24px;border:1px solid var(--magenta);color:var(--magenta);display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;margin-top:2px}
+
+/* the schedule list */
+.w1-sched{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.w1-sched li{border-bottom:1px solid var(--line);position:relative}
+.w1-row{display:grid;grid-template-columns:84px minmax(0,1fr) auto;gap:2px 12px;align-items:baseline;width:100%;text-align:left;padding:12px 60px 12px 0;background:none;border:0;color:var(--text);font-family:var(--f-body);font-weight:300;cursor:pointer;min-height:44px}
+.w1-row:hover .w{color:var(--teal)}
+.w1-row .t{font-weight:600;color:var(--teal);font-variant-numeric:tabular-nums;font-size:15px}
+.w1-row .w{font-weight:500;font-size:16px}
+.w1-row .m{color:var(--text-2);font-size:13px;white-space:nowrap}
+.w1-row .c{grid-column:2/4;font-size:13px;color:var(--text-2);line-height:1.5}
+li.indent .w1-row{padding-left:22px;grid-template-columns:62px minmax(0,1fr) auto}
+li.indent{background:rgba(20,186,189,.06)}
+li.soft .w1-row .w{color:var(--text-2);font-weight:300;font-style:italic}
+li.marker{border-left:3px solid var(--magenta)}
+li.marker .w1-row{padding-left:12px}
+li.marker .w1-row .w{color:var(--magenta);font-weight:500}
+.w1-notebtn{position:absolute;right:0;top:8px;min-width:44px;min-height:44px;background:none;border:1px solid var(--line);color:var(--text-2);font-family:var(--f-body);font-size:12px;cursor:pointer;padding:0 8px}
+.w1-notebtn:hover,.w1-notebtn[aria-expanded=true]{border-color:var(--teal);color:var(--teal)}
+.w1-noteline{padding:0 0 12px}
+.w1-noteline input{font-size:15px;padding:10px 12px}
+.w1-sched-static{display:grid;gap:0;border-top:1px solid var(--line);margin:0;padding:0;list-style:none}
+.w1-sched-static li{display:grid;grid-template-columns:84px 1fr auto;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.w1-sched-static .t{color:var(--teal);font-weight:600}
+.w1-sched-static .m{color:var(--text-2);font-size:13px}
+
+/* events picker cards */
+.w1-ev{background:var(--surface);border:1px solid var(--line);padding:16px 18px;margin:0 0 12px}
+.w1-ev.keep{border-color:var(--teal)}
+.w1-ev.skip{opacity:.7}
+.w1-ev-head{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin:0 0 10px}
+.w1-ev-head h3{font-size:22px;margin:0;flex:1 1 200px}
+.w1-ev-head h3 input{font-family:var(--f-body);font-size:16px;max-width:280px}
+.w1-ev .w1-why{margin:8px 0 0}
+.w1-detail{border-top:1px solid var(--line);margin-top:14px;padding-top:14px;display:grid;gap:14px}
+.w1-detail[hidden]{display:none}
+.w1-fact{border-left:3px solid var(--magenta);padding:8px 14px;font-size:14px;color:var(--text-2);line-height:1.55;background:var(--night)}
+.w1-fact strong{color:var(--text)}
+.w1-static{margin:0 0 20px}
+.w1-static table{width:100%;border-collapse:collapse;font-size:15px}
+.w1-static th,.w1-static td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.w1-static th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--text-2);font-weight:600}
+.w1-static .o{display:inline-block;width:14px;height:14px;border:1px solid var(--text-2);border-radius:50%;margin-right:8px;vertical-align:-2px}
+
+/* action row at the bottom of every tool */
+.w1-actions{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0}
+.w1-actions .btn{padding:14px 20px;font-size:13px}
+.w1-actions input[type=file]{position:absolute;left:-9999px;width:1px;height:1px}
+.w1-actions .btn-file{position:relative}
+/* the file input is what takes keyboard focus; the button it lives in shows the ring */
+.w1-actions .btn-file:focus-within{outline:2px solid var(--teal);outline-offset:3px}
+.w1-link{color:var(--teal)}
+
+/* the saved toast: the only animation, and reduced motion removes it (the site's rule) */
+.w1-toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--teal);color:var(--night);padding:12px 18px;font-weight:600;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:100;max-width:calc(100vw - 40px);text-align:center}
+.w1-toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:979px){.w1-toast{bottom:104px}}
+@media(prefers-reduced-motion:reduce){.w1-toast{transition:none}}
+
+/* the print view of the couple's data lives in the page, hidden on screen (print.css shows it) */
+.sheet-view{display:none}
