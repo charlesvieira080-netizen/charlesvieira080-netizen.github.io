@@ -32,6 +32,23 @@ h1,h2,h3{font-family:var(--f-disp);font-weight:400;margin:0;text-wrap:balance;le
 
 .ribbon{background:var(--flag-bg);border-bottom:1px solid var(--flag-line);color:var(--flag);font-size:12px;font-weight:400;letter-spacing:.03em;padding:9px 26px;text-align:center}
 
+/* Seasonal promo strip. Sits ABOVE the sticky nav on purpose, so it scrolls away
+ * and never permanently eats height on a phone. Ink is the night navy, not white:
+ * white on this magenta measures 3.3:1 and fails AA at 13px, the navy measures
+ * 5.5:1 and passes. Text and on/off live in build/site.config.mjs (PROMO). */
+.promo{background:var(--magenta);color:#0E1726}
+/* The WHOLE strip is the control, not a small link inside it. A 13px "See holiday
+ * parties" link measured under the 44px tap minimum on every page at 390px wide;
+ * making the bar itself the target fixes that everywhere at once and is how a promo
+ * strip should behave anyway. min-height carries the 44px on its own. */
+.promo .shell{display:flex;align-items:center;justify-content:center;gap:4px 14px;flex-wrap:wrap;
+  min-height:44px;padding-top:8px;padding-bottom:8px;font:inherit;font-size:13px;line-height:1.4;
+  text-align:center;color:inherit;text-decoration:none;background:none;border:0;cursor:pointer;width:100%}
+.promo b{font-weight:600}
+.promo .go{font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.promo .shell:hover .go{text-decoration:none}
+@media (max-width:560px){ .promo .shell{font-size:12px} }
+
 .topbar{position:sticky;top:0;z-index:50;background:rgba(14,23,38,.95);border-bottom:1px solid var(--line)}
 .topbar .shell{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:14px;padding-bottom:14px}
 .brandmark{width:124px;cursor:pointer;background:none;border:0;padding:0}
@@ -94,12 +111,16 @@ section.cream .lede{color:var(--cream-text)}
 .lane .fig{margin-top:auto;padding-top:10px;font-size:14px;font-weight:600;letter-spacing:.04em;color:var(--teal)}
 .lane .fig.mag{color:var(--magenta)}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:42px}
-.card{background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column}
+/* Flex, not grid. auto-fit resolved to FOUR columns at this shell width, so the
+ * corporate page's two cards under the full-width feature sat in the left half
+ * with two empty columns beside them. Flex lets whatever is left on a row grow to
+ * fill it, which is right at every count the site actually uses: 1 card, 2, or 3. */
+.cards{display:flex;flex-wrap:wrap;gap:20px;margin-top:42px}
+.card{flex:1 1 260px;background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column}
 .card .ph{aspect-ratio:1/1;overflow:hidden;background:#101B2C}
 .card .ph img{width:100%;height:100%;object-fit:cover;object-position:center}
 /* the featured format: full width, screen beside the words */
-.card.feature{grid-column:1/-1;flex-direction:row;border-top:3px solid var(--magenta)}
+.card.feature{flex:1 1 100%;flex-direction:row;border-top:3px solid var(--magenta)}
 .card.feature .ph{aspect-ratio:1/1;width:min(42%,360px);flex:none}
 .card.feature .tx{justify-content:center;padding:30px 30px}
 .card.feature h3{font-size:31px}
@@ -128,8 +149,15 @@ section.cream .prices p{color:var(--cream-text)}
 section.cream .prices .fig{color:var(--teal)}
 
 /* reels, images carry the page */
-.reels{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:40px}
-.reel{aspect-ratio:9/16;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:18px}
+/* Landscape, two across. These were 9:16 tiles four across, which is the Instagram
+ * Reels grid exactly, so a wall of real dance-floor photographs still read as a
+ * social-video portfolio no matter what the headings above it said. Chuck, 9/10:
+ * "you are making it look like we're a content company." 3:2 is a photograph. */
+/* min(400px,100%) not a bare 400px: a bare floor wider than the viewport makes the
+ * track overflow instead of collapsing, which pushed 420px of grid into a 390px
+ * phone on four pages. */
+.reels{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));gap:16px;margin-top:40px}
+.reel{aspect-ratio:3/2;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:18px}
 .reel .tri{font-size:24px;color:var(--line)}
 .reel span{font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--text-2)}
 .gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:38px}
@@ -238,6 +266,13 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px}
  * (.tx) are deliberately left underlined. */
 .topbar a, .foot-nav a, a.lane, a.card, a.btn, .brandmark, a.reel{text-decoration:none}
 a.lane h3, a.card h3{text-decoration:none}
+
+/* Package price on the corporate holiday cards. The .fig class is scoped to .lane
+ * and .prices in the mockup, so the cards need their own. Same display face and
+ * teal as the wedding price grid, a little smaller, so a buyer reads them as the
+ * same kind of number rather than a different sort of claim. Set 2026-09-10. */
+.card .tx .price{font-family:var(--f-disp);font-size:30px;color:var(--teal);line-height:1;margin:12px 0 14px}
+.card .tx .price small{display:block;font-family:var(--f-body);font-size:13px;font-weight:500;color:var(--text-2);letter-spacing:.03em;margin-top:8px}
 
 /* A reel frame carrying a real photograph rather than a placeholder label. */
 .reel.has-img{padding:0;overflow:hidden}
