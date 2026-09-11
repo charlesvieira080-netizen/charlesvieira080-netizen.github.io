@@ -332,6 +332,9 @@ a.lane h3, a.card h3{text-decoration:none}
 .clip video{display:block;width:100%;aspect-ratio:4/3;height:auto;background:#000}
 .clip .cap{display:block;padding:11px 14px;font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--text-2);background:var(--surface)}
 .clip .cap b{color:var(--text);font-weight:600}
+/* a vertical 9:16 reel in the same frame (WO-2026-09-11, the Quiz Show sample round) */
+.clip.tall{max-width:360px}
+.clip.tall video{aspect-ratio:9/16}
 
 /* Wide photo band on the game and lane pages. Licensed stock, captioned honestly:
    Ensemble has no game show footage of its own yet. */
