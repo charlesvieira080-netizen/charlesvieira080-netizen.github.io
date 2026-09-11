@@ -378,6 +378,46 @@ a.lane h3, a.card h3{text-decoration:none}
   box-sizing:border-box}
 .foot-tel:hover{text-decoration:underline}
 
+
+/* energy pass 2026-09-11 */
+@media screen{
+.hero,.phead{position:relative;background:
+  radial-gradient(900px 480px at 10% -12%, rgba(20,186,189,.20), transparent 62%),
+  radial-gradient(820px 460px at 92% 4%, rgba(236,87,157,.17), transparent 58%),
+  linear-gradient(180deg,#13213A 0%, var(--night) 74%)}
+.hero::after,.phead::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;
+  background:linear-gradient(90deg,var(--teal),var(--magenta));opacity:.9}
+.hero h1 span,.phead h1 span{background:linear-gradient(100deg,var(--teal) 5%,#4ED2D4 45%,var(--magenta) 100%);
+  -webkit-background-clip:text;background-clip:text;color:var(--teal);-webkit-text-fill-color:transparent}
+section{background:radial-gradient(1100px 520px at 88% 0%, rgba(20,186,189,.05), transparent 62%)}
+section.alt{background:linear-gradient(155deg,#1C2A45 0%, var(--surface) 52%, #141F32 100%)}
+.proof{background:linear-gradient(120deg,#1C2A45 0%, var(--surface) 60%, #1A2136 100%)}
+.proof .n{font-size:44px;background:linear-gradient(115deg,var(--teal),#4ED2D4 55%,var(--magenta));
+  -webkit-background-clip:text;background-clip:text;color:var(--teal);-webkit-text-fill-color:transparent}
+.btn{transition:transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease, color .18s ease}
+.btn-p{background:linear-gradient(120deg,#FF74AE 0%, var(--magenta) 55%, #D63E85 100%);
+  box-shadow:0 8px 26px rgba(236,87,157,.34)}
+.btn-p:hover{background:linear-gradient(120deg,#FF86B9 0%, #F0699F 60%, var(--magenta) 100%);
+  transform:translateY(-2px);box-shadow:0 12px 34px rgba(236,87,157,.5)}
+.btn-s:hover{border-color:var(--teal);color:#FFFFFF;background:rgba(20,186,189,.14);
+  box-shadow:0 8px 24px rgba(20,186,189,.22)}
+nav.pages a.cta{box-shadow:0 6px 18px rgba(236,87,157,.35)}
+.lane,a.card,.card,.prices > div{transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease}
+.lane{position:relative;overflow:hidden}
+.lane::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--teal),var(--magenta));opacity:.85}
+.lane:hover{transform:translateY(-4px);border-color:var(--teal);
+  box-shadow:0 16px 36px rgba(0,0,0,.4), 0 6px 26px rgba(20,186,189,.16)}
+a.card:hover{transform:translateY(-4px);border-color:var(--teal);
+  box-shadow:0 16px 36px rgba(0,0,0,.4), 0 6px 26px rgba(20,186,189,.16)}
+.prices .fig{font-size:44px;background:linear-gradient(115deg,var(--teal),#4ED2D4 60%,var(--magenta));
+  -webkit-background-clip:text;background-clip:text;color:var(--teal);-webkit-text-fill-color:transparent}
+.prices > div.flag{box-shadow:inset 0 0 0 1px rgba(236,87,157,.25), 0 0 26px rgba(236,87,157,.14)}
+.topbar{background:rgba(14,23,38,.82);backdrop-filter:saturate(1.5) blur(10px);-webkit-backdrop-filter:saturate(1.5) blur(10px)}
+.promo{background:linear-gradient(90deg,#E14F92 0%, #F47FB5 50%, #E14F92 100%)}
+footer{border-top:2px solid transparent;border-image:linear-gradient(90deg,var(--teal),var(--magenta)) 1}
+}
+
 /* Wedding 101 tools */
 /* Wedding 101 tools: the screen styles every tool shares (TOOLS-SPEC 5.1, 5.3).
  * Appended to site.css by the build; until then w101.js links it from the tool page.
