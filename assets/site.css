@@ -418,6 +418,30 @@ a.card:hover{transform:translateY(-4px);border-color:var(--teal);
 footer{border-top:2px solid transparent;border-image:linear-gradient(90deg,var(--teal),var(--magenta)) 1}
 }
 
+
+/* game-lane energy 2026-09-12 */
+@media screen{
+.lane-games .phead{background:
+  linear-gradient(rgba(20,186,189,.055) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(20,186,189,.055) 1px, transparent 1px),
+  radial-gradient(980px 520px at 8% -14%, rgba(20,186,189,.26), transparent 62%),
+  radial-gradient(880px 500px at 94% 2%, rgba(236,87,157,.22), transparent 58%),
+  linear-gradient(180deg,#152441 0%, var(--night) 76%);
+  background-size:56px 56px, 56px 56px, auto, auto, auto}
+.lane-games .phead h1{font-size:clamp(42px,6.6vw,84px)}
+.lane-games .card.feature{border:1px solid transparent;border-top-width:3px;background:
+  linear-gradient(var(--surface),var(--surface)) padding-box,
+  linear-gradient(120deg,var(--teal),var(--magenta)) border-box;
+  box-shadow:0 10px 40px rgba(0,0,0,.35), 0 0 30px rgba(20,186,189,.12), 0 0 30px rgba(236,87,157,.10)}
+.lane-games .card .ph img{transition:transform .35s ease}
+.lane-games a.card:hover .ph img{transform:scale(1.05)}
+.lane-games .card{overflow:hidden}
+@keyframes ee-pulse{0%,100%{box-shadow:0 8px 26px rgba(236,87,157,.32)}50%{box-shadow:0 10px 36px rgba(236,87,157,.58)}}
+.lane-games .btn-p{animation:ee-pulse 2.8s ease-in-out infinite}
+.lane-games .btn-p:hover{animation-play-state:paused}
+.lane-games .proof{border-bottom:2px solid transparent;border-image:linear-gradient(90deg,var(--teal),var(--magenta)) 1}
+}
+
 /* Wedding 101 tools */
 /* Wedding 101 tools: the screen styles every tool shares (TOOLS-SPEC 5.1, 5.3).
  * Appended to site.css by the build; until then w101.js links it from the tool page.
