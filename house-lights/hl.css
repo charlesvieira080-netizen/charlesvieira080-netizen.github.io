@@ -1,0 +1,40 @@
+@font-face{font-family:"Poppins Fallback";src:local("Arial"),local("ArialMT");font-weight:300;font-style:normal;size-adjust:110.53%;ascent-override:95.00%;descent-override:31.67%;line-gap-override:9.05%}
+@font-face{font-family:"Poppins Fallback";src:local("Arial"),local("ArialMT");font-weight:400 500;font-style:normal;size-adjust:111.40%;ascent-override:94.25%;descent-override:31.42%;line-gap-override:8.98%}
+@font-face{font-family:"Poppins Fallback";src:local("Arial Bold"),local("Arial-BoldMT");font-weight:600 700;font-style:normal;size-adjust:97.10%;ascent-override:108.14%;descent-override:36.05%;line-gap-override:10.30%}
+@font-face{font-family:"Abril Fatface Fallback";src:local("Georgia");font-weight:400;font-style:normal;size-adjust:101.70%;ascent-override:104.03%;descent-override:28.61%;line-gap-override:0.00%}
+.hl-banner{display:contents}
+.phead h1{max-width:9.96em}
+h2.sec{max-width:11.288em}
+nav.pages a.cta{color:#0E1726}
+:root{--f-body:"Poppins","Poppins Fallback",-apple-system,"Segoe UI",sans-serif;--f-disp:"Abril Fatface","Abril Fatface Fallback",Georgia,serif}
+
+.hl-hero{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.hl-price{font-family:var(--f-disp);font-size:34px;line-height:1.1;color:var(--text)}
+.phead p.hl-price{margin-top:26px;font-size:30px;color:var(--text)}
+.band .hl-price{margin:0 auto}
+.hl-small{font-size:15px;margin-top:30px}
+.band p.hl-small{max-width:56ch;margin-top:30px}
+
+.hl-shot{margin:0;max-width:none}
+.hl-shot img{aspect-ratio:16/9;object-fit:contain}
+.hl-shot.hl-phone{max-width:300px;justify-self:center}
+.hl-phone img{aspect-ratio:540/1168}
+.hl-clip{max-width:960px;margin-top:40px}
+.hl-clip video{aspect-ratio:16/9}
+
+.hl-dl{margin:0;max-width:none}
+.hl-dl > div{padding:19px 0;border-bottom:1px solid var(--line);font-size:16px;color:var(--text-2)}
+.hl-dl dt{color:var(--text);font-weight:600}
+.hl-dl dd{margin:4px 0 0}
+
+.hl-faq{margin-top:42px}
+.hl-faq h3{font-size:22px;line-height:1.2;margin-top:30px}
+.hl-faq h3:first-child{margin-top:0}
+.hl-faq p{color:var(--text-2);margin:10px 0 0}
+
+@media (min-width:901px){
+  .hl-flip .hl-shot{order:-1}
+}
+@media (max-width:900px){
+  .hl-hero{grid-template-columns:1fr;gap:40px}
+}
