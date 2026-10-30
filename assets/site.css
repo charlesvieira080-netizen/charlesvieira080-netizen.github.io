@@ -57,7 +57,7 @@ nav.pages{display:flex;flex-wrap:wrap;gap:2px;align-items:center}
 nav.pages a{font-family:var(--f-body);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;background:none;border:0;color:var(--text-2);padding:10px 11px;cursor:pointer;border-radius:0}
 nav.pages a:hover{color:var(--text)}
 nav.pages a[aria-current]{color:var(--teal)}
-nav.pages a.cta{background:var(--magenta);color:#fff;margin-left:8px;padding:12px 18px}
+nav.pages a.cta{background:var(--magenta);color:var(--night);margin-left:8px;padding:12px 18px}
 nav.pages a.cta:hover{background:#F06BA9}
 
 .btn{font-family:var(--f-body);font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;padding:16px 30px;border-radius:0;text-decoration:none;display:inline-block;border:1px solid transparent;cursor:pointer}
